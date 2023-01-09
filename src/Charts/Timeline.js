@@ -14,24 +14,23 @@ const Timeline = props => {
 
   // Format data
   const maxMortalities = [];
+  const focusDiffKey = `${props.focus}_diff`;
   props.data.forEach(d => {
-    maxMortalities.push(d3.max(d.infant_mortality, year => year.mortality_rate));
-    d["infant_mortality_diff"] = d.infant_mortality[d.infant_mortality.length -1].mortality_rate - d.infant_mortality[0].mortality_rate;
+    maxMortalities.push(d3.max(d[props.focus], year => year.mortality_rate));
+    d[focusDiffKey] = d[props.focus].find(y => y.year === props.year).mortality_rate - d[props.focus][0].mortality_rate;
   });
   const maxMortality = d3.max(maxMortalities);
 
   const dataSortedByDiff = props.data
-    .filter(country => !isNaN(country.infant_mortality_diff))
-    .sort((a, b) => a.infant_mortality_diff - b.infant_mortality_diff);
-  const increasedMortality = dataSortedByDiff.slice(-5).sort((a, b) => b.infant_mortality_diff - a.infant_mortality_diff);
+    .filter(country => !isNaN(country[focusDiffKey]))
+    .sort((a, b) => a[focusDiffKey] - b[focusDiffKey]);
+  const increasedMortality = dataSortedByDiff.slice(-5).sort((a, b) => b[focusDiffKey] - a[focusDiffKey]);
   const topDecreaseMortality = dataSortedByDiff.slice(0, 5);
 
   let dataSortedForDisplay = dataSortedByDiff.filter(country => !increasedMortality.find(c => c.country_code === country.country_code));
   dataSortedForDisplay = dataSortedForDisplay.filter(country => !topDecreaseMortality.find(c => c.country_code === country.country_code));
   dataSortedForDisplay = dataSortedForDisplay.concat(topDecreaseMortality).concat(increasedMortality);
-  console.log(props.data)
-  console.log(dataSortedForDisplay)
-
+  console.log("dataSortedForDisplay", props.focus, dataSortedForDisplay)
   // Scales
   const xScale = d3.scaleLinear()
     .domain([d3.min(props.years), d3.max(props.years)])
@@ -57,14 +56,17 @@ const Timeline = props => {
         type="left"
         innerHeight={innerHeight}
         scale={yScale}
-        label={"Infant mortality rate (per 1,000 live births)"}
+        label={props.focus === "infant_mortality"
+          ? "Infant mortality rate (per 1,000 live births)"
+          : "Number of Maternal deaths"
+        }
       />
       {dataSortedForDisplay.map(country => (
         <Curve
-          key={`timeline-infant-mortality-${country.country_code}`}
+          key={`timeline-${props.focus}-${country.country_code}`}
           xScale={xScale}
           yScale={yScale}
-          data={country.infant_mortality}
+          data={country[props.focus]}
           xAccessor={"year"}
           yAccessor={"mortality_rate"}
           stroke={

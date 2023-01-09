@@ -14,12 +14,37 @@ const Health = props => {
               data={props.data}
               margin={props.margin}
               years={props.years}
+              focus="infant_mortality"
+              year={2020}
             />
           </div>
           <div className="col-5">
             <Scatterplot
               data={props.data}
               margin={props.margin}
+              focus="infant_mortality"
+              year={2020}
+            />
+          </div>
+        </div>
+        <h3>Maternal deaths</h3>
+        <p>description</p>
+        <div className="row">
+          <div className="col-5">
+            <Timeline
+              data={props.data}
+              margin={props.margin}
+              years={props.years}
+              focus="maternal_mortality"
+              year={2017}
+            />
+          </div>
+          <div className="col-5">
+            <Scatterplot
+              data={props.data}
+              margin={props.margin}
+              focus="maternal_mortality"
+              year={2017}
             />
           </div>
         </div>

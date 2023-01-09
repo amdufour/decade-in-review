@@ -43,6 +43,7 @@ function App() {
   //   return () => mounted = false;
   // }, []);
 
+  
   useEffect(() => {
     let mounted = true;
     d3.json("data/data.json").then(data => {
@@ -56,8 +57,6 @@ function App() {
 
     return () => mounted = false;
   }, []);
-
-
 
   return (
     <div>
