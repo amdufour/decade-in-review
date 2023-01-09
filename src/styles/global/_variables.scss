@@ -1,0 +1,37 @@
+// Grid
+$xl: 1600px;
+$lg: 1024px;
+$md: 768px;
+$sm: 576px;
+$gutter: 30px;
+$container: $xl;
+
+// Colors
+$white: #fff;
+$textDark: #333;
+$text: #666;
+$textPale: #888;
+
+$cyan: #71cfd6;
+$cyanDark: #509296;
+$orange: #F2AB27;
+
+$land: #EC1C4B;
+$gas: #F16A43;
+$water: #56BFBF;
+$eutro: #A6206A;
+$cost: #BF7222;
+$index: #C7B500;
+
+// Other
+$radius: 3px;
+
+// Transitions
+@mixin easeSineIn {
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+}
+@mixin easeSineOut {
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+}
