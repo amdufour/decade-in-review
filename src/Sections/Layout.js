@@ -3,6 +3,7 @@ import * as d3 from "d3";
 
 import Introduction from "./Introduction";
 import Health from "./Health";
+import Education from "./Education";
 
 const Layout = props => {
   const margin = {top: 30, right: 20, bottom: 50, left: 60};
@@ -15,7 +16,13 @@ const Layout = props => {
       </header>
       <main>
         <Health 
-          data={props.data}
+          data={props.dataByCountry}
+          margin={margin}
+          years={years}
+        />
+        <Education 
+          dataByCountry={props.dataByCountry}
+          dataWorld={props.dataWorld}
           margin={margin}
           years={years}
         />
