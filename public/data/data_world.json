@@ -1,232 +1,322 @@
 [
-  {
-      "id": "literacy",
-      "timeline": [
-          {
-              "year": 1976,
-              "literacy_female": 59.1316795349121,
-              "literacy_male": 75.8351516723633
-          },
-          {
-              "year": 1977,
-              "literacy_female": 59.3144607543945,
-              "literacy_male": 76.0041198730469
-          },
-          {
-              "year": 1978,
-              "literacy_female": 59.862190246582,
-              "literacy_male": 76.3709564208984
-          },
-          {
-              "year": 1979,
-              "literacy_female": 60.3893699645996,
-              "literacy_male": 76.7182006835938
-          },
-          {
-              "year": 1980,
-              "literacy_female": 60.7365913391113,
-              "literacy_male": 76.9182586669922
-          },
-          {
-              "year": 1981,
-              "literacy_female": 61.4327392578125,
-              "literacy_male": 77.2978973388672
-          },
-          {
-              "year": 1982,
-              "literacy_female": 61.9751815795898,
-              "literacy_male": 77.730583190918
-          },
-          {
-              "year": 1983,
-              "literacy_female": 62.6292991638184,
-              "literacy_male": 78.1142730712891
-          },
-          {
-              "year": 1984,
-              "literacy_female": 63.2789916992188,
-              "literacy_male": 78.4959411621094
-          },
-          {
-              "year": 1985,
-              "literacy_female": 63.8492012023926,
-              "literacy_male": 78.841926574707
-          },
-          {
-              "year": 1986,
-              "literacy_female": 64.3723068237305,
-              "literacy_male": 79.1661682128906
-          },
-          {
-              "year": 1987,
-              "literacy_female": 65.0421829223633,
-              "literacy_male": 79.6466827392578
-          },
-          {
-              "year": 1988,
-              "literacy_female": 67.0367431640625,
-              "literacy_male": 80.969970703125
-          },
-          {
-              "year": 1989,
-              "literacy_female": 67.5618133544922,
-              "literacy_male": 81.27734375
-          },
-          {
-              "year": 1990,
-              "literacy_female": 67.8792724609375,
-              "literacy_male": 81.3584136962891
-          },
-          {
-              "year": 1991,
-              "literacy_female": 68.5762329101563,
-              "literacy_male": 81.7515411376953
-          },
-          {
-              "year": 1992,
-              "literacy_female": 69.0453796386719,
-              "literacy_male": 82.2093734741211
-          },
-          {
-              "year": 1993,
-              "literacy_female": 69.5028305053711,
-              "literacy_male": 82.5803680419922
-          },
-          {
-              "year": 1994,
-              "literacy_female": 70.0171203613281,
-              "literacy_male": 82.8797607421875
-          },
-          {
-              "year": 1995,
-              "literacy_female": 70.5304183959961,
-              "literacy_male": 83.1560363769531
-          },
-          {
-              "year": 1996,
-              "literacy_female": 71.0497131347656,
-              "literacy_male": 83.4393005371094
-          },
-          {
-              "year": 1997,
-              "literacy_female": 73.8649215698242,
-              "literacy_male": 84.6664123535156
-          },
-          {
-              "year": 1998,
-              "literacy_female": 75.0084762573242,
-              "literacy_male": 85.8770217895508
-          },
-          {
-              "year": 1999,
-              "literacy_female": 75.4311981201172,
-              "literacy_male": 86.1065216064453
-          },
-          {
-              "year": 2000,
-              "literacy_female": 75.6010818481445,
-              "literacy_male": 86.1909484863281
-          },
-          {
-              "year": 2001,
-              "literacy_female": 76.0324325561523,
-              "literacy_male": 86.3669662475586
-          },
-          {
-              "year": 2002,
-              "literacy_female": 76.438102722168,
-              "literacy_male": 86.708381652832
-          },
-          {
-              "year": 2003,
-              "literacy_female": 77.0109786987305,
-              "literacy_male": 87.1633224487305
-          },
-          {
-              "year": 2004,
-              "literacy_female": 77.4821014404297,
-              "literacy_male": 87.4899826049805
-          },
-          {
-              "year": 2005,
-              "literacy_female": 77.3783493041992,
-              "literacy_male": 87.4897003173828
-          },
-          {
-              "year": 2006,
-              "literacy_female": 77.9581832885742,
-              "literacy_male": 87.4841918945313
-          },
-          {
-              "year": 2007,
-              "literacy_female": 78.2880477905273,
-              "literacy_male": 87.6257781982422
-          },
-          {
-              "year": 2008,
-              "literacy_female": 78.7882995605469,
-              "literacy_male": 88.0567398071289
-          },
-          {
-              "year": 2009,
-              "literacy_female": 79.2034606933594,
-              "literacy_male": 88.2425384521484
-          },
-          {
-              "year": 2010,
-              "literacy_female": 79.9306716918945,
-              "literacy_male": 88.302848815918
-          },
-          {
-              "year": 2011,
-              "literacy_female": 80.2965698242188,
-              "literacy_male": 88.388313293457
-          },
-          {
-              "year": 2012,
-              "literacy_female": 80.7441177368164,
-              "literacy_male": 88.7937698364258
-          },
-          {
-              "year": 2013,
-              "literacy_female": 80.9704132080078,
-              "literacy_male": 88.935661315918
-          },
-          {
-              "year": 2014,
-              "literacy_female": 81.5185012817383,
-              "literacy_male": 89.1921768188477
-          },
-          {
-              "year": 2015,
-              "literacy_female": 81.7882766723633,
-              "literacy_male": 89.3405075073242
-          },
-          {
-              "year": 2016,
-              "literacy_female": 82.3325729370117,
-              "literacy_male": 89.6979293823242
-          },
-          {
-              "year": 2017,
-              "literacy_female": 82.6653671264648,
-              "literacy_male": 89.8265991210938
-          },
-          {
-              "year": 2018,
-              "literacy_female": 82.8037414550781,
-              "literacy_male": 89.7902069091797
-          },
-          {
-              "year": 2019,
-              "literacy_female": 83.2468795776367,
-              "literacy_male": 90.0779113769531
-          },
-          {
-              "year": 2020,
-              "literacy_female": 83.4591369628906,
-              "literacy_male": 90.1634063720703
-          }
-      ]
-  }
+    {
+        "id": "literacy",
+        "timeline": [
+            {
+                "year": 1976,
+                "literacy_female": 59.1316795349121,
+                "literacy_male": 75.8351516723633
+            },
+            {
+                "year": 1977,
+                "literacy_female": 59.3144607543945,
+                "literacy_male": 76.0041198730469
+            },
+            {
+                "year": 1978,
+                "literacy_female": 59.862190246582,
+                "literacy_male": 76.3709564208984
+            },
+            {
+                "year": 1979,
+                "literacy_female": 60.3893699645996,
+                "literacy_male": 76.7182006835938
+            },
+            {
+                "year": 1980,
+                "literacy_female": 60.7365913391113,
+                "literacy_male": 76.9182586669922
+            },
+            {
+                "year": 1981,
+                "literacy_female": 61.4327392578125,
+                "literacy_male": 77.2978973388672
+            },
+            {
+                "year": 1982,
+                "literacy_female": 61.9751815795898,
+                "literacy_male": 77.730583190918
+            },
+            {
+                "year": 1983,
+                "literacy_female": 62.6292991638184,
+                "literacy_male": 78.1142730712891
+            },
+            {
+                "year": 1984,
+                "literacy_female": 63.2789916992188,
+                "literacy_male": 78.4959411621094
+            },
+            {
+                "year": 1985,
+                "literacy_female": 63.8492012023926,
+                "literacy_male": 78.841926574707
+            },
+            {
+                "year": 1986,
+                "literacy_female": 64.3723068237305,
+                "literacy_male": 79.1661682128906
+            },
+            {
+                "year": 1987,
+                "literacy_female": 65.0421829223633,
+                "literacy_male": 79.6466827392578
+            },
+            {
+                "year": 1988,
+                "literacy_female": 67.0367431640625,
+                "literacy_male": 80.969970703125
+            },
+            {
+                "year": 1989,
+                "literacy_female": 67.5618133544922,
+                "literacy_male": 81.27734375
+            },
+            {
+                "year": 1990,
+                "literacy_female": 67.8792724609375,
+                "literacy_male": 81.3584136962891
+            },
+            {
+                "year": 1991,
+                "literacy_female": 68.5762329101563,
+                "literacy_male": 81.7515411376953
+            },
+            {
+                "year": 1992,
+                "literacy_female": 69.0453796386719,
+                "literacy_male": 82.2093734741211
+            },
+            {
+                "year": 1993,
+                "literacy_female": 69.5028305053711,
+                "literacy_male": 82.5803680419922
+            },
+            {
+                "year": 1994,
+                "literacy_female": 70.0171203613281,
+                "literacy_male": 82.8797607421875
+            },
+            {
+                "year": 1995,
+                "literacy_female": 70.5304183959961,
+                "literacy_male": 83.1560363769531
+            },
+            {
+                "year": 1996,
+                "literacy_female": 71.0497131347656,
+                "literacy_male": 83.4393005371094
+            },
+            {
+                "year": 1997,
+                "literacy_female": 73.8649215698242,
+                "literacy_male": 84.6664123535156
+            },
+            {
+                "year": 1998,
+                "literacy_female": 75.0084762573242,
+                "literacy_male": 85.8770217895508
+            },
+            {
+                "year": 1999,
+                "literacy_female": 75.4311981201172,
+                "literacy_male": 86.1065216064453
+            },
+            {
+                "year": 2000,
+                "literacy_female": 75.6010818481445,
+                "literacy_male": 86.1909484863281
+            },
+            {
+                "year": 2001,
+                "literacy_female": 76.0324325561523,
+                "literacy_male": 86.3669662475586
+            },
+            {
+                "year": 2002,
+                "literacy_female": 76.438102722168,
+                "literacy_male": 86.708381652832
+            },
+            {
+                "year": 2003,
+                "literacy_female": 77.0109786987305,
+                "literacy_male": 87.1633224487305
+            },
+            {
+                "year": 2004,
+                "literacy_female": 77.4821014404297,
+                "literacy_male": 87.4899826049805
+            },
+            {
+                "year": 2005,
+                "literacy_female": 77.3783493041992,
+                "literacy_male": 87.4897003173828
+            },
+            {
+                "year": 2006,
+                "literacy_female": 77.9581832885742,
+                "literacy_male": 87.4841918945313
+            },
+            {
+                "year": 2007,
+                "literacy_female": 78.2880477905273,
+                "literacy_male": 87.6257781982422
+            },
+            {
+                "year": 2008,
+                "literacy_female": 78.7882995605469,
+                "literacy_male": 88.0567398071289
+            },
+            {
+                "year": 2009,
+                "literacy_female": 79.2034606933594,
+                "literacy_male": 88.2425384521484
+            },
+            {
+                "year": 2010,
+                "literacy_female": 79.9306716918945,
+                "literacy_male": 88.302848815918
+            },
+            {
+                "year": 2011,
+                "literacy_female": 80.2965698242188,
+                "literacy_male": 88.388313293457
+            },
+            {
+                "year": 2012,
+                "literacy_female": 80.7441177368164,
+                "literacy_male": 88.7937698364258
+            },
+            {
+                "year": 2013,
+                "literacy_female": 80.9704132080078,
+                "literacy_male": 88.935661315918
+            },
+            {
+                "year": 2014,
+                "literacy_female": 81.5185012817383,
+                "literacy_male": 89.1921768188477
+            },
+            {
+                "year": 2015,
+                "literacy_female": 81.7882766723633,
+                "literacy_male": 89.3405075073242
+            },
+            {
+                "year": 2016,
+                "literacy_female": 82.3325729370117,
+                "literacy_male": 89.6979293823242
+            },
+            {
+                "year": 2017,
+                "literacy_female": 82.6653671264648,
+                "literacy_male": 89.8265991210938
+            },
+            {
+                "year": 2018,
+                "literacy_female": 82.8037414550781,
+                "literacy_male": 89.7902069091797
+            },
+            {
+                "year": 2019,
+                "literacy_female": 83.2468795776367,
+                "literacy_male": 90.0779113769531
+            },
+            {
+                "year": 2020,
+                "literacy_female": 83.4591369628906,
+                "literacy_male": 90.1634063720703
+            }
+        ]
+    },
+    {
+        "id": "girls_high_school_enrollment",
+        "timeline": [
+            {
+                "year": 2010,
+                "percentage": 62.1
+            },
+            {
+                "year": 2011,
+                "percentage": 63.3
+            },
+            {
+                "year": 2012,
+                "percentage": 63.8
+            },
+            {
+                "year": 2013,
+                "percentage": 64.8
+            },
+            {
+                "year": 2014,
+                "percentage": 65.7
+            },
+            {
+                "year": 2015,
+                "percentage": 65.8
+            },
+            {
+                "year": 2016,
+                "percentage": 65.8
+            },
+            {
+                "year": 2017,
+                "percentage": 66.3
+            },
+            {
+                "year": 2018,
+                "percentage": 66.3
+            }
+        ]
+    },
+    {
+        "id": "women_MP",
+        "timeline": [
+            {
+                "year": 2010,
+                "percentage": 19.16
+            },
+            {
+                "year": 2011,
+                "percentage": 19.83
+            },
+            {
+                "year": 2012,
+                "percentage": 20.76
+            },
+            {
+                "year": 2013,
+                "percentage": 21.78
+            },
+            {
+                "year": 2014,
+                "percentage": 22.19
+            },
+            {
+                "year": 2015,
+                "percentage": 22.85
+            },
+            {
+                "year": 2016,
+                "percentage": 23.1
+            },
+            {
+                "year": 2017,
+                "percentage": 23.6
+            },
+            {
+                "year": 2018,
+                "percentage": 24.1
+            },
+            {
+                "year": 2019,
+                "percentage": 24.64
+            },
+            {
+                "year": 2020,
+                "percentage": 25.58
+            }
+        ]
+    }
 ]

@@ -55,6 +55,23 @@ const AxisLeft = props => {
   );
 };
 
+const AxisBandBottom = props => {
+  return (
+    <g className="axis" transform={`translate(0, ${props.innerHeight})`} >
+      <line x1={0} y1={0} x2={props.innerWidth} y2={0} />
+      {props.ticks.map(tick => (
+        <text
+          key={tick}
+          textAnchor="middle"
+          transform={`translate(${props.scale(tick)}, 15)`}
+        >
+          {tick}
+        </text>
+      ))}
+    </g>
+  );
+};
+
 const Axis = props => {
 
   switch (props.type) {
@@ -62,6 +79,8 @@ const Axis = props => {
       return AxisBottom(props);
     case "left":
       return AxisLeft(props);
+    case "bandBottom":
+      return AxisBandBottom(props);
     // no default
   };
 
