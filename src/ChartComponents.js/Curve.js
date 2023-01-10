@@ -3,8 +3,8 @@ import * as d3 from "d3";
 const Curve = props => {
   const lineGenerator = d3.line()
     .x(d => props.xScale(d[props.xAccessor]))
-    .y(d => props.yScale(d[props.yAccessor]))
-    .defined(d => d[props.yAccessor] !== null);
+    .y(d => props.yScale(d[props.yAccessor] / props.ratio))
+    .defined(d => d[props.yAccessor] && d[props.yAccessor] !== null);
 
   return (
     <path

@@ -16,7 +16,10 @@ const Timeline = props => {
   const maxMortalities = [];
   const focusDiffKey = `${props.focus}_diff`;
   props.data.forEach(d => {
-    maxMortalities.push(d3.max(d[props.focus], year => year.mortality_rate));
+    const max = props.focus === "infant_mortality"
+      ? d3.max(d[props.focus], year => year.mortality_rate)
+      : d3.max(d[props.focus], year => year.mortality_rate / d.population);
+    maxMortalities.push(max);
     d[focusDiffKey] = d[props.focus].find(y => y.year === props.year).mortality_rate - d[props.focus][0].mortality_rate;
   });
   const maxMortality = d3.max(maxMortalities);
@@ -30,7 +33,7 @@ const Timeline = props => {
   let dataSortedForDisplay = dataSortedByDiff.filter(country => !increasedMortality.find(c => c.country_code === country.country_code));
   dataSortedForDisplay = dataSortedForDisplay.filter(country => !topDecreaseMortality.find(c => c.country_code === country.country_code));
   dataSortedForDisplay = dataSortedForDisplay.concat(topDecreaseMortality).concat(increasedMortality);
-  console.log("dataSortedForDisplay", props.focus, dataSortedForDisplay)
+  
   // Scales
   const xScale = d3.scaleLinear()
     .domain([d3.min(props.years), d3.max(props.years)])
@@ -58,7 +61,7 @@ const Timeline = props => {
         scale={yScale}
         label={props.focus === "infant_mortality"
           ? "Infant mortality rate (per 1,000 live births)"
-          : "Number of Maternal deaths"
+          : "Number of Maternal deaths / population"
         }
       />
       {dataSortedForDisplay.map(country => (
@@ -69,6 +72,10 @@ const Timeline = props => {
           data={country[props.focus]}
           xAccessor={"year"}
           yAccessor={"mortality_rate"}
+          ratio={props.focus === "infant_mortality"
+            ? 1
+            : country.population
+          }
           stroke={
             topDecreaseMortality.find(c => c.country_code === country.country_code)
               ? "green"
