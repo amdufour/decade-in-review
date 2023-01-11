@@ -1,5 +1,6 @@
 import Gap from "../Charts/Gap";
 import Dots from "../Charts/Dots";
+import BreakdownWomen from "../Charts/BreakdownWomen";
 
 const Education = props => {
   const literacyData = props.dataWorld.find(d => d.id === "literacy").timeline;
@@ -30,6 +31,11 @@ const Education = props => {
             />
           </div>
         </div>
+        <h3>Breakdown by region / income</h3>
+        <BreakdownWomen
+          data={props.dataByCountry}
+          years={props.years}
+        />
         
 
         <div>Sources: 

@@ -1,0 +1,13 @@
+.heatmap-section {
+  display: flex;
+  h5 {
+    flex-shrink: 0;
+    width: 220px;
+    margin: 0;
+    text-align: end;
+  }
+}
+
+.heatmap-axis {
+  margin-left: 220px;
+}

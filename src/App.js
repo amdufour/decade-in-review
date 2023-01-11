@@ -51,12 +51,14 @@ function App() {
       d3.json("/data/data.json"),
       d3.json("/data/data_world.json"),
     ]).then(data => {
-      console.log("data by country", data[0]);
-      console.log("data world", data[1]);
+      const dataByCountry = data[0];
+      const dataWorld = data[1];
+      console.log("data by country", dataByCountry);
+      console.log("data world", dataWorld);
 
       if (mounted) {
-        setDataByCountry(data[0]);
-        setDataWorld(data[1]);
+        setDataByCountry(dataByCountry);
+        setDataWorld(dataWorld);
         setLoading(false);
       }
     });
