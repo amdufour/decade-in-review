@@ -13,7 +13,7 @@ const Dots = props => {
   const innerHeight = height - margin.top - margin.bottom;
 
   // Scales
-  const categories = ["Not enrolled", "Enrolled"];
+  const categories = ["out", "in"];
   const xScale = d3.scalePoint()
     .domain(categories)
     .range([0, innerWidth])
@@ -23,47 +23,62 @@ const Dots = props => {
   // Format data
   const data = props.data;
   data.forEach(d => {
-    // d["in_number"] = d.percentage * 10;
-    // d["out_number"] = (100 - d.percentage) * 10;
-    d["in_number"] = Math.round(d.percentage);
-    d["out_number"] = Math.round(100 - d.percentage);
-    const inArray = Array(d.in_number).fill({ status: "Enrolled" });
-    const outArray = Array(d.out_number).fill({ status: "Not enrolled" });
+    d["in_number"] = d.percentage * 10;
+    d["out_number"] = (100 - d.percentage) * 10;
+    const arrayIn = d3.range(0, d.in_number);
+    const inArray = [];
+    arrayIn.forEach((d, i) => {
+      inArray.push({ id: i, status: "in" });
+    });
+    const arrayOut = d3.range(0, d.out_number);
+    const outArray = [];
+    arrayOut.forEach((d, i) => {
+      outArray.push({ id: i + arrayIn.length, status: "out" });
+    });
     d["dots"] = inArray.concat(outArray);
   });
-  console.log("dots data", data);
 
 
   // Control dots position with D3
   const dotsRef = useRef();
   useEffect(() => {
-    console.log("in useEffect")
     const dotsContainer = d3.select(dotsRef.current);
 
     // 2010
     const data2010 = data[0].dots;
-    const dotsRadius = 4;
+    const dotsRadius = 3;
     dotsContainer
       .selectAll(`.dot-${props.type}`)
       .data(data2010)
       .join("circle")
         .attr("class", `dot-${props.type}`)
-        .attr("cx", d => xScale(d.status))
-        .attr("cy", innerHeight)
         .attr("r", dotsRadius)
-        .attr("fill", "LightCoral");
+        .attr("fill", d => d.status === "in" ? "LightSeaGreen" : "DarkGray");
 
     const tick = () => {
       d3.selectAll(`.dot-${props.type}`)
-          .attr("cx", d => d.x)
-          .attr("cy", d => d.y);
+        .transition().duration(50)
+        .attr("cx", d => d.x)
+        .attr("cy", d => d.y);
     };
 
     let simulation = d3.forceSimulation(data2010)
-      .force("x", d3.forceX().x(d => xScale(d.status)).strength(0.01))
-      .force("y", d3.forceY(innerHeight/2).strength(0.01))
-      .force("collide", d3.forceCollide(8).strength(1))
+      .force("x", d3.forceX().x(d => xScale(d.status)).strength(0.1))
+      .force("y", d3.forceY(innerHeight/2).strength(0.1))
+      .force("collide", d3.forceCollide(dotsRadius + 2).strength(1))
       .on("tick", tick);
+
+    setTimeout(() => {
+      const newData = data2010;
+      newData.forEach((d, i) => {
+        if (i >= newData.length - 30) {
+          d.status = "in";
+        }
+      });
+      simulation.stop();
+      simulation.nodes(newData);
+      simulation.alpha(0.3).restart();
+    }, 5000)
 
     return () => {
       simulation.stop();

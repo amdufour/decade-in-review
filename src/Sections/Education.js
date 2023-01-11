@@ -1,10 +1,10 @@
 import Gap from "../Charts/Gap";
 import Dots from "../Charts/Dots";
-import ForceTest from "../Charts/ForceTest";
 
 const Education = props => {
   const literacyData = props.dataWorld.find(d => d.id === "literacy").timeline;
   const girlsInSchoolData = props.dataWorld.find(d => d.id === "girls_high_school_enrollment").timeline;
+  const womenMPData = props.dataWorld.find(d => d.id === "women_MP").timeline;
 
   return (
     <section>
@@ -21,10 +21,13 @@ const Education = props => {
               data={girlsInSchoolData}
               type="school"
             />
-            {/* <ForceTest /> */}
           </div>
           <div className="col-5">
             <h3>% of women member of Parlament (worldwide)</h3>
+            <Dots
+              data={womenMPData}
+              type="parlament"
+            />
           </div>
         </div>
         
@@ -34,7 +37,7 @@ const Education = props => {
             <li>Literacy rate, adult female <a href="https://data.worldbank.org/indicator/SE.ADT.LITR.FE.ZS?view=chart">Worldbank</a></li>
             <li>Literacy rate, adult male <a href="https://data.worldbank.org/indicator/SE.ADT.LITR.MA.ZS?view=chart">Worldbank</a></li>
             <li>% of Girls enrolled in high school <a href="https://data.worldbank.org/indicator/SE.SEC.NENR.FE">Worldbank</a></li>
-            <li>% of women member of Parlament<a href="https://ourworldindata.org/grapher/seats-held-by-women-in-national-parliaments?tab=table">Our World in Data</a></li>
+            <li>% of women member of Parlament <a href="https://ourworldindata.org/grapher/seats-held-by-women-in-national-parliaments?tab=table">Our World in Data</a></li>
           </ul>
         </div>
       </div>
