@@ -11,6 +11,7 @@ const Heatmap = props => {
       >
         {props.data[props.topic].map((d, i) => (
           <rect
+            key={`heatmap-${props.data.country_name}-${d.year}`}
             x={props.bandScale(d.year)}
             y={0}
             width={props.bandScale.bandwidth()}

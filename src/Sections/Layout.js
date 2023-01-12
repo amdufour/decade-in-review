@@ -17,7 +17,8 @@ const Layout = props => {
       </header>
       <main>
         <QualityOfLife
-
+          dataByCountry={props.dataByCountry}
+          dataWorld={props.dataWorld}
         />
         <Health 
           data={props.dataByCountry}
