@@ -3,7 +3,11 @@
 @import "global/grid";
 @import "global/type";
 @import "global/base";
+@import "global/animations";
 
 // Components
 @import "components/axis";
 @import "components/heatmap";
+
+// Sections
+@import "sections/introduction";

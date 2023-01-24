@@ -15,7 +15,7 @@ const Education = props => {
         <p>The gap between men's and women's literacy keeps shrinking!</p>
         <p>Percentage of women and men above age 15 that can read, write, speak and listen in a way that let them communicate effectively and make sense of the world.</p>
         <Gap data={literacyData} />
-        <div className="row">
+        {/* <div className="row">
           <div className="col-5">
             <h3>% of Girls enrolled in high school (worldwide)</h3>
             <Dots
@@ -35,7 +35,7 @@ const Education = props => {
         <BreakdownWomen
           data={props.dataByCountry}
           years={props.years}
-        />
+        /> */}
         
 
         <div>Sources: 

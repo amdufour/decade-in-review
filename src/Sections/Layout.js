@@ -16,7 +16,7 @@ const Layout = props => {
         <Introduction />
       </header>
       <main>
-        <QualityOfLife
+        {/* <QualityOfLife
           dataByCountry={props.dataByCountry}
           dataWorld={props.dataWorld}
         />
@@ -24,7 +24,7 @@ const Layout = props => {
           data={props.dataByCountry}
           margin={margin}
           years={years}
-        />
+        /> */}
         <Education 
           dataByCountry={props.dataByCountry}
           dataWorld={props.dataWorld}

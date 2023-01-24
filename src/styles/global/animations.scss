@@ -1,0 +1,11 @@
+@keyframes bounce {
+  0%, 88%, 94%, 100% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(-12px);
+  }
+  96% {
+    transform: translateY(-6px);
+  }
+}
