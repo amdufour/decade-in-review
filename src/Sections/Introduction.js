@@ -5,7 +5,7 @@ const Introduction = props => {
     <Fragment>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-md-8">
             <h1>A decade in review</h1>
             <p className="intro">7 good (and less good) news about what happened in the world over the last 10 years.</p>
           </div>

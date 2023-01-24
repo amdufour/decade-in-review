@@ -6,8 +6,13 @@
 @import "global/animations";
 
 // Components
+@import "components/section";
+@import "components/section-header";
+@import "components/description";
+@import "components/sources";
 @import "components/axis";
 @import "components/heatmap";
 
 // Sections
 @import "sections/introduction";
+@import "sections/literacy-gap";

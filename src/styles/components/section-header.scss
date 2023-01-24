@@ -1,0 +1,19 @@
+.section-header {
+  // Section number
+  .section-number-container {
+    position: relative;
+    .section-number-circle {
+      position: absolute;
+      top: -18px;
+      left: -66px;
+      width: 170px;
+      height: auto;
+    }
+    .section-number {
+      font-size: 12rem;
+      line-height: 1;
+      font-weight: 800;
+      color: $cyan;
+    }
+  }
+}
