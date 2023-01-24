@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import * as d3 from 'd3';
 
+import Loader from './UI/Loader';
 import Layout from './Sections/Layout';
 
 function App() {
@@ -57,9 +58,11 @@ function App() {
       console.log("data world", dataWorld);
 
       if (mounted) {
-        setDataByCountry(dataByCountry);
-        setDataWorld(dataWorld);
-        setLoading(false);
+        setTimeout(() => {
+          setDataByCountry(dataByCountry);
+          setDataWorld(dataWorld);
+          setLoading(false);
+        }, 2000);
       }
     });
 
@@ -68,7 +71,7 @@ function App() {
 
   return (
     <div>
-      {loading && <div className="loading">Loading...</div>}
+      {loading && <Loader />}
       {!loading && <Layout dataByCountry={dataByCountry} dataWorld={dataWorld} />}
     </div>
   );
