@@ -29,7 +29,7 @@
     background: linear-gradient(to right, $purple 50%, $cyan 50%) no-repeat;
     background-size: 200% auto;
     background-position: 100% 0;
-    animation: colorBallMoveX 1.5s linear infinite alternate;
+    animation: colorBallMoveX 1s linear infinite alternate;
   }
   .loader:after{
       content: '';

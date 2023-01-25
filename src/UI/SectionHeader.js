@@ -14,15 +14,18 @@ const SectionHeader = props => {
     const title = titleRef.current;
     
     gsap.set(circle, {drawSVG:"0%"});
-    gsap.set(title, {y: 20, opacity: 0});
+    gsap.set(title, {clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)", opacity: 0, y: 35});
 
     const tl = gsap.timeline({
+      defaults: {
+        ease: "power4.inOut"
+      },
       scrollTrigger: {
         trigger: circle
       }
     });
-    tl.to(circle, {drawSVG:'100%', duration:2, ease: "power3.out"}, 0.8)
-      .to(title, {y: 0, opacity: 1, duration: 1, ease: "power3.out"}, "-=1");
+    tl.to(circle, {drawSVG:'100%', duration:1.5}, 0.8)
+      .to(title, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, "-=1");
   }, []);
 
   return (
