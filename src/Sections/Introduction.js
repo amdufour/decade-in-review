@@ -7,7 +7,7 @@ const Introduction = props => {
         <div className="row">
           <div className="col-12 col-md-8">
             <h1>A decade in review</h1>
-            <p className="intro">7 good (and less good) news about what happened in the world over the last 10 years.</p>
+            <p className="intro">6 good (and less good) news about what happened in the world over the last 10 years.</p>
           </div>
         </div>
         <div className="scroll">

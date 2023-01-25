@@ -83,28 +83,28 @@ $xlGrid: $xl - 1 + $gap;
 @for $i from 1 through 12 {
   @media (min-width: $smGrid) {
     .offset-sm-#{$i} {
-      margin-left: calc(100%/12*$i + $gutter/2);
+      margin-left: calc(100%/12*$i);
     }
   }
 }
 @for $i from 1 through 12 {
   @media (min-width: $mdGrid) {
     .offset-md-#{$i} {
-      margin-left: calc(100%/12*$i + $gutter/2);
+      margin-left: calc(100%/12*$i);
     }
   }
 }
 @for $i from 1 through 12 {
   @media (min-width: $lgGrid) {
     .offset-lg-#{$i} {
-      margin-left: calc(100%/12*$i + $gutter/2);
+      margin-left: calc(100%/12*$i);
     }
   }
 }
 @for $i from 1 through 12 {
   @media (min-width: $xlGrid) {
     .offset-xl-#{$i} {
-      margin-left: calc(100%/12*$i + $gutter/2);
+      margin-left: calc(100%/12*$i);
     }
   }
 }

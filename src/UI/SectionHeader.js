@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, Fragment } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { DrawSVGPlugin } from "../Animations/DrawSVGPlugin";
@@ -8,13 +8,15 @@ gsap.registerPlugin(DrawSVGPlugin);
 const SectionHeader = props => {
   const sectionCircleRef = useRef(null);
   const titleRef = useRef(null);
+  const title2Ref = useRef(null);
 
   useEffect(() => {
     const circle = sectionCircleRef.current;
     const title = titleRef.current;
+    const title2 = title2Ref.current;
     
     gsap.set(circle, {drawSVG:"0%"});
-    gsap.set(title, {clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)", opacity: 0, y: 35});
+    gsap.set([title, title2], {clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)", opacity: 0, y: 35});
 
     const tl = gsap.timeline({
       defaults: {
@@ -26,7 +28,11 @@ const SectionHeader = props => {
     });
     tl.to(circle, {drawSVG:'100%', duration:1.5}, 0.8)
       .to(title, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, "-=1");
-  }, []);
+    
+    if (props.title2) {
+      tl.to(title2, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, 3);
+    }
+  }, [props.title2]);
 
   return (
     <div className="section-header">
@@ -39,14 +45,28 @@ const SectionHeader = props => {
             <div className="section-number">{props.number}</div>
           </div>
         </div>
-        <div className="col-9">
-          <h2 ref={titleRef}>{props.title}</h2>
-        </div>
-        <div className="row">
-          <div className="col-9 offset-md-1">
-            <p className="section-intro">{props.intro}</p>
+        {!props.title2 &&
+          <div className="col-9">
+            <h2 ref={titleRef}>{props.title}</h2>
           </div>
-        </div>
+        }
+        {props.title2 &&
+          <Fragment>
+            <div className="col-5">
+              <h2 ref={titleRef}>{props.title}</h2>
+            </div>
+            <div className="col-5 offset-md-1">
+              <h2 ref={title2Ref}>{props.title2}</h2>
+            </div>
+          </Fragment>
+        }
+        {props.intro &&
+          <div className="row">
+            <div className="col-9 offset-md-1">
+              <p className="section-intro">{props.intro}</p>
+            </div>
+          </div>
+        }
       </div>
     </div>
   );

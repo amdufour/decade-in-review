@@ -103,7 +103,7 @@ const Gap = props => {
       <div className="container">
         <SectionHeader
           number={1}
-          title="The gap between men's and women's literacy levels keeps shrinking."
+          title="The gap between men's and women's literacy levels keeps shrinking"
           intro="“ Literacy is the ability to read, write, speak and listen in a way that lets us communicate 
           effectively and make sense of the world. ”"
         />
