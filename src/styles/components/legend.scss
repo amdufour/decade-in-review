@@ -1,0 +1,24 @@
+.legend-dots {
+  margin-top: 60px;
+  font-size: 1.6rem;
+  li {
+    margin: 5px 0;
+    .dot {
+      display: inline-block;
+      margin-right: 7px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      &.dot-girl-enrolled,
+      &.dot-women-mp {
+        background-color: $purple;
+      }
+      &.dot-girl-not-enrolled {
+        border: 1px solid $purple
+      }
+      &.dot-men-mp {
+        background-color: $blue;
+      }
+    }
+  }
+}

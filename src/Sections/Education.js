@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
 import Gap from "../Charts/Gap";
-import SchoolAndParlaments from "../Charts/SchoolAndParlaments";
+import SchoolAndparliaments from "../Charts/SchoolAndParlaments";
 
 const Education = props => {
   const literacyData = props.dataWorld.find(d => d.id === "literacy").timeline;
@@ -11,7 +11,7 @@ const Education = props => {
   return (
     <Fragment>
       <Gap />
-      <SchoolAndParlaments 
+      <SchoolAndparliaments 
         years={props.years}
         dataSchool={girlsInSchoolData}
         dataMP={womenMPData}

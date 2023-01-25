@@ -1,9 +1,16 @@
 .timeline {
   max-width: 300px;
-  margin: 50px auto;
+  margin: 50px auto 25px;
 }
 
 .dots {
-  max-width: 400px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+#dots-school {
+  max-width: 200px;
+  margin-top: -70px;
+}
+#dots-mp {
+  max-width: 440px;
 }

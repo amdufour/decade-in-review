@@ -30,7 +30,7 @@ const SectionHeader = props => {
       .to(title, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, "-=1");
     
     if (props.title2) {
-      tl.to(title2, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, 3);
+      tl.to(title2, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0, duration: 1.5}, 5);
     }
   }, [props.title2]);
 

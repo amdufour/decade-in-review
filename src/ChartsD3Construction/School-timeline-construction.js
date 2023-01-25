@@ -4,7 +4,7 @@ import SectionHeader from "../UI/SectionHeader";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 import Curve from "../ChartComponents.js/Curve";
 
-const SchoolAndParlaments = props => {
+const SchoolAndparliaments = props => {
   // Dimensions
   const tlWidth = 300;
   const tlHeight = 200;
@@ -26,7 +26,7 @@ const SchoolAndParlaments = props => {
         <SectionHeader
           number={2}
           title="More girls are enrolled in high school..."
-          title2="...And there are more women in parlaments"
+          title2="...And there are more women in parliaments"
         />
         <div className="row">
           <div className="col-12 col-md-5 offset-md-1">
@@ -89,4 +89,4 @@ const SchoolAndParlaments = props => {
   );
 };
 
-export default SchoolAndParlaments;
+export default SchoolAndparliaments;
