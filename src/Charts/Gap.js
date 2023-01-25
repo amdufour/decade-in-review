@@ -57,7 +57,9 @@ const Gap = props => {
     gsap.set([description1, description2, description3], {opacity: 0, x: -50});
     gsap.set([lineWomenEarly, lineMenEarly, lineWomenDecade, lineMenDecade], {drawSVG:"0%"})
     gsap.set([year1976, year2010, year2020], {opacity: 0});
-    gsap.set([perc1976, perc2010, perc2020], {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+    gsap.set(perc1976, {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+    gsap.set(perc2010, {opacity: 0, x: 1020, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+    gsap.set(perc2020, {opacity: 0, x: 1325, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
     gsap.set([arrowLine1976, arrowLine2010, arrowLine2020], {drawSVG: "50% 50%", opacity: 0});
     gsap.set([arrowTop1976, arrowTop2010, arrowTop2020], {opacity: 0, y: "-=10"});
     gsap.set([arrowBottom1976, arrowBottom2010, arrowBottom2020], {opacity: 0, y: "+=10"});
@@ -84,7 +86,7 @@ const Gap = props => {
       .to(arrowLine2010, {drawSVG: "0% 100%", opacity: 100}, "-=1")
       .to(arrowTop2010, {opacity: 1, y: 0}, "-=1")
       .to(arrowBottom2010, {opacity: 1, y: 0}, "-=1")
-      .to(perc2010, {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1}, "-=0.5")
+      .to(perc2010, {opacity: 1, x: 1030.62, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1}, "-=0.5")
       
       .to(description3, {opacity:1, x: 0, duration: 1.5})
       .to(year2020, {opacity: 1, duration: 1}, "-=1")
@@ -92,7 +94,7 @@ const Gap = props => {
       .to(arrowLine2020, {drawSVG: "0% 100%", opacity: 100}, "-=1")
       .to(arrowTop2020, {opacity: 1, y: 0}, "-=1")
       .to(arrowBottom2020, {opacity: 1, y: 0}, "-=1")
-      .to(perc2020, {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1}, "-=0.5");
+      .to(perc2020, {opacity: 1, x: 1335.62, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1}, "-=0.5");
       
   }, []);
 
