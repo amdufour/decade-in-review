@@ -39,8 +39,8 @@ const SchoolAndparliaments = props => {
     const percSchool = percSchoolRef.current;
     const percMp = percMpRef.current;
 
-    gsap.set([schoolToFill1, schoolToFill2, schoolToFill3, schoolToFill4], {fill: "transparent", stroke: "#C38D9D"});
-    gsap.set([mpToFill1, mpToFill2, mpToFill3, mpToFill4, mpToFill5, mpToFill6, mpToFill7], {fill: "#85CDCA"});
+    gsap.set([schoolToFill1, schoolToFill2, schoolToFill3, schoolToFill4], {fill: "transparent", stroke: "#ac2c5a"});
+    gsap.set([mpToFill1, mpToFill2, mpToFill3, mpToFill4, mpToFill5, mpToFill6, mpToFill7], {fill: "#85CDCA", stroke: "transparent"});
     gsap.set([tlSchool, tlMp], {drawSVG: "0%"});
     gsap.set([percSchool, percMp], {clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)", opacity: 0, x: 230});
     
@@ -55,12 +55,16 @@ const SchoolAndparliaments = props => {
     });
     tl.to(tlSchool, {drawSVG: "100%", duration: 2}, 2)
       .to(percSchool, {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, x: 240.72, duration: 1.5}, "-=1")
-      .to([schoolToFill1, schoolToFill2, schoolToFill3, schoolToFill4], {fill: "#C38D9D", stroke: "transparent", duration: 1.5, stagger: 0.3}, "-=2")
+      .to([schoolToFill1, schoolToFill2, schoolToFill3, schoolToFill4], {fill: "#ac2c5a", stroke: "#021E1E", duration: 1.5, stagger: 0.3}, "-=2")
         
       .to(tlMp, {drawSVG: "100%", duration: 2}, 5)
       .to(percMp, {clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", opacity: 1, x: 240.9, duration: 1.5}, "-=1")
-      .to([mpToFill1, mpToFill2, mpToFill3, mpToFill4, mpToFill5, mpToFill6, mpToFill7], {fill: "#C38D9D", duration: 1.5, stagger: 0.3}, "-=2");
-  }, []);
+      .to([mpToFill1, mpToFill2, mpToFill3, mpToFill4, mpToFill5, mpToFill6, mpToFill7], {fill: "#ac2c5a", stroke: "#021E1E", duration: 1.5, stagger: 0.3}, "-=2")
+      
+      .to([schoolToFill1, schoolToFill2, schoolToFill3, schoolToFill4], {stroke: "transparent", duration: 1.5}, "+=1")
+      .to([mpToFill1, mpToFill2, mpToFill3, mpToFill4, mpToFill5, mpToFill6, mpToFill7], {stroke: "transparent", duration: 1.5}, "-=1");
+  
+    }, []);
 
   return (
     <section>
@@ -83,106 +87,106 @@ const SchoolAndparliaments = props => {
             </div>
             <div className="dots">
               <svg id="dots-school" viewBox="0 0 193 192.5">
-                <circle cx="6.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="6.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="6.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="6.5" cy="66.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="26.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="26.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="26.5" cy="66.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="26.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="46.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="46.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle ref={schoolToFill1Ref} cx="46.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="46.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="46.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="66.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="66.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle ref={schoolToFill2Ref} cx="66.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="66.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="66.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="86.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="86.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle ref={schoolToFill3Ref} cx="86.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="86.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="86.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="106.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="106.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle ref={schoolToFill4Ref} cx="106.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="106.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="106.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="126.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="126.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="126.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="126.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="126.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="146.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="146.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="146.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="146.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="146.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="166.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="166.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="166.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="166.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="166.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="186.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="186.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="186.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#c38d9d"}}/>
-                <circle cx="186.5" cy="86.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="106.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="126.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="146.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="166.5" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="186.5" cy="186.5" r="6" style={{fill: "#c38d9d"}}/>
+                <circle cx="6.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="66.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="66.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="26.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle ref={schoolToFill1Ref} cx="46.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="46.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle ref={schoolToFill2Ref} cx="66.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="66.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle ref={schoolToFill3Ref} cx="86.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="86.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle ref={schoolToFill4Ref} cx="106.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="106.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="126.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="146.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="166.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="66.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="86.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="106.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="126.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="146.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="166.5" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="186.5" cy="186.5" r="6" style={{fill: "#ac2c5a"}}/>
               </svg>
             </div>
             <ul className="legend legend-dots">
@@ -203,25 +207,25 @@ const SchoolAndparliaments = props => {
             </div>
             <div className="dots">
               <svg id="dots-mp" viewBox="0 0 423.35 209.2">
-                <circle cx="74.86" cy="203.2" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="57.65" cy="202.11" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="40.43" cy="201.02" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="23.22" cy="199.93" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="6" cy="198.85" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="77.9" cy="181.9" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="61.07" cy="178.13" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="44.23" cy="174.36" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="27.4" cy="170.59" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="10.57" cy="166.83" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="84.32" cy="161.13" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="68.29" cy="154.74" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="52.27" cy="148.36" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="36.24" cy="141.97" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="20.22" cy="135.59" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="93.74" cy="141.69" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="78.92" cy="132.86" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="64.1" cy="124.03" r="6" style={{fill: "#c38d9d"}}/>
-                <circle cx="49.28" cy="115.2" r="6" style={{fill: "#c38d9d"}}/>
+                <circle cx="74.86" cy="203.2" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="57.65" cy="202.11" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="40.43" cy="201.02" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="23.22" cy="199.93" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="6" cy="198.85" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="77.9" cy="181.9" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="61.07" cy="178.13" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="44.23" cy="174.36" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="27.4" cy="170.59" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="10.57" cy="166.83" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="84.32" cy="161.13" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="68.29" cy="154.74" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="52.27" cy="148.36" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="36.24" cy="141.97" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="20.22" cy="135.59" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="93.74" cy="141.69" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="78.92" cy="132.86" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="64.1" cy="124.03" r="6" style={{fill: "#ac2c5a"}}/>
+                <circle cx="49.28" cy="115.2" r="6" style={{fill: "#ac2c5a"}}/>
                 <circle ref={mpToFill1Ref} cx="34.46" cy="106.37" r="6" style={{fill: "#85CDCA"}}/>
                 <circle ref={mpToFill2Ref} cx="106.11" cy="123.96" r="6" style={{fill: "#85CDCA"}}/>
                 <circle ref={mpToFill3Ref} cx="92.87" cy="112.91" r="6" style={{fill: "#85CDCA"}}/>
@@ -306,8 +310,8 @@ const SchoolAndparliaments = props => {
               </svg>
             </div>
             <ul className="legend legend-dots">
-              <li><span className="dot dot-women-mp"></span><span className="label">Parlement seat occupied by a women</span></li>
-              <li><span className="dot dot-men-mp"></span><span className="label">Parlement seat occupied by a men</span></li>
+              <li><span className="dot dot-women-mp"></span><span className="label">Parliament seat occupied by a women</span></li>
+              <li><span className="dot dot-men-mp"></span><span className="label">Parliament seat occupied by a men</span></li>
               <li><span className="label no-dot">Each dot represents 1% of parliament seats</span></li>
             </ul>
           </div>
@@ -315,12 +319,12 @@ const SchoolAndparliaments = props => {
         <div className="row">
           <div className="offset-md-1 col-9">
             <div className="section-sources section-sources-gap">
-                <div>Sources:</div>
-                <ul>
-                  <li>Girls secondary school enrollement: <a href="https://data.worldbank.org/indicator/SE.SEC.NENR.FE">Worldbank</a></li>
-                  <li>Women members of parliaments: <a href="https://ourworldindata.org/grapher/seats-held-by-women-in-national-parliaments?tab=table">Our World in Data</a></li>
-                </ul>
-              </div>
+              <div>Sources:</div>
+              <ul>
+                <li>Girls secondary school enrollement: <a href="https://data.worldbank.org/indicator/SE.SEC.NENR.FE">Worldbank</a></li>
+                <li>Women members of parliaments: <a href="https://ourworldindata.org/grapher/seats-held-by-women-in-national-parliaments?tab=table">Our World in Data</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

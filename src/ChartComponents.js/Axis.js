@@ -56,11 +56,10 @@ const AxisLeft = props => {
 };
 
 const AxisBandBottom = props => {
-  const ticksVerticalTranslation = props.labelsPosition ? -10 : 10;
+  const ticksVerticalTranslation = props.labelsPosition ? -10 : -15;
 
   return (
     <g className="axis" transform={`translate(0, ${props.innerHeight})`} >
-      <line x1={0} y1={0} x2={props.innerWidth} y2={0} />
       {props.ticks.map(tick => (
         <text
           key={tick}

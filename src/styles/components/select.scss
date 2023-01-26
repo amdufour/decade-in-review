@@ -1,0 +1,37 @@
+.selectors {
+  margin: 50px 0;
+  span {
+    display: inline-block;
+    margin: 0 20px;
+  }
+}
+.select {
+  display: inline-block;
+  margin-bottom: 5px;
+  .select__control {
+    min-width: 250px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $white;
+  }
+  .select__single-value,
+  .select__input {
+    color: $white !important;
+  }
+  .select__indicator-separator {
+    display: none;
+  }
+  .select__indicator {
+    padding: 0;
+    color: $white;
+    svg {
+      width: 35px;
+      height: auto;
+    }
+  }
+  .select__menu {
+    color: $text;
+  }
+}
