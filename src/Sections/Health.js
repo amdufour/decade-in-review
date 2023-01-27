@@ -11,6 +11,7 @@ const Health = props => {
         data={props.data}
         type="infant_mortality"
         yLabel={"Infant mortality per 1000 live births (2020)"}
+        lastYear={2020}
       />
     </Fragment>
     // <section>

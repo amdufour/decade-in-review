@@ -7,12 +7,12 @@ const AxisBottom = props => {
 
   return (
     <g className="axis" transform={`translate(0, ${verticalPosition})`} >
-      <line x1={0} y1={0} x2={props.innerWidth} y2={0} />
+      <line x1={0} y1={0} x2={props.innerWidth} y2={0} strokeLinecap="round" />
       {ticks.map(tick => (
         <g key={tick} transform={`translate(${props.scale(tick)}, 0)`}>
-          <line x1={0} y1={0} x2={0} y2={3} />
+          <line x1={0} y1={0} x2={0} y2={3} strokeLinecap="round" />
           <text x={0} y={12} textAnchor="middle" >
-            {d3.format(",.2r")(tick)}
+            {tick === 0 ? "0" : d3.format(",.2r")(tick)}
           </text>
         </g>
       ))}
@@ -36,10 +36,10 @@ const AxisLeft = props => {
 
   return (
     <g className="axis" transform={`translate(${horizontalPosition}, 0)`}>
-      <line x1={0} y1={props.innerHeight} x2={0} y2={0} />
+      <line x1={0} y1={props.innerHeight} x2={0} y2={0} strokeLinecap="round" />
       {ticks.map(tick => (
         <g key={tick} transform={`translate(0, ${props.scale(tick)})`}>
-          <line x1={-3} y1={0} x2={0} y2={0} />
+          <line x1={-3} y1={0} x2={0} y2={0} strokeLinecap="round" />
           <text x={-5} y={0} textAnchor="end" alignmentBaseline="middle" >
             {tick}
           </text>
