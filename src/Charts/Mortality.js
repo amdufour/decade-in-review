@@ -7,11 +7,11 @@ import Axis from "../ChartComponents.js/Axis";
 
 const Mortality = props => {
   // Dimensions
-  const width = 300;
+  const width = 330;
   const height = 245;
   const heightSlope = 410;
   const margin = { top: 12, right: 50, bottom: 30, left: 30 };
-  const marginSlope = { top: 25, right: 60, bottom: 30, left: 100 };
+  const marginSlope = { top: 25, right: 20, bottom: 30, left: 200 };
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
   const innerWidthSlope = width - marginSlope.left - marginSlope.right;
@@ -36,11 +36,9 @@ const Mortality = props => {
   const topIncrease = dataIncrease.slice(0, 3);
   topIncrease.forEach(d => d.fill = "#E27D5F");
   const increaseRemain = dataIncrease.splice(3);
-  console.log("dataDecrease", topDecrease)
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
-  console.log("sortedData", sortedData);
-
+  
   const scatterplotRef = useRef(null);
   const scatterplotMouseOverRef = useRef(null);
   const slopeRef = useRef(null);
@@ -86,6 +84,10 @@ const Mortality = props => {
       slopeMouseOver2020
         .attr("transform", `translate(0, -100})`)
         .style("opacity", 0);
+
+      d3.select(".slope-others")
+        .style("opacity", 0)
+        .attr("transform", "translate(0, -1000)");
     };
 
     const showScatterplotLabels = d => {
@@ -159,23 +161,39 @@ const Mortality = props => {
           .transition()
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
 
-      if (topDecrease.find(c => c.country_code === d.country_code) || topIncrease.find(c => c.country_code === d.country_code)) {
-        slopeMouseOver2010
-          .select("text")
-          .text(d[props.type][0].mortality_rate);
-        slopeMouseOver2020
-          .select("text")
-          .text(d.mortality2020);
-        
-        slopeMouseOver2010
-          .attr("transform", `translate(0, ${yScaleSlope(d[props.type][0].mortality_rate) + 8})`)
-          .transition()
-            .style("opacity", 1);
-        slopeMouseOver2020
-          .attr("transform", `translate(${innerWidthSlope}, ${yScaleSlope(d.mortality2020) + 8})`)
+      if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
+        d3.select(".slope-others line")
+          .attr("y1", yScaleSlope(d[props.type][0].mortality_rate))
+          .attr("y2", yScaleSlope(d.mortality2020));
+        d3.select(".slope-others .other-circle-2010")
+          .attr("cy", yScaleSlope(d[props.type][0].mortality_rate));
+        d3.select(".slope-others .other-circle-2020")
+          .attr("cy", yScaleSlope(d.mortality2020));
+        d3.select(".slope-others text")
+          .attr("y", yScaleSlope(d[props.type][0].mortality_rate))
+          .text(d.country_name);
+        d3.select(".slope-others")
+          .attr("transform", "translate(0, 0)")
           .transition()
             .style("opacity", 1);
       }
+
+      slopeMouseOver2010
+        .select("text")
+        .text(d[props.type][0].mortality_rate);
+      slopeMouseOver2020
+        .select("text")
+        .text(d.mortality2020);
+      
+      slopeMouseOver2010
+        .attr("transform", `translate(0, ${yScaleSlope(d[props.type][0].mortality_rate) + 8})`)
+        .transition()
+          .style("opacity", 1);
+      slopeMouseOver2020
+        .attr("transform", `translate(${innerWidthSlope}, ${yScaleSlope(d.mortality2020) + 8})`)
+        .transition()
+          .style("opacity", 1);
+
     };
 
     scatterplot
@@ -256,8 +274,41 @@ const Mortality = props => {
         .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
         .text(d => d.country_name);
 
+    const slopeOthers = slope
+      .append("g")
+        .attr("class", "slope-others")
+        .attr("transform", "translate(0, -1000)");
+    slopeOthers
+      .append("line")
+        .attr("x1", 0)
+        .attr("x2", innerWidthSlope)
+        .attr("stroke", "#059799")
+        .attr("stroke-width", 2);
+    slopeOthers
+      .append("circle")
+        .attr("class", "other-circle-2010")
+        .attr("cx", 0)
+        .attr("r", 5)
+        .attr("fill", "#059799")
+        .attr("stroke", "#F9FFFF");
+    slopeOthers
+      .append("circle")
+        .attr("class", "other-circle-2020")
+        .attr("cx", innerWidthSlope)
+        .attr("r", 5)
+        .attr("fill", "#059799")
+        .attr("stroke", "#F9FFFF");
+    slopeOthers
+      .append("text")
+        .attr("x", -8)
+        .attr("text-anchor", "end")
+        .attr("alignment-baseline", "middle")
+        .attr("fill", "#059799")
+        .style("font-size", "13px");
+
     slopeMouseOver2010.style("opacity", 0);
     slopeMouseOver2020.style("opacity", 0);
+    slopeOthers.style("opacity", 0);
 
   });
 
@@ -396,80 +447,82 @@ const Mortality = props => {
             </ChartContainer>
           </div>
           <div className="col-4">
-            <ChartContainer
-              width={width}
-              height={heightSlope}
-              margin={marginSlope}
-            >
-              <g
-                stroke="#808989"
-                strokeWidth={2}
-                strokeLinecap="round"
+            <div className="slope-container">
+              <ChartContainer
+                width={width}
+                height={heightSlope}
+                margin={marginSlope}
               >
-                <line
-                  x1={0}
-                  x2={0}
-                  y1={0}
-                  y2={innerHeightSlope}
-                />
-                <line
-                  x1={innerWidthSlope}
-                  x2={innerWidthSlope}
-                  y1={0}
-                  y2={innerHeightSlope}
-                />
-              </g>
-              <g
-                transform={`translate(0, ${innerHeightSlope + 20})`}  
-                fontSize="15px"
-                textAnchor="middle"
-                alignmentBaseline="hanging"
-              >
-                <text>2010</text>
-                <text x={innerWidthSlope}>2020</text>
-              </g>
-              <g ref={slopeRef}></g>
-              <g ref={slopeMouseOver2010Ref}>
-                <rect
-                  x={-18}
-                  y={0}
-                  width={36}
-                  height={20}
-                  fill="#059799"
-                  rx={2}
-                  ry={2}
-                />
-                <text
-                  x={0}
-                  y={10.5}
+                <g
+                  stroke="#808989"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                >
+                  <line
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={innerHeightSlope}
+                  />
+                  <line
+                    x1={innerWidthSlope}
+                    x2={innerWidthSlope}
+                    y1={0}
+                    y2={innerHeightSlope}
+                  />
+                </g>
+                <g
+                  transform={`translate(0, ${innerHeightSlope + 20})`}  
+                  fontSize="15px"
                   textAnchor="middle"
-                  alignmentBaseline="middle"
-                  fill="#F9FFFF"
-                  fontSize="11px"
-                  fontWeight={500}
-                />
-              </g>
-              <g ref={slopeMouseOver2020Ref}>
-                <rect
-                  x={-18}
-                  y={0}
-                  width={36}
-                  height={20}
-                  fill="#059799"
-                  rx={2}
-                  ry={2}
-                />
-                <text
-                  x={0}
-                  y={10.5}
-                  textAnchor="middle"
-                  alignmentBaseline="middle"
-                  fill="#F9FFFF"
-                  fontSize="11px"
-                  fontWeight={500}
-                />
-              </g>
-            </ChartContainer>
+                  alignmentBaseline="hanging"
+                >
+                  <text>2010</text>
+                  <text x={innerWidthSlope}>2020</text>
+                </g>
+                <g ref={slopeRef}></g>
+                <g ref={slopeMouseOver2010Ref}>
+                  <rect
+                    x={-18}
+                    y={0}
+                    width={36}
+                    height={20}
+                    fill="#059799"
+                    rx={2}
+                    ry={2}
+                  />
+                  <text
+                    x={0}
+                    y={10.5}
+                    textAnchor="middle"
+                    alignmentBaseline="middle"
+                    fill="#F9FFFF"
+                    fontSize="11px"
+                    fontWeight={500}
+                  />
+                </g>
+                <g ref={slopeMouseOver2020Ref}>
+                  <rect
+                    x={-18}
+                    y={0}
+                    width={36}
+                    height={20}
+                    fill="#059799"
+                    rx={2}
+                    ry={2}
+                  />
+                  <text
+                    x={0}
+                    y={10.5}
+                    textAnchor="middle"
+                    alignmentBaseline="middle"
+                    fill="#F9FFFF"
+                    fontSize="11px"
+                    fontWeight={500}
+                  />
+                </g>
+              </ChartContainer>
+            </div>
           </div>
         </div>
         <div className="row">
