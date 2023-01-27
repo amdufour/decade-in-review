@@ -8,67 +8,21 @@ const Health = props => {
       <Mortality
         number={3}
         title="Infant mortality decreased globally by 25%"
+        intro="Infant mortality refers to the death of children before the age of one. Unsurprisingly, the correlation between infant mortality and low income is very strong. Infants that are born in developing countries have a much higher chance of dying before their first birthday. The leading causes of infant mortality include complications following premature birth, congenital birth defects, and diarrheal diseases."
         data={props.data}
         type="infant_mortality"
         yLabel={"Infant mortality per 1000 live births (2020)"}
         lastYear={2020}
+        description={[
+          "Between 2010 and 2020, infant mortality declined in 184 countries. The countries where we saw the most important diminution are Haiti (-54%), Malawi (-45%), Angola (-36%), Sierra Leone (-25%), and Somalia (-24%).",
+          "But we must remain vigilant and keep taking action, especially as we witnessed an increase in infant mortality in Dominica (+49%), Saint Lucia (+27%), and Fiji (+15%)."
+        ]}
+        sources={[
+          { label: "Mortality rate, infant: ", link: "https://data.worldbank.org/indicator/SP.DYN.IMRT.IN", linkLabel: "Worldbank"},
+          { label: "Child and Infant mortality: ", link: "https://ourworldindata.org/child-mortality", linkLabel: "Our World in Data"},
+        ]}
       />
     </Fragment>
-    // <section>
-    //   <div className="container">
-    //     <h2>Health</h2>
-    //     <h3>Infant mortality</h3>
-    //     <p>Mortality of children under age of 1.</p>
-    //     <div className="row">
-    //       <div className="col-5">
-    //         <Timeline
-    //           data={props.data}
-    //           margin={props.margin}
-    //           years={props.years}
-    //           focus="infant_mortality"
-    //           year={2020}
-    //         />
-    //       </div>
-    //       <div className="col-5">
-    //         <Scatterplot
-    //           data={props.data}
-    //           margin={props.margin}
-    //           focus="infant_mortality"
-    //           year={2020}
-    //         />
-    //       </div>
-    //     </div>
-    //     <h3>Maternal deaths</h3>
-    //     <p>description</p>
-    //     <div className="row">
-    //       <div className="col-5">
-    //         <Timeline
-    //           data={props.data}
-    //           margin={props.margin}
-    //           years={props.years}
-    //           focus="maternal_mortality"
-    //           year={2017}
-    //         />
-    //       </div>
-    //       <div className="col-5">
-    //         <Scatterplot
-    //           data={props.data}
-    //           margin={props.margin}
-    //           focus="maternal_mortality"
-    //           year={2017}
-    //         />
-    //       </div>
-    //     </div>
-    //     <div>Sources: 
-    //       <ul>
-    //         <li>Infant mortality<a href="https://data.worldbank.org/indicator/SP.DYN.IMRT.IN">Worldbank</a></li>
-    //         <li>Maternal mortality<a href="https://data.worldbank.org/indicator/SH.MMR.DTHS?name_desc=false&view=chart">Worldbank</a></li>
-    //         <li>GDP per capita: <a href="https://ourworldindata.org/grapher/gdp-per-capita-in-us-dollar-world-bank">Our World in Data</a></li>
-    //         <li>Population by country: <a href="https://ourworldindata.org/world-population-growth">Our World in Data</a></li>
-    //       </ul>
-    //     </div>
-    //   </div>
-    // </section>
   );
 };
 

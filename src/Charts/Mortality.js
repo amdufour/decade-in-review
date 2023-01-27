@@ -36,6 +36,7 @@ const Mortality = props => {
   const topIncrease = dataIncrease.slice(0, 3);
   topIncrease.forEach(d => d.fill = "#E27D5F");
   const increaseRemain = dataIncrease.splice(3);
+  console.log("dataDecrease", topDecrease)
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
   console.log("sortedData", sortedData);
@@ -279,6 +280,7 @@ const Mortality = props => {
         <SectionHeader
           number={props.number}
           title={props.title}
+          intro={props.intro}
         />
         <div className="row">
           <div className="offset-md-1 col-11">
@@ -468,6 +470,28 @@ const Mortality = props => {
                 />
               </g>
             </ChartContainer>
+          </div>
+        </div>
+        <div className="row">
+          <div className="offset-md-1 col-9">
+            <div className="description description-mortality">
+              <ul>
+                {props.description.map((d, i) => (
+                  <li key={`description-${props.type}-${i}`}>{d}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="section-sources section-sources-infant-mortality">
+              <div>Sources:</div>
+              <ul>
+                {props.sources.map((d, i) => (
+                  <li key={`source-${props.type}-${i}`}>
+                    {d.label}
+                    <a href={d.link}>{d.linkLabel}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
