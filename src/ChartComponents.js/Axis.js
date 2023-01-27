@@ -1,5 +1,5 @@
 const AxisBottom = props => {
-  const numberOfTicks = props.innerWidth / 100;
+  const numberOfTicks = props.innerWidth / 50;
   const ticks = props.scale.ticks(numberOfTicks);
   const verticalPosition = props.position === "middle" ? props.innerHeight/2 : props.innerHeight;
 
@@ -8,8 +8,8 @@ const AxisBottom = props => {
       <line x1={0} y1={0} x2={props.innerWidth} y2={0} />
       {ticks.map(tick => (
         <g key={tick} transform={`translate(${props.scale(tick)}, 0)`}>
-          <line x1={0} y1={0} x2={0} y2={5} />
-          <text x={0} y={20} textAnchor="middle" >
+          <line x1={0} y1={0} x2={0} y2={3} />
+          <text x={0} y={12} textAnchor="middle" >
             {tick}
           </text>
         </g>
@@ -18,7 +18,7 @@ const AxisBottom = props => {
         <text
           className="axis-label"
           textAnchor="middle"
-          transform={`translate(${props.innerWidth / 2}, 45)`}
+          transform={`translate(${props.innerWidth / 2}, 27)`}
         >
           {props.label}
         </text>
@@ -37,8 +37,8 @@ const AxisLeft = props => {
       <line x1={0} y1={props.innerHeight} x2={0} y2={0} />
       {ticks.map(tick => (
         <g key={tick} transform={`translate(0, ${props.scale(tick)})`}>
-          <line x1={-5} y1={0} x2={0} y2={0} />
-          <text x={-10} y={0} textAnchor="end" alignmentBaseline="middle" >
+          <line x1={-3} y1={0} x2={0} y2={0} />
+          <text x={-5} y={0} textAnchor="end" alignmentBaseline="middle" >
             {tick}
           </text>
         </g>
@@ -46,7 +46,7 @@ const AxisLeft = props => {
       {props.label &&
         <text
           textAnchor="middle"
-          transform={`translate(-42, ${props.innerHeight / 2}) rotate(-90)`}
+          transform={`translate(-24, ${props.innerHeight / 2}) rotate(-90)`}
         >
           {props.label}
         </text>

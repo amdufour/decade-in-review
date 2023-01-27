@@ -16,8 +16,6 @@ const Heatmap = props => {
       .on("mouseleave", () => setShowLabels(false));
   }, []);
 
-  console.log("heatmap data", props.data[props.topic])
-
   return (
     <div className={`heatmap-section ${showLabels ? "show-labels" : ""}`}>
       <h4>{props.data.country_name}</h4>

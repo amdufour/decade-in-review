@@ -22,3 +22,24 @@
     }
   }
 }
+
+.country-label,
+.gdp-label,
+.mortality-label {
+  text {
+    fill: $white;
+    line-height: 1;
+    font-weight: 500;
+  }
+}
+.country-label {
+  text {
+    font-size: 0.8rem;
+  }
+}
+.gdp-label,
+.mortality-label {
+  text {
+    font-size: 0.6rem;
+  }
+}

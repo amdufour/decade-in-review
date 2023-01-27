@@ -20,14 +20,15 @@ const Layout = props => {
           dataByCountry={props.dataByCountry}
           dataWorld={props.dataWorld}
         />
-        <Health 
-          data={props.dataByCountry}
-          margin={margin}
-          years={years}
-        /> */}
+         */}
         <Education 
           dataByCountry={props.dataByCountry}
           dataWorld={props.dataWorld}
+          margin={margin}
+          years={years}
+        />
+        <Health 
+          data={props.dataByCountry}
           margin={margin}
           years={years}
         />

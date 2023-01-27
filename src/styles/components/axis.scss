@@ -1,9 +1,10 @@
 .axis {
   line {
-    stroke: #888b8d;
+    stroke: #808989;
   }
   text {
-    font-size: 1rem;
+    font-size: 0.8rem;
+    fill: $text;
   }
 }
 
