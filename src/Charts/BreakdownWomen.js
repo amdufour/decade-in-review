@@ -109,6 +109,7 @@ const BreakdownWomen = props => {
             </div>
           </div>
         </div>
+        <div className="chart-help">Pass your cursor over a section to reveal additional information.</div>
         <div className="heatmap-axis">
           <ChartContainer
             width={width}

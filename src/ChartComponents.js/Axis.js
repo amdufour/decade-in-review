@@ -1,3 +1,5 @@
+import * as d3 from "d3";
+
 const AxisBottom = props => {
   const numberOfTicks = props.innerWidth / 50;
   const ticks = props.scale.ticks(numberOfTicks);
@@ -10,7 +12,7 @@ const AxisBottom = props => {
         <g key={tick} transform={`translate(${props.scale(tick)}, 0)`}>
           <line x1={0} y1={0} x2={0} y2={3} />
           <text x={0} y={12} textAnchor="middle" >
-            {tick}
+            {d3.format(",.2r")(tick)}
           </text>
         </g>
       ))}

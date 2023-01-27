@@ -1,0 +1,21 @@
+.chart-help {
+  max-width: 685px;
+  margin-top: 50px;
+  padding: 10px 20px 10px 50px;
+  color: $text;
+  background-color: $white;
+  background-image: url("../../../public/assets/magic.svg");
+  background-repeat: no-repeat;
+  background-size: 25px auto;
+  background-position: 16px 10px;
+  border: 1px solid $text;
+  border-radius: 5px;
+}
+
+.section-explore {
+  .chart-help {
+    max-width: 702px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+}

@@ -9,7 +9,7 @@ const Mortality = props => {
   // Dimensions
   const width = 300;
   const height = 245;
-  const margin = { top: 30, right: 50, bottom: 30, left: 30 };
+  const margin = { top: 12, right: 50, bottom: 30, left: 30 };
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
 
@@ -162,6 +162,7 @@ const Mortality = props => {
         />
         <div className="row">
           <div className="offset-md-1 col-7">
+            <div className="chart-help">Pass your cursor over a circle to reveal additional information.</div>
             <ChartContainer
               width={width}
               height={height}
