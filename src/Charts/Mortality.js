@@ -1,5 +1,8 @@
 import { useRef, useEffect } from "react";
 import * as d3 from "d3";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { DrawSVGPlugin } from "../Animations/DrawSVGPlugin";
 
 import SectionHeader from "../UI/SectionHeader";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
@@ -44,6 +47,7 @@ const Mortality = props => {
   const slopeRef = useRef(null);
   const slopeMouseOver2020Ref = useRef(null);
   const slopeMouseOver2010Ref = useRef(null);
+  const descriptionRef = useRef(null);
   useEffect(() => {
 
     const scatterplot = d3.select(scatterplotRef.current);
@@ -79,10 +83,10 @@ const Mortality = props => {
           .style("opacity", 1);
 
       slopeMouseOver2010
-        .attr("transform", `translate(0, -100})`)
+        .attr("transform", `translate(0, -100)`)
         .style("opacity", 0);
       slopeMouseOver2020
-        .attr("transform", `translate(0, -100})`)
+        .attr("transform", `translate(0, -100)`)
         .style("opacity", 0);
 
       d3.select(".slope-others")
@@ -195,12 +199,22 @@ const Mortality = props => {
           .style("opacity", 1);
 
     };
-
+    
     scatterplot
       .selectAll(".scatterplot-circle")
       .data(sortedData)
       .join("circle")
-        .attr("class", d => `scatterplot-circle scatterplot-circle-${props.type}-${d.country_code}`)
+        .attr("class", d => {
+          let circleType = "";
+          if (topDecrease.find(c => c.country_code === d.country_code)) {
+            circleType = "decrease";
+          } else if (topIncrease.find(c => c.country_code === d.country_code)) {
+            circleType = "increase";
+          } else {
+            circleType = "default";
+          }
+          return `scatterplot-circle scatterplot-circle-${props.type}-${d.country_code} ${circleType}`;
+        })
         .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
         .attr("cy", d => yScale(d.mortality2020))
         .attr("r", 2.5)
@@ -218,7 +232,7 @@ const Mortality = props => {
       .selectAll(".slope-country")
       .data(topDecrease.concat(topIncrease))
       .join("g")
-        .attr("class", d => `slope-country slope-country-${d.country_code}`);
+        .attr("class", d => `slope-country slope-country-${d.country_code} ${d[`${props.type}_diff`] < 0 ? "decrease" : "increase"}`);
 
     slopeCountry
       .append("line")
@@ -231,6 +245,7 @@ const Mortality = props => {
 
     slopeCountry
       .append("circle")
+        .attr("class", "circle-2010")
         .attr("cx", 0)
         .attr("cy", d => yScaleSlope(d[props.type].find(y => y.year === 2010).mortality_rate))
         .attr("r", 5)
@@ -243,6 +258,7 @@ const Mortality = props => {
         .on("mouseleave", () => hideLabels());
     slopeCountry
       .append("circle")
+        .attr("class", "circle-2020")
         .attr("cx", innerWidthSlope)
         .attr("cy", d => yScaleSlope(d[props.type].find(y => y.year === props.lastYear).mortality_rate))
         .attr("r", 5)
@@ -309,6 +325,42 @@ const Mortality = props => {
     slopeMouseOver2010.style("opacity", 0);
     slopeMouseOver2020.style("opacity", 0);
     slopeOthers.style("opacity", 0);
+
+    // Animations
+    const scatterplotGsap = scatterplotRef.current;
+    const description = descriptionRef.current;
+    const slopeGsap = slopeRef.current;
+
+    gsap.set(scatterplotGsap.querySelectorAll(".scatterplot-circle"), {scale: 0, opacity: 0});
+    gsap.set(slopeGsap.querySelectorAll("circle"), {scale: 0, opacity: 0});
+    gsap.set(slopeGsap.querySelectorAll("line"), {drawSVG: "0%", opacity: 0});
+    gsap.set(slopeGsap.querySelectorAll("text"), {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+    gsap.set(description.querySelectorAll("li"), {opacity: 0, x: -50});
+
+    const tl = gsap.timeline({
+      defaults: {
+        ease: "power4.inOut",
+        duration: 0.5
+      },
+      scrollTrigger: {
+        trigger: description
+      }
+    });
+
+    tl.to(scatterplotGsap.querySelectorAll(".scatterplot-circle.default"), {scale: 1, opacity: 1, stagger: {amount: 0.8, from: "center"}})
+      .to(description.querySelectorAll(`.description-${props.type}-0`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
+      .to(scatterplotGsap.querySelectorAll(".scatterplot-circle.decrease"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.decrease .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.decrease line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.decrease .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+      .to(slopeGsap.querySelectorAll(".slope-country.decrease text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+
+      .to(description.querySelectorAll(`.description-${props.type}-1`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
+      .to(scatterplotGsap.querySelectorAll(".scatterplot-circle.increase"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.increase .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.increase line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+      .to(slopeGsap.querySelectorAll(".slope-country.increase .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+      .to(slopeGsap.querySelectorAll(".slope-country.increase text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
 
   });
 
@@ -527,10 +579,15 @@ const Mortality = props => {
         </div>
         <div className="row">
           <div className="offset-md-1 col-9">
-            <div className="description description-mortality">
+            <div ref={descriptionRef} className="description description-mortality">
               <ul>
                 {props.description.map((d, i) => (
-                  <li key={`description-${props.type}-${i}`}>{d}</li>
+                  <li 
+                    key={`description-${props.type}-${i}`}
+                    className={`description-${props.type}-${i}`}
+                  >
+                    {d}
+                  </li>
                 ))}
               </ul>
             </div>
