@@ -28,7 +28,7 @@ const MaternalMortality = props => {
     d["fill"] = "#AAAFAF";
   });
   const filteredData = localData.filter(d => d[`${props.type}_diff`]);
-
+console.log(filteredData.filter(d => d[`${props.type}_diff`] <= 0))
   const dataDecrease = filteredData.filter(d => d[`${props.type}_diff`] <= 0);
   dataDecrease.sort((a, b) => a[`${props.type}_diff`] - b[`${props.type}_diff`]);
   const topDecrease = dataDecrease.slice(0, 5);
