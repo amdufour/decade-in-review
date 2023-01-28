@@ -25,20 +25,26 @@
 
 .country-label,
 .gdp-label,
-.mortality-label {
+.mortality-label,
+.maternity-country-label,
+.maternity-gdp-label,
+.maternity-mortality-label {
   text {
     fill: $white;
     line-height: 1;
     font-weight: 500;
   }
 }
-.country-label {
+.country-label,
+.maternity-country-label {
   text {
     font-size: 0.8rem;
   }
 }
 .gdp-label,
-.mortality-label {
+.mortality-label,
+.maternity-gdp-label,
+.maternity-mortality-label {
   text {
     font-size: 0.6rem;
   }
