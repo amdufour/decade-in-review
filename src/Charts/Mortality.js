@@ -53,6 +53,7 @@ const Mortality = props => {
     const scatterplot = d3.select(scatterplotRef.current);
     const scatterplotMouseOver = d3.select(scatterplotMouseOverRef.current);
     d3.selectAll(".slope-country").remove();
+    d3.selectAll(".slope-others").remove();
     const slope = d3.select(slopeRef.current);
     const slopeMouseOver2020 = d3.select(slopeMouseOver2020Ref.current);
     const slopeMouseOver2010 = d3.select(slopeMouseOver2010Ref.current);
@@ -164,7 +165,7 @@ const Mortality = props => {
         .selectAll(".slope-country")
           .transition()
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
-
+      
       if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
         d3.select(".slope-others line")
           .attr("y1", yScaleSlope(d[props.type][0].mortality_rate))
@@ -332,9 +333,9 @@ const Mortality = props => {
     const slopeGsap = slopeRef.current;
 
     gsap.set(scatterplotGsap.querySelectorAll(".scatterplot-circle"), {scale: 0, opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll("circle"), {scale: 0, opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll("line"), {drawSVG: "0%", opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll("text"), {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+    gsap.set(slopeGsap.querySelectorAll(".slope-country circle"), {scale: 0, opacity: 0});
+    gsap.set(slopeGsap.querySelectorAll(".slope-country line"), {drawSVG: "0%", opacity: 0});
+    gsap.set(slopeGsap.querySelectorAll(".slope-country text"), {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
     gsap.set(description.querySelectorAll("li"), {opacity: 0, x: -50});
 
     const tl = gsap.timeline({
