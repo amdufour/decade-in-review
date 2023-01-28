@@ -37,9 +37,9 @@ const Mortality = props => {
 
   const dataIncrease = filteredData.filter(d => d[`${props.type}_diff`] > 0);
   dataIncrease.sort((a, b) => b[`${props.type}_diff`] - a[`${props.type}_diff`]);
-  const topIncrease = dataIncrease.slice(0, 3);
+  const topIncrease = dataIncrease.slice(0, 5);
   topIncrease.forEach(d => d.fill = "#E27D5F");
-  const increaseRemain = dataIncrease.splice(3);
+  const increaseRemain = dataIncrease.splice(5);
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
   
@@ -279,7 +279,7 @@ const Mortality = props => {
           const defaultPosition = yScaleSlope(d[props.type].find(y => y.year === 2010).mortality_rate);
           switch (d.country_code) {
             case "LCA":
-              return defaultPosition + 6;
+              return defaultPosition + 4;
             case "DMA":
               return defaultPosition - 10;
             default:

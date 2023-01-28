@@ -13,7 +13,7 @@ const MaternalMortality = props => {
   const width = 330;
   const height = 245;
   const heightSlope = 410;
-  const margin = { top: 12, right: 50, bottom: 30, left: 30 };
+  const margin = { top: 12, right: 62, bottom: 30, left: 30 };
   const marginSlope = { top: 25, right: 20, bottom: 30, left: 200 };
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
@@ -23,10 +23,8 @@ const MaternalMortality = props => {
   // FormatData
   const localData = JSON.parse(JSON.stringify(props.data));
   localData.forEach(d => {
-    const mortality2017 = d[props.type].find(y => y.year === 2017).mortality_rate / d.population * 10000;
-    const mortality2010 = d[props.type].find(y => y.year === 2010).mortality_rate / d.population * 10000;
-    d["mortality2017"] = mortality2017;
-    d["mortality2010"] = mortality2010;
+    d["mortality2010"] = d.maternal_deaths_per_10000_births_2010;
+    d["mortality2017"] = d.maternal_deaths_per_10000_births_2017;
     d["fill"] = "#AAAFAF";
   });
   const filteredData = localData.filter(d => d[`${props.type}_diff`]);
@@ -39,9 +37,9 @@ const MaternalMortality = props => {
 
   const dataIncrease = filteredData.filter(d => d[`${props.type}_diff`] > 0);
   dataIncrease.sort((a, b) => b[`${props.type}_diff`] - a[`${props.type}_diff`]);
-  const topIncrease = dataIncrease.slice(0, 3);
+  const topIncrease = dataIncrease.slice(0, 5);
   topIncrease.forEach(d => d.fill = "#E27D5F");
-  const increaseRemain = dataIncrease.splice(3);
+  const increaseRemain = dataIncrease.splice(5);
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
   
@@ -282,9 +280,6 @@ const MaternalMortality = props => {
           switch (d.country_code) {
             case "BGD":
               return defaultPosition - 10;
-            case "IND":
-            case "DZA":
-              return defaultPosition + 8;
             default:
               return defaultPosition;
           }
@@ -370,7 +365,8 @@ const MaternalMortality = props => {
   });
 
   // Scales
-  const maxGDP = d3.max(localData, d => d.gdp_per_capita_2015_US$);
+  const dataWithMaternalDeath = localData.filter(d => d.maternal_deaths_per_10000_births_2017);
+  const maxGDP = d3.max(dataWithMaternalDeath, d => d.gdp_per_capita_2015_US$);
   const xScale = d3.scaleLinear()
     .domain([0, maxGDP])
     .range([0, innerWidth]);

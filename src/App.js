@@ -54,6 +54,7 @@ function App() {
     ]).then(data => {
       const dataByCountry = data[0];
       const dataWorld = data[1];
+      const birthRate = data[2];
       console.log("data by country", dataByCountry);
       console.log("data world", dataWorld);
 

@@ -235,7 +235,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.9,
+        "birth_rate_2017": 12.64,
+        "maternal_deaths_per_10000_births_2010": 3.6563794671600527,
+        "maternal_deaths_per_10000_births_2017": 2.7205426542734625
     },
     {
         "country_name": "India",
@@ -473,7 +477,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 21.438,
+        "birth_rate_2017": 17.911,
+        "maternal_deaths_per_10000_births_2010": 18.37268391741067,
+        "maternal_deaths_per_10000_births_2017": 13.994016804047027
     },
     {
         "country_name": "United States",
@@ -711,7 +719,11 @@
             }
         ],
         "region": "North America",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 13,
+        "birth_rate_2017": 11.8,
+        "maternal_deaths_per_10000_births_2010": 1.3738634632068814,
+        "maternal_deaths_per_10000_births_2017": 1.8162940700023176
     },
     {
         "country_name": "Indonesia",
@@ -949,7 +961,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 20.158,
+        "birth_rate_2017": 17.519,
+        "maternal_deaths_per_10000_births_2010": 21.897357720981525,
+        "maternal_deaths_per_10000_births_2017": 18.057060228323977
     },
     {
         "country_name": "Pakistan",
@@ -1187,7 +1203,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 32.109,
+        "birth_rate_2017": 28.963,
+        "maternal_deaths_per_10000_births_2010": 13.707906453375442,
+        "maternal_deaths_per_10000_births_2017": 12.613408476279687
     },
     {
         "country_name": "Brazil",
@@ -1425,7 +1445,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 15.492,
+        "birth_rate_2017": 14.159,
+        "maternal_deaths_per_10000_births_2010": 5.752629992219318,
+        "maternal_deaths_per_10000_births_2017": 5.63166312396002
     },
     {
         "country_name": "Nigeria",
@@ -1663,7 +1687,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 42.094,
+        "birth_rate_2017": 38.689,
+        "maternal_deaths_per_10000_births_2010": 72.98159773555106,
+        "maternal_deaths_per_10000_births_2017": 83.12676654313049
     },
     {
         "country_name": "Bangladesh",
@@ -1901,7 +1929,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 21.379,
+        "birth_rate_2017": 18.495,
+        "maternal_deaths_per_10000_births_2010": 22.630171501220655,
+        "maternal_deaths_per_10000_births_2017": 16.470472341710245
     },
     {
         "country_name": "Russia",
@@ -2139,7 +2171,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 12.5,
+        "birth_rate_2017": 11.5,
+        "maternal_deaths_per_10000_births_2010": 2.4722332496033714,
+        "maternal_deaths_per_10000_births_2017": 1.910904927229659
     },
     {
         "country_name": "Mexico",
@@ -2377,7 +2413,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 20.152,
+        "birth_rate_2017": 16.947,
+        "maternal_deaths_per_10000_births_2010": 4.332213575208028,
+        "maternal_deaths_per_10000_births_2017": 3.4655663537133536
     },
     {
         "country_name": "Japan",
@@ -2615,7 +2655,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 8.5,
+        "birth_rate_2017": 7.6,
+        "maternal_deaths_per_10000_births_2010": 0.610569162616417,
+        "maternal_deaths_per_10000_births_2017": 0.46225276683914973
     },
     {
         "country_name": "Ethiopia",
@@ -2853,7 +2897,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 36.528,
+        "birth_rate_2017": 33.059,
+        "maternal_deaths_per_10000_births_2010": 44.38474643348095,
+        "maternal_deaths_per_10000_births_2017": 36.13635628821627
     },
     {
         "country_name": "Philippines",
@@ -3091,7 +3139,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 25.511,
+        "birth_rate_2017": 22.664,
+        "maternal_deaths_per_10000_births_2010": 11.879371856987726,
+        "maternal_deaths_per_10000_births_2017": 10.618648513550353
     },
     {
         "country_name": "Egypt",
@@ -3329,7 +3381,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 27.16,
+        "birth_rate_2017": 25.231,
+        "maternal_deaths_per_10000_births_2010": 3.42612082049918,
+        "maternal_deaths_per_10000_births_2017": 3.5405375857226193
     },
     {
         "country_name": "Vietnam",
@@ -3567,7 +3623,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 16.906,
+        "birth_rate_2017": 16.1,
+        "maternal_deaths_per_10000_births_2010": 4.406519586521456,
+        "maternal_deaths_per_10000_births_2017": 4.498588172085249
     },
     {
         "country_name": "Democratic Republic of Congo",
@@ -3805,7 +3865,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 44.526,
+        "birth_rate_2017": 43.251,
+        "maternal_deaths_per_10000_births_2010": 38.69987612923292,
+        "maternal_deaths_per_10000_births_2017": 39.84071315183985
     },
     {
         "country_name": "Iran",
@@ -4043,7 +4107,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 17.755,
+        "birth_rate_2017": 18.608,
+        "maternal_deaths_per_10000_births_2010": 1.871164082627361,
+        "maternal_deaths_per_10000_births_2017": 1.5391284378543522
     },
     {
         "country_name": "Turkey",
@@ -4281,7 +4349,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 17.746,
+        "birth_rate_2017": 17.368,
+        "maternal_deaths_per_10000_births_2010": 2.0762626317241675,
+        "maternal_deaths_per_10000_births_2017": 1.5055456950429704
     },
     {
         "country_name": "Germany",
@@ -4519,7 +4591,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 8.3,
+        "birth_rate_2017": 9.5,
+        "maternal_deaths_per_10000_births_2010": 0.5494262132694522,
+        "maternal_deaths_per_10000_births_2017": 0.6695085629286206
     },
     {
         "country_name": "Thailand",
@@ -4757,7 +4833,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.926,
+        "birth_rate_2017": 9.98,
+        "maternal_deaths_per_10000_births_2010": 3.8713366253042953,
+        "maternal_deaths_per_10000_births_2017": 3.7850796624194865
     },
     {
         "country_name": "United Kingdom",
@@ -4995,7 +5075,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.9,
+        "birth_rate_2017": 11.4,
+        "maternal_deaths_per_10000_births_2010": 0.9016640673679888,
+        "maternal_deaths_per_10000_births_2017": 0.680202717488132
     },
     {
         "country_name": "France",
@@ -5233,7 +5317,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.9,
+        "birth_rate_2017": 11.5,
+        "maternal_deaths_per_10000_births_2010": 0.8896447708396903,
+        "maternal_deaths_per_10000_births_2017": 0.7552049147527524
     },
     {
         "country_name": "Tanzania",
@@ -5471,7 +5559,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 39.729,
+        "birth_rate_2017": 38.058,
+        "maternal_deaths_per_10000_births_2010": 48.95044384380462,
+        "maternal_deaths_per_10000_births_2017": 46.84138687042509
     },
     {
         "country_name": "Italy",
@@ -5709,7 +5801,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.5,
+        "birth_rate_2017": 7.6,
+        "maternal_deaths_per_10000_births_2010": 0.21229338935085976,
+        "maternal_deaths_per_10000_births_2017": 0.15479726306833524
     },
     {
         "country_name": "South Africa",
@@ -5947,7 +6043,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.274,
+        "birth_rate_2017": 20.643,
+        "maternal_deaths_per_10000_births_2010": 15.270041394766183,
+        "maternal_deaths_per_10000_births_2017": 11.533567379688774
     },
     {
         "country_name": "Myanmar",
@@ -6185,7 +6285,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 19.409,
+        "birth_rate_2017": 18.129,
+        "maternal_deaths_per_10000_births_2010": 26.039383981131575,
+        "maternal_deaths_per_10000_births_2017": 24.780353329032437
     },
     {
         "country_name": "Kenya",
@@ -6423,7 +6527,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 35.422,
+        "birth_rate_2017": 29.755,
+        "maternal_deaths_per_10000_births_2010": 34.7554031641398,
+        "maternal_deaths_per_10000_births_2017": 32.32402881028819
     },
     {
         "country_name": "South Korea",
@@ -6661,7 +6769,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.4,
+        "birth_rate_2017": 7,
+        "maternal_deaths_per_10000_births_2010": 1.41584910915365,
+        "maternal_deaths_per_10000_births_2017": 1.1848575774739243
     },
     {
         "country_name": "Colombia",
@@ -6899,7 +7011,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 16.909,
+        "birth_rate_2017": 15.081,
+        "maternal_deaths_per_10000_births_2010": 7.431607764568867,
+        "maternal_deaths_per_10000_births_2017": 7.941827047647696
     },
     {
         "country_name": "Spain",
@@ -7137,7 +7253,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.4,
+        "birth_rate_2017": 8.4,
+        "maternal_deaths_per_10000_births_2010": 0.4060224471556263,
+        "maternal_deaths_per_10000_births_2017": 0.3518861208682095
     },
     {
         "country_name": "Argentina",
@@ -7375,7 +7495,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 17.87,
+        "birth_rate_2017": 16.206,
+        "maternal_deaths_per_10000_births_2010": 4.7217058162706245,
+        "maternal_deaths_per_10000_births_2017": 3.973397775297528
     },
     {
         "country_name": "Sudan",
@@ -7613,7 +7737,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 37.497,
+        "birth_rate_2017": 35.669,
+        "maternal_deaths_per_10000_births_2010": 30.00507394415452,
+        "maternal_deaths_per_10000_births_2017": 24.603386722181465
     },
     {
         "country_name": "Uganda",
@@ -7851,7 +7979,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 43.068,
+        "birth_rate_2017": 38.343,
+        "maternal_deaths_per_10000_births_2010": 32.94259481346535,
+        "maternal_deaths_per_10000_births_2017": 35.240099041516864
     },
     {
         "country_name": "Ukraine",
@@ -8089,7 +8221,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 10.8,
+        "birth_rate_2017": 9.4,
+        "maternal_deaths_per_10000_births_2010": 2.53044776455386,
+        "maternal_deaths_per_10000_births_2017": 2.010898383108227
     },
     {
         "country_name": "Algeria",
@@ -8327,7 +8463,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 24.458,
+        "birth_rate_2017": 24.755,
+        "maternal_deaths_per_10000_births_2010": 9.409631301632848,
+        "maternal_deaths_per_10000_births_2017": 11.156086239159904
     },
     {
         "country_name": "Iraq",
@@ -8565,7 +8705,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 34.291,
+        "birth_rate_2017": 28.923,
+        "maternal_deaths_per_10000_births_2010": 4.865274133291031,
+        "maternal_deaths_per_10000_births_2017": 7.06813819476356
     },
     {
         "country_name": "Afghanistan",
@@ -8803,7 +8947,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 40.602,
+        "birth_rate_2017": 37.342,
+        "maternal_deaths_per_10000_births_2010": 69.51682593975995,
+        "maternal_deaths_per_10000_births_2017": 52.91000794719869
     },
     {
         "country_name": "Poland",
@@ -9041,7 +9189,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.9,
+        "birth_rate_2017": 10.6,
+        "maternal_deaths_per_10000_births_2010": 0.26261180592592576,
+        "maternal_deaths_per_10000_births_2017": 0.19639579311098393
     },
     {
         "country_name": "Canada",
@@ -9279,7 +9431,11 @@
             }
         ],
         "region": "North America",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.1,
+        "birth_rate_2017": 10.3,
+        "maternal_deaths_per_10000_births_2010": 0.998657484770074,
+        "maternal_deaths_per_10000_births_2017": 1.024974394909646
     },
     {
         "country_name": "Morocco",
@@ -9517,7 +9673,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 21.402,
+        "birth_rate_2017": 19.298,
+        "maternal_deaths_per_10000_births_2010": 8.02330055388187,
+        "maternal_deaths_per_10000_births_2017": 6.779470991977645
     },
     {
         "country_name": "Saudi Arabia",
@@ -9755,7 +9915,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 21.894,
+        "birth_rate_2017": 18.903,
+        "maternal_deaths_per_10000_births_2010": 1.5226094512762953,
+        "maternal_deaths_per_10000_births_2017": 1.4696084980445436
     },
     {
         "country_name": "Uzbekistan",
@@ -9993,7 +10157,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 22,
+        "birth_rate_2017": 22.1,
+        "maternal_deaths_per_10000_births_2010": 2.7115461392813547,
+        "maternal_deaths_per_10000_births_2017": 2.6992766997370956
     },
     {
         "country_name": "Angola",
@@ -10231,7 +10399,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 44.97,
+        "birth_rate_2017": 40.81,
+        "maternal_deaths_per_10000_births_2010": 23.282434899270505,
+        "maternal_deaths_per_10000_births_2017": 21.990641595271352
     },
     {
         "country_name": "Peru",
@@ -10469,7 +10641,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 21.066,
+        "birth_rate_2017": 18.269,
+        "maternal_deaths_per_10000_births_2010": 8.836966261839875,
+        "maternal_deaths_per_10000_births_2017": 8.21767224541833
     },
     {
         "country_name": "Malaysia",
@@ -10707,7 +10883,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 17.002,
+        "birth_rate_2017": 16.355,
+        "maternal_deaths_per_10000_births_2010": 2.4802193824544374,
+        "maternal_deaths_per_10000_births_2017": 2.7625031624551473
     },
     {
         "country_name": "Ghana",
@@ -10945,7 +11125,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 33.004,
+        "birth_rate_2017": 28.978,
+        "maternal_deaths_per_10000_births_2010": 25.42176622429015,
+        "maternal_deaths_per_10000_births_2017": 28.953688055299605
     },
     {
         "country_name": "Mozambique",
@@ -11183,7 +11367,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 42.013,
+        "birth_rate_2017": 38.127,
+        "maternal_deaths_per_10000_births_2010": 30.536880784204154,
+        "maternal_deaths_per_10000_births_2017": 26.07818943530165
     },
     {
         "country_name": "Nepal",
@@ -11421,7 +11609,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 22.589,
+        "birth_rate_2017": 21.376,
+        "maternal_deaths_per_10000_births_2010": 28.6595140094841,
+        "maternal_deaths_per_10000_births_2017": 17.5338977839451
     },
     {
         "country_name": "Madagascar",
@@ -11659,7 +11851,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 36.041,
+        "birth_rate_2017": 32.477,
+        "maternal_deaths_per_10000_births_2010": 33.42299265866579,
+        "maternal_deaths_per_10000_births_2017": 30.545368935760205
     },
     {
         "country_name": "Cote d'Ivoire",
@@ -11897,7 +12093,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 38.815,
+        "birth_rate_2017": 35.863,
+        "maternal_deaths_per_10000_births_2010": 51.88816683983351,
+        "maternal_deaths_per_10000_births_2017": 56.159250366342405
     },
     {
         "country_name": "Cameroon",
@@ -12135,7 +12335,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 39.958,
+        "birth_rate_2017": 37.403,
+        "maternal_deaths_per_10000_births_2010": 45.34586249152489,
+        "maternal_deaths_per_10000_births_2017": 47.43420132938786
     },
     {
         "country_name": "Australia",
@@ -12373,7 +12577,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 13.7,
+        "birth_rate_2017": 12.6,
+        "maternal_deaths_per_10000_births_2010": 0.45495942574593623,
+        "maternal_deaths_per_10000_births_2017": 0.6183476322142188
     },
     {
         "country_name": "Niger",
@@ -12611,7 +12819,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 48.51,
+        "birth_rate_2017": 46.351,
+        "maternal_deaths_per_10000_births_2010": 46.593385194283364,
+        "maternal_deaths_per_10000_births_2017": 45.21722622617106
     },
     {
         "country_name": "Sri Lanka",
@@ -12849,7 +13061,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 17.553,
+        "birth_rate_2017": 15.17,
+        "maternal_deaths_per_10000_births_2010": 3.672952645881244,
+        "maternal_deaths_per_10000_births_2017": 3.6427914752699957
     },
     {
         "country_name": "Burkina Faso",
@@ -13087,7 +13303,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 43.206,
+        "birth_rate_2017": 37.898,
+        "maternal_deaths_per_10000_births_2010": 26.884413549003487,
+        "maternal_deaths_per_10000_births_2017": 29.423854898050422
     },
     {
         "country_name": "Mali",
@@ -13325,7 +13545,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 46.588,
+        "birth_rate_2017": 43.378,
+        "maternal_deaths_per_10000_births_2010": 46.521709867280244,
+        "maternal_deaths_per_10000_births_2017": 47.79198353857069
     },
     {
         "country_name": "Romania",
@@ -13563,7 +13787,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.5,
+        "birth_rate_2017": 10.8,
+        "maternal_deaths_per_10000_births_2010": 2.8411676572054803,
+        "maternal_deaths_per_10000_births_2017": 1.7144977241757209
     },
     {
         "country_name": "Malawi",
@@ -13801,7 +14029,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 40.825,
+        "birth_rate_2017": 34.343,
+        "maternal_deaths_per_10000_births_2010": 32.86694328202042,
+        "maternal_deaths_per_10000_births_2017": 31.5568194943524
     },
     {
         "country_name": "Chile",
@@ -14039,7 +14271,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.327,
+        "birth_rate_2017": 12.13,
+        "maternal_deaths_per_10000_births_2010": 1.8443801967792424,
+        "maternal_deaths_per_10000_births_2017": 1.2387188097868354
     },
     {
         "country_name": "Kazakhstan",
@@ -14277,7 +14513,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.53,
+        "birth_rate_2017": 21.64,
+        "maternal_deaths_per_10000_births_2010": 1.870896440789656,
+        "maternal_deaths_per_10000_births_2017": 0.9008768380352734
     },
     {
         "country_name": "Zambia",
@@ -14515,7 +14755,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 41.794,
+        "birth_rate_2017": 36.601,
+        "maternal_deaths_per_10000_births_2010": 21.49001764177369,
+        "maternal_deaths_per_10000_births_2017": 18.765156473005018
     },
     {
         "country_name": "Ecuador",
@@ -14753,7 +14997,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 21.892,
+        "birth_rate_2017": 17.996,
+        "maternal_deaths_per_10000_births_2010": 6.492670985709057,
+        "maternal_deaths_per_10000_births_2017": 6.318628727234616
     },
     {
         "country_name": "Netherlands",
@@ -14991,7 +15239,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.1,
+        "birth_rate_2017": 9.9,
+        "maternal_deaths_per_10000_births_2010": 0.6717525631966959,
+        "maternal_deaths_per_10000_births_2017": 0.5214303112925401
     },
     {
         "country_name": "Guatemala",
@@ -15229,7 +15481,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 27.525,
+        "birth_rate_2017": 24.791,
+        "maternal_deaths_per_10000_births_2010": 10.880738036376547,
+        "maternal_deaths_per_10000_births_2017": 9.292836247995222
     },
     {
         "country_name": "Chad",
@@ -15467,7 +15723,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 48.764,
+        "birth_rate_2017": 44.811,
+        "maternal_deaths_per_10000_births_2010": 86.24274335352196,
+        "maternal_deaths_per_10000_births_2017": 97.87281279566356
     },
     {
         "country_name": "Somalia",
@@ -15705,7 +15965,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 47.696,
+        "birth_rate_2017": 45.457,
+        "maternal_deaths_per_10000_births_2010": 65.92713239527367,
+        "maternal_deaths_per_10000_births_2017": 67.84411888960726
     },
     {
         "country_name": "Senegal",
@@ -15943,7 +16207,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 37.74,
+        "birth_rate_2017": 34.224,
+        "maternal_deaths_per_10000_births_2010": 35.46675718195803,
+        "maternal_deaths_per_10000_births_2017": 30.221697257640358
     },
     {
         "country_name": "Cambodia",
@@ -16181,7 +16449,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 23.669,
+        "birth_rate_2017": 21.348,
+        "maternal_deaths_per_10000_births_2010": 23.44772371385547,
+        "maternal_deaths_per_10000_births_2017": 16.855204379961716
     },
     {
         "country_name": "Zimbabwe",
@@ -16419,7 +16691,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 37.056,
+        "birth_rate_2017": 32.516,
+        "maternal_deaths_per_10000_births_2010": 48.22140246918185,
+        "maternal_deaths_per_10000_births_2017": 41.21568512189389
     },
     {
         "country_name": "Guinea",
@@ -16657,7 +16933,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 39.369,
+        "birth_rate_2017": 36.625,
+        "maternal_deaths_per_10000_births_2010": 57.70630969189498,
+        "maternal_deaths_per_10000_births_2017": 53.75911932902439
     },
     {
         "country_name": "Rwanda",
@@ -16895,7 +17175,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 34.836,
+        "birth_rate_2017": 31.399,
+        "maternal_deaths_per_10000_births_2010": 28.386334645867148,
+        "maternal_deaths_per_10000_births_2017": 23.256784257570445
     },
     {
         "country_name": "Benin",
@@ -17133,7 +17417,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 39.332,
+        "birth_rate_2017": 38.678,
+        "maternal_deaths_per_10000_births_2010": 34.186024264857956,
+        "maternal_deaths_per_10000_births_2017": 32.719124874402375
     },
     {
         "country_name": "Burundi",
@@ -17371,7 +17659,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 46.691,
+        "birth_rate_2017": 38.124,
+        "maternal_deaths_per_10000_births_2010": 43.81547142511303,
+        "maternal_deaths_per_10000_births_2017": 51.51496824198811
     },
     {
         "country_name": "Tunisia",
@@ -17609,7 +17901,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 18.211,
+        "birth_rate_2017": 18.399,
+        "maternal_deaths_per_10000_births_2010": 4.018474454630044,
+        "maternal_deaths_per_10000_births_2017": 4.022103940916486
     },
     {
         "country_name": "Bolivia",
@@ -17847,7 +18143,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 25.749,
+        "birth_rate_2017": 22.986,
+        "maternal_deaths_per_10000_births_2010": 17.24449748006954,
+        "maternal_deaths_per_10000_births_2017": 13.850174177673203
     },
     {
         "country_name": "Belgium",
@@ -18085,7 +18385,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.9,
+        "birth_rate_2017": 10.5,
+        "maternal_deaths_per_10000_births_2010": 0.5814611841036618,
+        "maternal_deaths_per_10000_births_2017": 0.4942420064881125
     },
     {
         "country_name": "Haiti",
@@ -18323,7 +18627,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 27.527,
+        "birth_rate_2017": 24.98,
+        "maternal_deaths_per_10000_births_2010": 44.98101891972485,
+        "maternal_deaths_per_10000_births_2017": 46.02682889580939
     },
     {
         "country_name": "Cuba",
@@ -18561,7 +18869,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.417,
+        "birth_rate_2017": 10.182,
+        "maternal_deaths_per_10000_births_2010": 4.030381798808384,
+        "maternal_deaths_per_10000_births_2017": 3.6501527920194823
     },
     {
         "country_name": "Dominican Republic",
@@ -18799,7 +19111,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.038,
+        "birth_rate_2017": 19.993,
+        "maternal_deaths_per_10000_births_2010": 8.250461456898014,
+        "maternal_deaths_per_10000_births_2017": 9.094366507633596
     },
     {
         "country_name": "Jordan",
@@ -19037,7 +19353,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 28.605,
+        "birth_rate_2017": 23.377,
+        "maternal_deaths_per_10000_births_2010": 3.5186924942355824,
+        "maternal_deaths_per_10000_births_2017": 3.9141891135268483
     },
     {
         "country_name": "Czechia",
@@ -19275,7 +19595,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.2,
+        "birth_rate_2017": 10.8,
+        "maternal_deaths_per_10000_births_2010": 0.42392047159707746,
+        "maternal_deaths_per_10000_births_2017": 0.35169698384350123
     },
     {
         "country_name": "Greece",
@@ -19513,7 +19837,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.3,
+        "birth_rate_2017": 8.2,
+        "maternal_deaths_per_10000_births_2010": 0.277069737352001,
+        "maternal_deaths_per_10000_births_2017": 0.2320177475386676
     },
     {
         "country_name": "Sweden",
@@ -19751,7 +20079,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.3,
+        "birth_rate_2017": 11.5,
+        "maternal_deaths_per_10000_births_2010": 0.3920390776021783,
+        "maternal_deaths_per_10000_births_2017": 0.41931136126146035
     },
     {
         "country_name": "Portugal",
@@ -19989,7 +20321,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.6,
+        "birth_rate_2017": 8.4,
+        "maternal_deaths_per_10000_births_2010": 0.9103545032105655,
+        "maternal_deaths_per_10000_births_2017": 0.6936034310175736
     },
     {
         "country_name": "Azerbaijan",
@@ -20227,7 +20563,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 18.3,
+        "birth_rate_2017": 14.6,
+        "maternal_deaths_per_10000_births_2010": 2.7096725836947413,
+        "maternal_deaths_per_10000_births_2017": 2.930201939821388
     },
     {
         "country_name": "Honduras",
@@ -20465,7 +20805,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 25.392,
+        "birth_rate_2017": 22.16,
+        "maternal_deaths_per_10000_births_2010": 5.836308343108782,
+        "maternal_deaths_per_10000_births_2017": 5.795854509106007
     },
     {
         "country_name": "Hungary",
@@ -20703,7 +21047,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9,
+        "birth_rate_2017": 9.7,
+        "maternal_deaths_per_10000_births_2010": 1.3674412845497288,
+        "maternal_deaths_per_10000_births_2017": 1.16302995850879
     },
     {
         "country_name": "Papua New Guinea",
@@ -20941,7 +21289,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 30.445,
+        "birth_rate_2017": 27.216,
+        "maternal_deaths_per_10000_births_2010": 12.465138870561528,
+        "maternal_deaths_per_10000_births_2017": 12.8134475736494
     },
     {
         "country_name": "Belarus",
@@ -21179,7 +21531,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.4,
+        "birth_rate_2017": 10.8,
+        "maternal_deaths_per_10000_births_2010": 0.5463252239639769,
+        "maternal_deaths_per_10000_births_2017": 0.28833831264765447
     },
     {
         "country_name": "Tajikistan",
@@ -21417,7 +21773,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 31.045,
+        "birth_rate_2017": 28.932,
+        "maternal_deaths_per_10000_births_2010": 1.8564211136750324,
+        "maternal_deaths_per_10000_births_2017": 1.6660377938274724
     },
     {
         "country_name": "United Arab Emirates",
@@ -21655,7 +22015,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 13.665,
+        "birth_rate_2017": 10.62,
+        "maternal_deaths_per_10000_births_2010": 0.3151820932643467,
+        "maternal_deaths_per_10000_births_2017": 0.304164075173538
     },
     {
         "country_name": "Austria",
@@ -21893,7 +22257,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.4,
+        "birth_rate_2017": 10,
+        "maternal_deaths_per_10000_births_2010": 0.47770815499890773,
+        "maternal_deaths_per_10000_births_2017": 0.44904566569897325
     },
     {
         "country_name": "Israel",
@@ -22131,7 +22499,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 21.8,
+        "birth_rate_2017": 21.1,
+        "maternal_deaths_per_10000_births_2010": 0.31427892247874895,
+        "maternal_deaths_per_10000_births_2017": 0.27058769786874903
     },
     {
         "country_name": "Switzerland",
@@ -22369,7 +22741,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.3,
+        "birth_rate_2017": 10.3,
+        "maternal_deaths_per_10000_births_2010": 0.5619387255562597,
+        "maternal_deaths_per_10000_births_2017": 0.4495509804450077
     },
     {
         "country_name": "Togo",
@@ -22607,7 +22983,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 37.351,
+        "birth_rate_2017": 33.656,
+        "maternal_deaths_per_10000_births_2010": 34.88310317853662,
+        "maternal_deaths_per_10000_births_2017": 35.19347588492991
     },
     {
         "country_name": "Sierra Leone",
@@ -22845,7 +23225,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 38.887,
+        "birth_rate_2017": 33.568,
+        "maternal_deaths_per_10000_births_2010": 106.18545648067312,
+        "maternal_deaths_per_10000_births_2017": 104.92116225778238
     },
     {
         "country_name": "Hong Kong",
@@ -23064,7 +23448,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.6,
+        "birth_rate_2017": 7.7,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Serbia",
@@ -23302,7 +23690,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 9.4,
+        "birth_rate_2017": 9.2,
+        "maternal_deaths_per_10000_births_2010": 1.5903930083778723,
+        "maternal_deaths_per_10000_births_2017": 1.477242517663241
     },
     {
         "country_name": "Laos",
@@ -23540,7 +23932,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 27.042,
+        "birth_rate_2017": 23.715,
+        "maternal_deaths_per_10000_births_2010": 24.75608515470074,
+        "maternal_deaths_per_10000_births_2017": 17.859251827488794
     },
     {
         "country_name": "Bulgaria",
@@ -23778,7 +24174,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 10.2,
+        "birth_rate_2017": 9,
+        "maternal_deaths_per_10000_births_2010": 1.264264304330939,
+        "maternal_deaths_per_10000_births_2017": 0.9552219188278204
     },
     {
         "country_name": "Nicaragua",
@@ -24016,7 +24416,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 24.105,
+        "birth_rate_2017": 22.09,
+        "maternal_deaths_per_10000_births_2010": 9.210875468567597,
+        "maternal_deaths_per_10000_births_2017": 8.710927995194462
     },
     {
         "country_name": "Libya",
@@ -24254,7 +24658,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 23.562,
+        "birth_rate_2017": 19.898,
+        "maternal_deaths_per_10000_births_2010": 4.59241442844609,
+        "maternal_deaths_per_10000_births_2017": 6.9486290681086755
     },
     {
         "country_name": "Paraguay",
@@ -24492,7 +24900,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.606,
+        "birth_rate_2017": 21.962,
+        "maternal_deaths_per_10000_births_2010": 14.035337968084418,
+        "maternal_deaths_per_10000_births_2017": 12.383058403730457
     },
     {
         "country_name": "Kyrgyzstan",
@@ -24730,7 +25142,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 26.8,
+        "birth_rate_2017": 24.8,
+        "maternal_deaths_per_10000_births_2010": 6.388411319651571,
+        "maternal_deaths_per_10000_births_2017": 5.962204992607368
     },
     {
         "country_name": "El Salvador",
@@ -24968,7 +25384,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 19.428,
+        "birth_rate_2017": 16.974,
+        "maternal_deaths_per_10000_births_2010": 5.398541778443105,
+        "maternal_deaths_per_10000_births_2017": 5.05557069659658
     },
     {
         "country_name": "Singapore",
@@ -25206,7 +25626,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.3,
+        "birth_rate_2017": 8.9,
+        "maternal_deaths_per_10000_births_2010": 0.9097222861302128,
+        "maternal_deaths_per_10000_births_2017": 0.7604869448099756
     },
     {
         "country_name": "Denmark",
@@ -25444,7 +25868,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.4,
+        "birth_rate_2017": 10.6,
+        "maternal_deaths_per_10000_births_2010": 0.4517237334981029,
+        "maternal_deaths_per_10000_births_2017": 0.3238773938288285
     },
     {
         "country_name": "Congo",
@@ -25682,7 +26110,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 38.858,
+        "birth_rate_2017": 33.025,
+        "maternal_deaths_per_10000_births_2010": 36.10508668677655,
+        "maternal_deaths_per_10000_births_2017": 34.516708857251935
     },
     {
         "country_name": "Lebanon",
@@ -25920,7 +26352,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 17.565,
+        "birth_rate_2017": 16.904,
+        "maternal_deaths_per_10000_births_2010": 2.0106714363750138,
+        "maternal_deaths_per_10000_births_2017": 3.551801610617374
     },
     {
         "country_name": "Finland",
@@ -26158,7 +26594,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.4,
+        "birth_rate_2017": 9.1,
+        "maternal_deaths_per_10000_births_2010": 0.47591901198603936,
+        "maternal_deaths_per_10000_births_2017": 0.3974708231971318
     },
     {
         "country_name": "Slovakia",
@@ -26396,7 +26836,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.2,
+        "birth_rate_2017": 10.7,
+        "maternal_deaths_per_10000_births_2010": 0.490879241167191,
+        "maternal_deaths_per_10000_births_2017": 0.5138175234647233
     },
     {
         "country_name": "Norway",
@@ -26634,7 +27078,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.6,
+        "birth_rate_2017": 10.7,
+        "maternal_deaths_per_10000_births_2010": 0.295046463740082,
+        "maternal_deaths_per_10000_births_2017": 0.17371894594042206
     },
     {
         "country_name": "Central African Republic",
@@ -26872,7 +27320,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 43.237,
+        "birth_rate_2017": 41.602,
+        "maternal_deaths_per_10000_births_2010": 73.58787189004035,
+        "maternal_deaths_per_10000_births_2017": 62.98348698837366
     },
     {
         "country_name": "Costa Rica",
@@ -27110,7 +27562,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 16.04,
+        "birth_rate_2017": 13.926,
+        "maternal_deaths_per_10000_births_2010": 2.798917164857331,
+        "maternal_deaths_per_10000_births_2017": 2.6631386869787517
     },
     {
         "country_name": "Liberia",
@@ -27348,7 +27804,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 38.074,
+        "birth_rate_2017": 33.151,
+        "maternal_deaths_per_10000_births_2010": 51.62490958533235,
+        "maternal_deaths_per_10000_births_2017": 59.291327789567234
     },
     {
         "country_name": "New Zealand",
@@ -27586,7 +28046,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.68,
+        "birth_rate_2017": 12.38,
+        "maternal_deaths_per_10000_births_2010": 0.9421596304722871,
+        "maternal_deaths_per_10000_births_2017": 0.797998117662888
     },
     {
         "country_name": "Palestine",
@@ -27824,7 +28288,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 33.727,
+        "birth_rate_2017": 30.973,
+        "maternal_deaths_per_10000_births_2010": 3.6032940983829573,
+        "maternal_deaths_per_10000_births_2017": 2.5085855857483055
     },
     {
         "country_name": "Ireland",
@@ -28062,7 +28530,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 16.5,
+        "birth_rate_2017": 12.9,
+        "maternal_deaths_per_10000_births_2010": 0.4901298298166916,
+        "maternal_deaths_per_10000_births_2017": 0.4701826855799658
     },
     {
         "country_name": "Oman",
@@ -28300,7 +28772,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 23.421,
+        "birth_rate_2017": 20.282,
+        "maternal_deaths_per_10000_births_2010": 1.1277017768919653,
+        "maternal_deaths_per_10000_births_2017": 1.8448310340119904
     },
     {
         "country_name": "Mauritania",
@@ -28538,7 +29014,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 36.772,
+        "birth_rate_2017": 34.425,
+        "maternal_deaths_per_10000_births_2010": 66.49631396731694,
+        "maternal_deaths_per_10000_births_2017": 71.02984625145035
     },
     {
         "country_name": "Kuwait",
@@ -28776,7 +29256,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 21.203,
+        "birth_rate_2017": 14.386,
+        "maternal_deaths_per_10000_births_2010": 0.6489668700585236,
+        "maternal_deaths_per_10000_births_2017": 1.1159033298688092
     },
     {
         "country_name": "Panama",
@@ -29014,7 +29498,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 21.165,
+        "birth_rate_2017": 19.317,
+        "maternal_deaths_per_10000_births_2010": 6.711351393253497,
+        "maternal_deaths_per_10000_births_2017": 4.942453510130481
     },
     {
         "country_name": "Croatia",
@@ -29252,7 +29740,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.8,
+        "birth_rate_2017": 8.9,
+        "maternal_deaths_per_10000_births_2010": 0.996280248214058,
+        "maternal_deaths_per_10000_births_2017": 0.8227707667835198
     },
     {
         "country_name": "Georgia",
@@ -29490,7 +29982,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 15.109,
+        "birth_rate_2017": 14.856,
+        "maternal_deaths_per_10000_births_2010": 3.163491096447316,
+        "maternal_deaths_per_10000_births_2017": 2.5023956563270917
     },
     {
         "country_name": "Uruguay",
@@ -29728,7 +30224,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.264,
+        "birth_rate_2017": 12.579,
+        "maternal_deaths_per_10000_births_2010": 1.635573829983335,
+        "maternal_deaths_per_10000_births_2017": 1.8546645290470056
     },
     {
         "country_name": "Bosnia and Herzegovina",
@@ -29966,7 +30466,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 9.492,
+        "birth_rate_2017": 9.02,
+        "maternal_deaths_per_10000_births_2010": 1.269907880742641,
+        "maternal_deaths_per_10000_births_2017": 1.002269867295661
     },
     {
         "country_name": "Mongolia",
@@ -30204,7 +30708,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 23.349,
+        "birth_rate_2017": 24.222,
+        "maternal_deaths_per_10000_births_2010": 5.7202626711441065,
+        "maternal_deaths_per_10000_births_2017": 4.386212063787833
     },
     {
         "country_name": "Puerto Rico",
@@ -30431,7 +30939,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.3,
+        "birth_rate_2017": 7.3,
+        "maternal_deaths_per_10000_births_2010": 2.434489181008355,
+        "maternal_deaths_per_10000_births_2017": 2.09358658640749
     },
     {
         "country_name": "Moldova",
@@ -30669,7 +31181,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 14.265,
+        "birth_rate_2017": 13.805,
+        "maternal_deaths_per_10000_births_2010": 2.95418580122352,
+        "maternal_deaths_per_10000_births_2017": 1.8785372280702537
     },
     {
         "country_name": "Albania",
@@ -30907,7 +31423,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.92,
+        "birth_rate_2017": 10.87,
+        "maternal_deaths_per_10000_births_2010": 2.048409655711499,
+        "maternal_deaths_per_10000_births_2017": 1.604484366939221
     },
     {
         "country_name": "Jamaica",
@@ -31145,7 +31665,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 15.329,
+        "birth_rate_2017": 12.748,
+        "maternal_deaths_per_10000_births_2010": 9.020575077851063,
+        "maternal_deaths_per_10000_births_2017": 10.568783085126276
     },
     {
         "country_name": "Lithuania",
@@ -31383,7 +31907,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.9,
+        "birth_rate_2017": 10.1,
+        "maternal_deaths_per_10000_births_2010": 1.0744730486003393,
+        "maternal_deaths_per_10000_births_2017": 0.7021309030457663
     },
     {
         "country_name": "Armenia",
@@ -31621,7 +32149,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 13.898,
+        "birth_rate_2017": 13.606,
+        "maternal_deaths_per_10000_births_2010": 3.5904462327063125,
+        "maternal_deaths_per_10000_births_2017": 2.8816081096768005
     },
     {
         "country_name": "Qatar",
@@ -31859,7 +32391,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.803,
+        "birth_rate_2017": 10.228,
+        "maternal_deaths_per_10000_births_2010": 0.6706797196808398,
+        "maternal_deaths_per_10000_births_2017": 0.7083841427172579
     },
     {
         "country_name": "Gambia",
@@ -32097,7 +32633,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 41.084,
+        "birth_rate_2017": 35.743,
+        "maternal_deaths_per_10000_births_2010": 46.33551274977037,
+        "maternal_deaths_per_10000_births_2017": 56.5201045229358
     },
     {
         "country_name": "Botswana",
@@ -32335,7 +32875,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 27.898,
+        "birth_rate_2017": 25.672,
+        "maternal_deaths_per_10000_births_2010": 13.93589343904566,
+        "maternal_deaths_per_10000_births_2017": 12.390761765427003
     },
     {
         "country_name": "Namibia",
@@ -32573,7 +33117,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 30.423,
+        "birth_rate_2017": 29.503,
+        "maternal_deaths_per_10000_births_2010": 22.449398728659865,
+        "maternal_deaths_per_10000_births_2017": 19.064248312351616
     },
     {
         "country_name": "Gabon",
@@ -32811,7 +33359,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 33.177,
+        "birth_rate_2017": 29.713,
+        "maternal_deaths_per_10000_births_2010": 22.35047415388611,
+        "maternal_deaths_per_10000_births_2017": 24.956136405057702
     },
     {
         "country_name": "Lesotho",
@@ -33049,7 +33601,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 28.477,
+        "birth_rate_2017": 27.723,
+        "maternal_deaths_per_10000_births_2010": 54.52552544494396,
+        "maternal_deaths_per_10000_births_2017": 49.60752034769041
     },
     {
         "country_name": "Slovenia",
@@ -33287,7 +33843,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 10.9,
+        "birth_rate_2017": 9.8,
+        "maternal_deaths_per_10000_births_2010": 0.8664624079738941,
+        "maternal_deaths_per_10000_births_2017": 0.48185919627119617
     },
     {
         "country_name": "North Macedonia",
@@ -33525,7 +34085,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.8,
+        "birth_rate_2017": 10.5,
+        "maternal_deaths_per_10000_births_2010": 0.8028671864503766,
+        "maternal_deaths_per_10000_births_2017": 0.9022697904870899
     },
     {
         "country_name": "Guinea-Bissau",
@@ -33763,7 +34327,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Low income"
+        "incomeGroup": "Low income",
+        "birth_rate_2010": 38.427,
+        "birth_rate_2017": 33.285,
+        "maternal_deaths_per_10000_births_2010": 60.6744061560172,
+        "maternal_deaths_per_10000_births_2017": 65.5765058285919
     },
     {
         "country_name": "Latvia",
@@ -34001,7 +34569,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.4,
+        "birth_rate_2017": 10.7,
+        "maternal_deaths_per_10000_births_2010": 3.364674189233247,
+        "maternal_deaths_per_10000_births_2017": 1.9705879986786619
     },
     {
         "country_name": "Kosovo",
@@ -34220,7 +34792,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 19.855,
+        "birth_rate_2017": 12.615,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Equatorial Guinea",
@@ -34458,7 +35034,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 38.674,
+        "birth_rate_2017": 33.507,
+        "maternal_deaths_per_10000_births_2010": 17.82071788317703,
+        "maternal_deaths_per_10000_births_2017": 24.308569890095825
     },
     {
         "country_name": "Trinidad and Tobago",
@@ -34696,7 +35276,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.842,
+        "birth_rate_2017": 12.909,
+        "maternal_deaths_per_10000_births_2010": 6.2133127283172405,
+        "maternal_deaths_per_10000_births_2017": 6.123169052400948
     },
     {
         "country_name": "Bahrain",
@@ -34934,7 +35518,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 15.845,
+        "birth_rate_2017": 14.506,
+        "maternal_deaths_per_10000_births_2010": 1.708624875800111,
+        "maternal_deaths_per_10000_births_2017": 1.3997567122424908
     },
     {
         "country_name": "Estonia",
@@ -35172,7 +35760,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.9,
+        "birth_rate_2017": 10.5,
+        "maternal_deaths_per_10000_births_2010": 1.2641870947344072,
+        "maternal_deaths_per_10000_births_2017": 0.7163726870161641
     },
     {
         "country_name": "Timor",
@@ -35410,7 +36002,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 31.39,
+        "birth_rate_2017": 26.487,
+        "maternal_deaths_per_10000_births_2010": 18.134171550549905,
+        "maternal_deaths_per_10000_births_2017": 15.10177126082841
     },
     {
         "country_name": "Mauritius",
@@ -35648,7 +36244,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 12,
+        "birth_rate_2017": 10.7,
+        "maternal_deaths_per_10000_births_2010": 6.420974498457682,
+        "maternal_deaths_per_10000_births_2017": 5.760874316373247
     },
     {
         "country_name": "Cyprus",
@@ -35886,7 +36486,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.045,
+        "birth_rate_2017": 10.994,
+        "maternal_deaths_per_10000_births_2010": 0.6708631707275724,
+        "maternal_deaths_per_10000_births_2017": 0.7349960788988186
     },
     {
         "country_name": "Eswatini",
@@ -36124,7 +36728,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 30.083,
+        "birth_rate_2017": 26.408,
+        "maternal_deaths_per_10000_births_2010": 42.23224436858403,
+        "maternal_deaths_per_10000_births_2017": 41.694799291683005
     },
     {
         "country_name": "Djibouti",
@@ -36362,7 +36970,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 26.118,
+        "birth_rate_2017": 23.276,
+        "maternal_deaths_per_10000_births_2010": 21.07270527828654,
+        "maternal_deaths_per_10000_births_2017": 20.098830511666293
     },
     {
         "country_name": "Fiji",
@@ -36600,7 +37212,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.664,
+        "birth_rate_2017": 20.55,
+        "maternal_deaths_per_10000_births_2010": 3.3556040749059957,
+        "maternal_deaths_per_10000_births_2017": 3.172113065846485
     },
     {
         "country_name": "Comoros",
@@ -36838,7 +37454,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 33.924,
+        "birth_rate_2017": 31.33,
+        "maternal_deaths_per_10000_births_2010": 30.34907665343194,
+        "maternal_deaths_per_10000_births_2017": 28.506673806680467
     },
     {
         "country_name": "Guyana",
@@ -37076,7 +37696,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 21.705,
+        "birth_rate_2017": 20.958,
+        "maternal_deaths_per_10000_births_2010": 16.18181149668104,
+        "maternal_deaths_per_10000_births_2017": 15.56153409186061
     },
     {
         "country_name": "Bhutan",
@@ -37314,7 +37938,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 19.541,
+        "birth_rate_2017": 14.912,
+        "maternal_deaths_per_10000_births_2010": 21.86059210108475,
+        "maternal_deaths_per_10000_births_2017": 20.833877792006298
     },
     {
         "country_name": "Solomon Islands",
@@ -37552,7 +38180,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 33.641,
+        "birth_rate_2017": 31.743,
+        "maternal_deaths_per_10000_births_2010": 11.18154917597518,
+        "maternal_deaths_per_10000_births_2017": 10.027028258486526
     },
     {
         "country_name": "Macao",
@@ -37771,7 +38403,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.561,
+        "birth_rate_2017": 10.877,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Luxembourg",
@@ -38009,7 +38645,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 11.6,
+        "birth_rate_2017": 10.4,
+        "maternal_deaths_per_10000_births_2010": 0,
+        "maternal_deaths_per_10000_births_2017": 0
     },
     {
         "country_name": "Montenegro",
@@ -38247,7 +38887,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 12,
+        "birth_rate_2017": 11.9,
+        "maternal_deaths_per_10000_births_2010": 1.3247321126721754,
+        "maternal_deaths_per_10000_births_2017": 0
     },
     {
         "country_name": "Suriname",
@@ -38485,7 +39129,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 20.361,
+        "birth_rate_2017": 18.758,
+        "maternal_deaths_per_10000_births_2010": 12.94444808199616,
+        "maternal_deaths_per_10000_births_2017": 11.416145098650608
     },
     {
         "country_name": "Cape Verde",
@@ -38723,7 +39371,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 21.565,
+        "birth_rate_2017": 19.006,
+        "maternal_deaths_per_10000_births_2010": 6.367013273365894,
+        "maternal_deaths_per_10000_births_2017": 5.418209035573063
     },
     {
         "country_name": "Malta",
@@ -38961,7 +39613,11 @@
             }
         ],
         "region": "Middle East & North Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.4,
+        "birth_rate_2017": 9.2,
+        "maternal_deaths_per_10000_births_2010": 0,
+        "maternal_deaths_per_10000_births_2017": 0
     },
     {
         "country_name": "Maldives",
@@ -39199,7 +39855,11 @@
             }
         ],
         "region": "South Asia",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 21.165,
+        "birth_rate_2017": 16.126,
+        "maternal_deaths_per_10000_births_2010": 4.5920617112772675,
+        "maternal_deaths_per_10000_births_2017": 4.821579368432761
     },
     {
         "country_name": "Brunei",
@@ -39437,7 +40097,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 17.128,
+        "birth_rate_2017": 15.544,
+        "maternal_deaths_per_10000_births_2010": 2.643385766236371,
+        "maternal_deaths_per_10000_births_2017": 2.912758067685059
     },
     {
         "country_name": "Bahamas",
@@ -39675,7 +40339,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.858,
+        "birth_rate_2017": 11.653,
+        "maternal_deaths_per_10000_births_2010": 6.623119518951755,
+        "maternal_deaths_per_10000_births_2017": 8.444718940408922
     },
     {
         "country_name": "Belize",
@@ -39913,7 +40581,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.533,
+        "birth_rate_2017": 21.129,
+        "maternal_deaths_per_10000_births_2010": 4.494897055352181,
+        "maternal_deaths_per_10000_births_2017": 3.5951837053901285
     },
     {
         "country_name": "Iceland",
@@ -40151,7 +40823,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 15.4,
+        "birth_rate_2017": 11.9,
+        "maternal_deaths_per_10000_births_2010": 0,
+        "maternal_deaths_per_10000_births_2017": 0
     },
     {
         "country_name": "Vanuatu",
@@ -40389,7 +41065,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 33.056,
+        "birth_rate_2017": 31.484,
+        "maternal_deaths_per_10000_births_2010": 6.7939023100889075,
+        "maternal_deaths_per_10000_births_2017": 6.114105162594123
     },
     {
         "country_name": "Barbados",
@@ -40627,7 +41307,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12.115,
+        "birth_rate_2017": 10.952,
+        "maternal_deaths_per_10000_births_2010": 2.940546017522079,
+        "maternal_deaths_per_10000_births_2017": 3.2528045107998524
     },
     {
         "country_name": "Sao Tome and Principe",
@@ -40865,7 +41549,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 36.873,
+        "birth_rate_2017": 30.41,
+        "maternal_deaths_per_10000_births_2010": 11.16309329538477,
+        "maternal_deaths_per_10000_births_2017": 13.535571821135239
     },
     {
         "country_name": "Samoa",
@@ -41103,7 +41791,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 30.195,
+        "birth_rate_2017": 28.579,
+        "maternal_deaths_per_10000_births_2010": 4.622544488766479,
+        "maternal_deaths_per_10000_births_2017": 3.2559508925738907
     },
     {
         "country_name": "Curacao",
@@ -41322,7 +42014,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 13.6,
+        "birth_rate_2017": 9.7,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Saint Lucia",
@@ -41560,7 +42256,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 12.618,
+        "birth_rate_2017": 12.114,
+        "maternal_deaths_per_10000_births_2010": 8.842853348072953,
+        "maternal_deaths_per_10000_births_2017": 13.816137140414133
     },
     {
         "country_name": "Guam",
@@ -41779,7 +42479,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 21.169,
+        "birth_rate_2017": 17.997,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Kiribati",
@@ -42017,7 +42721,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 30.783,
+        "birth_rate_2017": 28.616,
+        "maternal_deaths_per_10000_births_2010": 7.70570700989546,
+        "maternal_deaths_per_10000_births_2017": 8.289236052754122
     },
     {
         "country_name": "Grenada",
@@ -42255,7 +42963,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 17.927,
+        "birth_rate_2017": 17.191,
+        "maternal_deaths_per_10000_births_2010": 4.510461678480702,
+        "maternal_deaths_per_10000_births_2017": 0
     },
     {
         "country_name": "Micronesia (country)",
@@ -42493,7 +43205,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Lower middle income"
+        "incomeGroup": "Lower middle income",
+        "birth_rate_2010": 23.696,
+        "birth_rate_2017": 21.451,
+        "maternal_deaths_per_10000_births_2010": 11.291899337758109,
+        "maternal_deaths_per_10000_births_2017": 8.31578470957115
     },
     {
         "country_name": "Seychelles",
@@ -42731,7 +43447,11 @@
             }
         ],
         "region": "Sub-Saharan Africa",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 16.8,
+        "birth_rate_2017": 17.2,
+        "maternal_deaths_per_10000_births_2010": 5.639661710531955,
+        "maternal_deaths_per_10000_births_2017": 5.508506787031212
     },
     {
         "country_name": "Tonga",
@@ -42969,7 +43689,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 27.266,
+        "birth_rate_2017": 24.015,
+        "maternal_deaths_per_10000_births_2010": 6.968263590485825,
+        "maternal_deaths_per_10000_births_2017": 3.9557916939035285
     },
     {
         "country_name": "Saint Vincent and the Grenadines",
@@ -43207,7 +43931,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 16.854,
+        "birth_rate_2017": 14.269,
+        "maternal_deaths_per_10000_births_2010": 5.669995030861714,
+        "maternal_deaths_per_10000_births_2017": 6.697182440965964
     },
     {
         "country_name": "Antigua and Barbuda",
@@ -43445,7 +44173,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.715,
+        "birth_rate_2017": 11.789,
+        "maternal_deaths_per_10000_births_2010": 7.333160622734346,
+        "maternal_deaths_per_10000_births_2017": 9.15323255267927
     },
     {
         "country_name": "Andorra",
@@ -43675,7 +44407,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 9.8,
+        "birth_rate_2017": 0,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Dominica",
@@ -43905,7 +44641,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 13.6,
+        "birth_rate_2017": 9.6,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Cayman Islands",
@@ -44124,7 +44864,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 14.8,
+        "birth_rate_2017": 9.9,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Bermuda",
@@ -44343,7 +45087,11 @@
             }
         ],
         "region": "North America",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 12,
+        "birth_rate_2017": 9,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Saint Kitts and Nevis",
@@ -44573,7 +45321,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 0,
+        "birth_rate_2017": 0,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "American Samoa",
@@ -44792,7 +45544,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 18.7,
+        "birth_rate_2017": 16.6,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Turks and Caicos Islands",
@@ -45011,7 +45767,11 @@
             }
         ],
         "region": "Latin America & Caribbean",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 13.702,
+        "birth_rate_2017": 13.308,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Marshall Islands",
@@ -45241,7 +46001,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 0,
+        "birth_rate_2017": 0,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Monaco",
@@ -45471,7 +46235,11 @@
             }
         ],
         "region": "Europe & Central Asia",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 0,
+        "birth_rate_2017": 0,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Palau",
@@ -45701,7 +46469,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 11.9,
+        "birth_rate_2017": 12.4,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Nauru",
@@ -45931,7 +46703,11 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "High income"
+        "incomeGroup": "High income",
+        "birth_rate_2010": 0,
+        "birth_rate_2017": 0,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     },
     {
         "country_name": "Tuvalu",
@@ -46161,6 +46937,10 @@
             }
         ],
         "region": "East Asia & Pacific",
-        "incomeGroup": "Upper middle income"
+        "incomeGroup": "Upper middle income",
+        "birth_rate_2010": 22.32,
+        "birth_rate_2017": 22.999,
+        "maternal_deaths_per_10000_births_2010": null,
+        "maternal_deaths_per_10000_births_2017": null
     }
 ]
