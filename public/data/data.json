@@ -234,7 +234,7 @@
                 "percentage": "24.941177368164062"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.9,
         "birth_rate_2017": 12.64,
@@ -503,7 +503,7 @@
                 "percentage": "14.364641189575195"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 21.438,
         "birth_rate_2017": 17.911,
@@ -772,7 +772,7 @@
                 "percentage": "27.46478843688965"
             }
         ],
-        "region": "North America",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 13,
         "birth_rate_2017": 11.8,
@@ -1041,7 +1041,7 @@
                 "percentage": "20.34782600402832"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 20.158,
         "birth_rate_2017": 17.519,
@@ -1310,7 +1310,7 @@
                 "percentage": "20.175437927246094"
             }
         ],
-        "region": "South Asia",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 32.109,
         "birth_rate_2017": 28.963,
@@ -1579,7 +1579,7 @@
                 "percentage": "14.619882583618164"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 15.492,
         "birth_rate_2017": 14.159,
@@ -1848,7 +1848,7 @@
                 "percentage": "7.222222328186035"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 42.094,
         "birth_rate_2017": 38.689,
@@ -2117,7 +2117,7 @@
                 "percentage": "20.916906356811523"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 21.379,
         "birth_rate_2017": 18.495,
@@ -2386,7 +2386,7 @@
                 "percentage": "15.777777671813965"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 12.5,
         "birth_rate_2017": 11.5,
@@ -2655,7 +2655,7 @@
                 "percentage": "48.20000076293945"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 20.152,
         "birth_rate_2017": 16.947,
@@ -2924,7 +2924,7 @@
                 "percentage": "9.892473220825195"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 8.5,
         "birth_rate_2017": 7.6,
@@ -3193,7 +3193,7 @@
                 "percentage": "38.75685501098633"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 36.528,
         "birth_rate_2017": 33.059,
@@ -3462,7 +3462,7 @@
                 "percentage": "27.960525512695312"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 25.511,
         "birth_rate_2017": 22.664,
@@ -3731,7 +3731,7 @@
                 "percentage": "27.41116714477539"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 27.16,
         "birth_rate_2017": 25.231,
@@ -4000,7 +4000,7 @@
                 "percentage": "26.72064781188965"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 16.906,
         "birth_rate_2017": 16.1,
@@ -4269,7 +4269,7 @@
                 "percentage": "12.800000190734863"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 44.526,
         "birth_rate_2017": 43.251,
@@ -4538,7 +4538,7 @@
                 "percentage": "5.594405651092529"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 17.755,
         "birth_rate_2017": 18.608,
@@ -4807,7 +4807,7 @@
                 "percentage": "17.317487716674805"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 17.746,
         "birth_rate_2017": 17.368,
@@ -5076,7 +5076,7 @@
                 "percentage": "31.170663833618164"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 8.3,
         "birth_rate_2017": 9.5,
@@ -5345,7 +5345,7 @@
                 "percentage": "15.746420860290527"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "South-East Asia",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.926,
         "birth_rate_2017": 9.98,
@@ -5614,7 +5614,7 @@
                 "percentage": "33.846153259277344"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.9,
         "birth_rate_2017": 11.4,
@@ -5883,7 +5883,7 @@
                 "percentage": "39.514732360839844"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.9,
         "birth_rate_2017": 11.5,
@@ -6152,7 +6152,7 @@
                 "percentage": "36.71875"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 39.729,
         "birth_rate_2017": 38.058,
@@ -6421,7 +6421,7 @@
                 "percentage": "35.71428680419922"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.5,
         "birth_rate_2017": 7.6,
@@ -6690,7 +6690,7 @@
                 "percentage": "46.75"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.274,
         "birth_rate_2017": 20.643,
@@ -6959,7 +6959,7 @@
                 "percentage": "16.825397491455078"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 19.409,
         "birth_rate_2017": 18.129,
@@ -7228,7 +7228,7 @@
                 "percentage": "21.776504516601562"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 35.422,
         "birth_rate_2017": 29.755,
@@ -7497,7 +7497,7 @@
                 "percentage": "19"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.4,
         "birth_rate_2017": 7,
@@ -7766,7 +7766,7 @@
                 "percentage": "18.34319496154785"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 16.909,
         "birth_rate_2017": 15.081,
@@ -8035,7 +8035,7 @@
                 "percentage": "44"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.4,
         "birth_rate_2017": 8.4,
@@ -8304,7 +8304,7 @@
                 "percentage": "40.85602951049805"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 17.87,
         "birth_rate_2017": 16.206,
@@ -8573,7 +8573,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Low income",
         "birth_rate_2010": 37.497,
         "birth_rate_2017": 35.669,
@@ -8842,7 +8842,7 @@
                 "percentage": "34.8583869934082"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 43.068,
         "birth_rate_2017": 38.343,
@@ -9111,7 +9111,7 @@
                 "percentage": "20.803783416748047"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 10.8,
         "birth_rate_2017": 9.4,
@@ -9380,7 +9380,7 @@
                 "percentage": "25.75757598876953"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 24.458,
         "birth_rate_2017": 24.755,
@@ -9649,7 +9649,7 @@
                 "percentage": "26.443769454956055"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 34.291,
         "birth_rate_2017": 28.923,
@@ -9918,7 +9918,7 @@
                 "percentage": "27.016128540039062"
             }
         ],
-        "region": "South Asia",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Low income",
         "birth_rate_2010": 40.602,
         "birth_rate_2017": 37.342,
@@ -10187,7 +10187,7 @@
                 "percentage": "28.69565200805664"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.9,
         "birth_rate_2017": 10.6,
@@ -10456,7 +10456,7 @@
                 "percentage": "28.994083404541016"
             }
         ],
-        "region": "North America",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.1,
         "birth_rate_2017": 10.3,
@@ -10725,7 +10725,7 @@
                 "percentage": "20.506328582763672"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 21.402,
         "birth_rate_2017": 19.298,
@@ -10994,7 +10994,7 @@
                 "percentage": "19.867549896240234"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 21.894,
         "birth_rate_2017": 18.903,
@@ -11263,7 +11263,7 @@
                 "percentage": "32"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 22,
         "birth_rate_2017": 22.1,
@@ -11532,7 +11532,7 @@
                 "percentage": "30"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 44.97,
         "birth_rate_2017": 40.81,
@@ -11800,7 +11800,7 @@
                 "percentage": "26.153846740722656"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 21.066,
         "birth_rate_2017": 18.269,
@@ -12069,7 +12069,7 @@
                 "percentage": "14.86486530303955"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 17.002,
         "birth_rate_2017": 16.355,
@@ -12338,7 +12338,7 @@
                 "percentage": "13.090909004211426"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 33.004,
         "birth_rate_2017": 28.978,
@@ -12607,7 +12607,7 @@
                 "percentage": "42.400001525878906"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 42.013,
         "birth_rate_2017": 38.127,
@@ -12876,7 +12876,7 @@
                 "percentage": "32.727272033691406"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 22.589,
         "birth_rate_2017": 21.376,
@@ -13145,7 +13145,7 @@
                 "percentage": "17.880794525146484"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 36.041,
         "birth_rate_2017": 32.477,
@@ -13414,7 +13414,7 @@
                 "percentage": "11.372549057006836"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 38.815,
         "birth_rate_2017": 35.863,
@@ -13683,7 +13683,7 @@
                 "percentage": "33.88888931274414"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 39.958,
         "birth_rate_2017": 37.403,
@@ -13952,7 +13952,7 @@
                 "percentage": "30.46357536315918"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 13.7,
         "birth_rate_2017": 12.6,
@@ -14221,7 +14221,7 @@
                 "percentage": "16.959064483642578"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 48.51,
         "birth_rate_2017": 46.351,
@@ -14490,7 +14490,7 @@
                 "percentage": "5.381165981292725"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 17.553,
         "birth_rate_2017": 15.17,
@@ -14759,7 +14759,7 @@
                 "percentage": "6.299212455749512"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 43.206,
         "birth_rate_2017": 37.898,
@@ -15028,7 +15028,7 @@
                 "percentage": "27.891157150268555"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 46.588,
         "birth_rate_2017": 43.378,
@@ -15297,7 +15297,7 @@
                 "percentage": "21.884498596191406"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.5,
         "birth_rate_2017": 10.8,
@@ -15566,7 +15566,7 @@
                 "percentage": "22.91666603088379"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 40.825,
         "birth_rate_2017": 34.343,
@@ -15835,7 +15835,7 @@
                 "percentage": "22.580644607543945"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.327,
         "birth_rate_2017": 12.13,
@@ -16104,7 +16104,7 @@
                 "percentage": "27.10280418395996"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.53,
         "birth_rate_2017": 21.64,
@@ -16373,7 +16373,7 @@
                 "percentage": "16.76646614074707"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 41.794,
         "birth_rate_2017": 36.601,
@@ -16642,7 +16642,7 @@
                 "percentage": "39.41605758666992"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 21.892,
         "birth_rate_2017": 17.996,
@@ -16911,7 +16911,7 @@
                 "percentage": "33.33333206176758"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.1,
         "birth_rate_2017": 9.9,
@@ -17180,7 +17180,7 @@
                 "percentage": "19.375"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 27.525,
         "birth_rate_2017": 24.791,
@@ -17449,7 +17449,7 @@
                 "percentage": "15.432098388671875"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 48.764,
         "birth_rate_2017": 44.811,
@@ -17718,7 +17718,7 @@
                 "percentage": "24.363636016845703"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Low income",
         "birth_rate_2010": 47.696,
         "birth_rate_2017": 45.457,
@@ -17986,7 +17986,7 @@
                 "percentage": "43.030303955078125"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 37.74,
         "birth_rate_2017": 34.224,
@@ -18255,7 +18255,7 @@
                 "percentage": "20"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 23.669,
         "birth_rate_2017": 21.348,
@@ -18524,7 +18524,7 @@
                 "percentage": "31.851852416992188"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 37.056,
         "birth_rate_2017": 32.516,
@@ -18793,7 +18793,7 @@
                 "percentage": "16.66666603088379"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 39.369,
         "birth_rate_2017": 36.625,
@@ -19062,7 +19062,7 @@
                 "percentage": "61.25"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 34.836,
         "birth_rate_2017": 31.399,
@@ -19331,7 +19331,7 @@
                 "percentage": "7.228915691375732"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 39.332,
         "birth_rate_2017": 38.678,
@@ -19600,7 +19600,7 @@
                 "percentage": "38.21138381958008"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 46.691,
         "birth_rate_2017": 38.124,
@@ -19869,7 +19869,7 @@
                 "percentage": "24.88479232788086"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 18.211,
         "birth_rate_2017": 18.399,
@@ -20138,7 +20138,7 @@
                 "percentage": "46.153846740722656"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 25.749,
         "birth_rate_2017": 22.986,
@@ -20407,7 +20407,7 @@
                 "percentage": "41.33333206176758"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.9,
         "birth_rate_2017": 10.5,
@@ -20676,7 +20676,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 27.527,
         "birth_rate_2017": 24.98,
@@ -20945,7 +20945,7 @@
                 "percentage": "53.223140716552734"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.417,
         "birth_rate_2017": 10.182,
@@ -21213,7 +21213,7 @@
                 "percentage": "27.894737243652344"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.038,
         "birth_rate_2017": 19.993,
@@ -21482,7 +21482,7 @@
                 "percentage": "11.538461685180664"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 28.605,
         "birth_rate_2017": 23.377,
@@ -21751,7 +21751,7 @@
                 "percentage": "22.5"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.2,
         "birth_rate_2017": 10.8,
@@ -22020,7 +22020,7 @@
                 "percentage": "21.66666603088379"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.3,
         "birth_rate_2017": 8.2,
@@ -22289,7 +22289,7 @@
                 "percentage": "46.99140548706055"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.3,
         "birth_rate_2017": 11.5,
@@ -22558,7 +22558,7 @@
                 "percentage": "40"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.6,
         "birth_rate_2017": 8.4,
@@ -22827,7 +22827,7 @@
                 "percentage": "17.355371475219727"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 18.3,
         "birth_rate_2017": 14.6,
@@ -23096,7 +23096,7 @@
                 "percentage": "21.09375"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 25.392,
         "birth_rate_2017": 22.16,
@@ -23365,7 +23365,7 @@
                 "percentage": "12.060301780700684"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9,
         "birth_rate_2017": 9.7,
@@ -23634,7 +23634,7 @@
                 "percentage": "0"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 30.445,
         "birth_rate_2017": 27.216,
@@ -23902,7 +23902,7 @@
                 "percentage": "40"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.4,
         "birth_rate_2017": 10.8,
@@ -24171,7 +24171,7 @@
                 "percentage": "23.809524536132812"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 31.045,
         "birth_rate_2017": 28.932,
@@ -24440,7 +24440,7 @@
                 "percentage": "50"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 13.665,
         "birth_rate_2017": 10.62,
@@ -24709,7 +24709,7 @@
                 "percentage": "39.344261169433594"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.4,
         "birth_rate_2017": 10,
@@ -24978,7 +24978,7 @@
                 "percentage": "27.5"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 21.8,
         "birth_rate_2017": 21.1,
@@ -25247,7 +25247,7 @@
                 "percentage": "41.5"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.3,
         "birth_rate_2017": 10.3,
@@ -25516,7 +25516,7 @@
                 "percentage": "18.681318283081055"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 37.351,
         "birth_rate_2017": 33.656,
@@ -25785,7 +25785,7 @@
                 "percentage": "12.328766822814941"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 38.887,
         "birth_rate_2017": 33.568,
@@ -26035,7 +26035,7 @@
                 "percentage": ""
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.6,
         "birth_rate_2017": 7.7,
@@ -26299,7 +26299,7 @@
                 "percentage": "38.79999923706055"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 9.4,
         "birth_rate_2017": 9.2,
@@ -26568,7 +26568,7 @@
                 "percentage": "27.51677894592285"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 27.042,
         "birth_rate_2017": 23.715,
@@ -26837,7 +26837,7 @@
                 "percentage": "26.66666603088379"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 10.2,
         "birth_rate_2017": 9,
@@ -27106,7 +27106,7 @@
                 "percentage": "47.25274658203125"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 24.105,
         "birth_rate_2017": 22.09,
@@ -27375,7 +27375,7 @@
                 "percentage": "15.957447052001953"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 23.562,
         "birth_rate_2017": 19.898,
@@ -27644,7 +27644,7 @@
                 "percentage": "16.25"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.606,
         "birth_rate_2017": 21.962,
@@ -27913,7 +27913,7 @@
                 "percentage": "16.521739959716797"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 26.8,
         "birth_rate_2017": 24.8,
@@ -28182,7 +28182,7 @@
                 "percentage": "33.33333206176758"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 19.428,
         "birth_rate_2017": 16.974,
@@ -28451,7 +28451,7 @@
                 "percentage": "29.473684310913086"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.3,
         "birth_rate_2017": 8.9,
@@ -28720,7 +28720,7 @@
                 "percentage": "39.6648063659668"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.4,
         "birth_rate_2017": 10.6,
@@ -28989,7 +28989,7 @@
                 "percentage": "11.258277893066406"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 38.858,
         "birth_rate_2017": 33.025,
@@ -29258,7 +29258,7 @@
                 "percentage": "4.6875"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 17.565,
         "birth_rate_2017": 16.904,
@@ -29527,7 +29527,7 @@
                 "percentage": "46"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.4,
         "birth_rate_2017": 9.1,
@@ -29796,7 +29796,7 @@
                 "percentage": "22.66666603088379"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.2,
         "birth_rate_2017": 10.7,
@@ -30065,7 +30065,7 @@
                 "percentage": "41.42012023925781"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.6,
         "birth_rate_2017": 10.7,
@@ -30334,7 +30334,7 @@
                 "percentage": "8.571428298950195"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 43.237,
         "birth_rate_2017": 41.602,
@@ -30603,7 +30603,7 @@
                 "percentage": "45.614036560058594"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 16.04,
         "birth_rate_2017": 13.926,
@@ -30872,7 +30872,7 @@
                 "percentage": "12.328766822814941"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 38.074,
         "birth_rate_2017": 33.151,
@@ -31141,7 +31141,7 @@
                 "percentage": "48.33333206176758"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.68,
         "birth_rate_2017": 12.38,
@@ -31410,7 +31410,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 33.727,
         "birth_rate_2017": 30.973,
@@ -31679,7 +31679,7 @@
                 "percentage": "22.5"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 16.5,
         "birth_rate_2017": 12.9,
@@ -31948,7 +31948,7 @@
                 "percentage": "2.3255813121795654"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 23.421,
         "birth_rate_2017": 20.282,
@@ -32216,7 +32216,7 @@
                 "percentage": "20.261438369750977"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 36.772,
         "birth_rate_2017": 34.425,
@@ -32485,7 +32485,7 @@
                 "percentage": "6.349206447601318"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 21.203,
         "birth_rate_2017": 14.386,
@@ -32754,7 +32754,7 @@
                 "percentage": "22.53521156311035"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 21.165,
         "birth_rate_2017": 19.317,
@@ -33023,7 +33023,7 @@
                 "percentage": "31.12582778930664"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.8,
         "birth_rate_2017": 8.9,
@@ -33292,7 +33292,7 @@
                 "percentage": "20.66666603088379"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 15.109,
         "birth_rate_2017": 14.856,
@@ -33561,7 +33561,7 @@
                 "percentage": "21.212121963500977"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.264,
         "birth_rate_2017": 12.579,
@@ -33830,7 +33830,7 @@
                 "percentage": "26.190475463867188"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 9.492,
         "birth_rate_2017": 9.02,
@@ -34099,7 +34099,7 @@
                 "percentage": "17.33333396911621"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 23.349,
         "birth_rate_2017": 24.222,
@@ -34357,7 +34357,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.3,
         "birth_rate_2017": 7.3,
@@ -34625,7 +34625,7 @@
                 "percentage": "24.75247573852539"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 14.265,
         "birth_rate_2017": 13.805,
@@ -34894,7 +34894,7 @@
                 "percentage": "29.508195877075195"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.92,
         "birth_rate_2017": 10.87,
@@ -35163,7 +35163,7 @@
                 "percentage": "28.571428298950195"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 15.329,
         "birth_rate_2017": 12.748,
@@ -35432,7 +35432,7 @@
                 "percentage": "26.950355529785156"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.9,
         "birth_rate_2017": 10.1,
@@ -35701,7 +35701,7 @@
                 "percentage": "23.484848022460938"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 13.898,
         "birth_rate_2017": 13.606,
@@ -35970,7 +35970,7 @@
                 "percentage": "9.756097793579102"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.803,
         "birth_rate_2017": 10.228,
@@ -36239,7 +36239,7 @@
                 "percentage": "8.620689392089844"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 41.084,
         "birth_rate_2017": 35.743,
@@ -36507,7 +36507,7 @@
                 "percentage": "10.769230842590332"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 27.898,
         "birth_rate_2017": 25.672,
@@ -36776,7 +36776,7 @@
                 "percentage": "43.269229888916016"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 30.423,
         "birth_rate_2017": 29.503,
@@ -37045,7 +37045,7 @@
                 "percentage": "14.788732528686523"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 33.177,
         "birth_rate_2017": 29.713,
@@ -37314,7 +37314,7 @@
                 "percentage": "23.33333396911621"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 28.477,
         "birth_rate_2017": 27.723,
@@ -37583,7 +37583,7 @@
                 "percentage": "27.77777862548828"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 10.9,
         "birth_rate_2017": 9.8,
@@ -37852,7 +37852,7 @@
                 "percentage": "39.16666793823242"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.8,
         "birth_rate_2017": 10.5,
@@ -38121,7 +38121,7 @@
                 "percentage": "13.72549057006836"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Low income",
         "birth_rate_2010": 38.427,
         "birth_rate_2017": 33.285,
@@ -38389,7 +38389,7 @@
                 "percentage": "30"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.4,
         "birth_rate_2017": 10.7,
@@ -38639,7 +38639,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 19.855,
         "birth_rate_2017": 12.615,
@@ -38897,7 +38897,7 @@
                 "percentage": "21"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 38.674,
         "birth_rate_2017": 33.507,
@@ -39165,7 +39165,7 @@
                 "percentage": "26.190475463867188"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.842,
         "birth_rate_2017": 12.909,
@@ -39434,7 +39434,7 @@
                 "percentage": "15"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "High income",
         "birth_rate_2010": 15.845,
         "birth_rate_2017": 14.506,
@@ -39703,7 +39703,7 @@
                 "percentage": "28.712871551513672"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.9,
         "birth_rate_2017": 10.5,
@@ -39972,7 +39972,7 @@
                 "percentage": "38.46154022216797"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 31.39,
         "birth_rate_2017": 26.487,
@@ -40240,7 +40240,7 @@
                 "percentage": "20"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 12,
         "birth_rate_2017": 10.7,
@@ -40509,7 +40509,7 @@
                 "percentage": "19.64285659790039"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.045,
         "birth_rate_2017": 10.994,
@@ -40778,7 +40778,7 @@
                 "percentage": "9.589040756225586"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 30.083,
         "birth_rate_2017": 26.408,
@@ -41047,7 +41047,7 @@
                 "percentage": "26.153846740722656"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Eastern Mediterranean",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 26.118,
         "birth_rate_2017": 23.276,
@@ -41315,7 +41315,7 @@
                 "percentage": "19.60784339904785"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.664,
         "birth_rate_2017": 20.55,
@@ -41583,7 +41583,7 @@
                 "percentage": "16.66666603088379"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 33.924,
         "birth_rate_2017": 31.33,
@@ -41852,7 +41852,7 @@
                 "percentage": "35.71428680419922"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 21.705,
         "birth_rate_2017": 20.958,
@@ -42120,7 +42120,7 @@
                 "percentage": "14.893616676330566"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 19.541,
         "birth_rate_2017": 14.912,
@@ -42389,7 +42389,7 @@
                 "percentage": "6.382978916168213"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 33.641,
         "birth_rate_2017": 31.743,
@@ -42638,7 +42638,7 @@
                 "percentage": ""
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.561,
         "birth_rate_2017": 10.877,
@@ -42901,7 +42901,7 @@
                 "percentage": "30"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 11.6,
         "birth_rate_2017": 10.4,
@@ -43170,7 +43170,7 @@
                 "percentage": "22.22222137451172"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 12,
         "birth_rate_2017": 11.9,
@@ -43439,7 +43439,7 @@
                 "percentage": "29.41176414489746"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 20.361,
         "birth_rate_2017": 18.758,
@@ -43707,7 +43707,7 @@
                 "percentage": "25"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 21.565,
         "birth_rate_2017": 19.006,
@@ -43975,7 +43975,7 @@
                 "percentage": "13.432835578918457"
             }
         ],
-        "region": "Middle East & North Africa",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.4,
         "birth_rate_2017": 9.2,
@@ -44244,7 +44244,7 @@
                 "percentage": "4.597701072692871"
             }
         ],
-        "region": "South Asia",
+        "region": "South-East Asia",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 21.165,
         "birth_rate_2017": 16.126,
@@ -44512,7 +44512,7 @@
                 "percentage": "9.090909004211426"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 17.128,
         "birth_rate_2017": 15.544,
@@ -44780,7 +44780,7 @@
                 "percentage": "12.820512771606445"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.858,
         "birth_rate_2017": 11.653,
@@ -45048,7 +45048,7 @@
                 "percentage": "9.677419662475586"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.533,
         "birth_rate_2017": 21.129,
@@ -45316,7 +45316,7 @@
                 "percentage": "38.095237731933594"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 15.4,
         "birth_rate_2017": 11.9,
@@ -45585,7 +45585,7 @@
                 "percentage": "0"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 33.056,
         "birth_rate_2017": 31.484,
@@ -45854,7 +45854,7 @@
                 "percentage": "20"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 12.115,
         "birth_rate_2017": 10.952,
@@ -46122,7 +46122,7 @@
                 "percentage": "23.636363983154297"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 36.873,
         "birth_rate_2017": 30.41,
@@ -46390,7 +46390,7 @@
                 "percentage": "10"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 30.195,
         "birth_rate_2017": 28.579,
@@ -46639,7 +46639,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 13.6,
         "birth_rate_2017": 9.7,
@@ -46902,7 +46902,7 @@
                 "percentage": "16.66666603088379"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 12.618,
         "birth_rate_2017": 12.114,
@@ -47151,7 +47151,7 @@
                 "percentage": ""
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 21.169,
         "birth_rate_2017": 17.997,
@@ -47419,7 +47419,7 @@
                 "percentage": "8.88888931274414"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 30.783,
         "birth_rate_2017": 28.616,
@@ -47687,7 +47687,7 @@
                 "percentage": "46.66666793823242"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 17.927,
         "birth_rate_2017": 17.191,
@@ -47955,7 +47955,7 @@
                 "percentage": "0"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Lower middle income",
         "birth_rate_2010": 23.696,
         "birth_rate_2017": 21.451,
@@ -48223,7 +48223,7 @@
                 "percentage": "24.24242401123047"
             }
         ],
-        "region": "Sub-Saharan Africa",
+        "region": "Africa",
         "incomeGroup": "High income",
         "birth_rate_2010": 16.8,
         "birth_rate_2017": 17.2,
@@ -48491,7 +48491,7 @@
                 "percentage": "7.407407283782959"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 27.266,
         "birth_rate_2017": 24.015,
@@ -48759,7 +48759,7 @@
                 "percentage": "18.18181800842285"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 16.854,
         "birth_rate_2017": 14.269,
@@ -49027,7 +49027,7 @@
                 "percentage": "11.11111068725586"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.715,
         "birth_rate_2017": 11.789,
@@ -49287,7 +49287,7 @@
                 "percentage": "46.42856979370117"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 9.8,
         "birth_rate_2017": 0,
@@ -49547,7 +49547,7 @@
                 "percentage": "34.375"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 13.6,
         "birth_rate_2017": 9.6,
@@ -49796,7 +49796,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 14.8,
         "birth_rate_2017": 9.9,
@@ -50040,7 +50040,7 @@
                 "percentage": ""
             }
         ],
-        "region": "North America",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 12,
         "birth_rate_2017": 9,
@@ -50300,7 +50300,7 @@
                 "percentage": "25"
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 0,
         "birth_rate_2017": 0,
@@ -50544,7 +50544,7 @@
                 "percentage": ""
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 18.7,
         "birth_rate_2017": 16.6,
@@ -50793,7 +50793,7 @@
                 "percentage": ""
             }
         ],
-        "region": "Latin America & Caribbean",
+        "region": "Americas",
         "incomeGroup": "High income",
         "birth_rate_2010": 13.702,
         "birth_rate_2017": 13.308,
@@ -51048,7 +51048,7 @@
                 "percentage": "6.060606002807617"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 0,
         "birth_rate_2017": 0,
@@ -51308,7 +51308,7 @@
                 "percentage": "33.33333206176758"
             }
         ],
-        "region": "Europe & Central Asia",
+        "region": "Europe",
         "incomeGroup": "High income",
         "birth_rate_2010": 0,
         "birth_rate_2017": 0,
@@ -51563,7 +51563,7 @@
                 "percentage": "6.25"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 11.9,
         "birth_rate_2017": 12.4,
@@ -51818,7 +51818,7 @@
                 "percentage": "10.526315689086914"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "High income",
         "birth_rate_2010": 0,
         "birth_rate_2017": 0,
@@ -52073,7 +52073,7 @@
                 "percentage": "6.25"
             }
         ],
-        "region": "East Asia & Pacific",
+        "region": "Western Pacific",
         "incomeGroup": "Upper middle income",
         "birth_rate_2010": 22.32,
         "birth_rate_2017": 22.999,

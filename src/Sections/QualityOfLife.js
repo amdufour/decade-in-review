@@ -41,7 +41,6 @@ const QualityOfLife = props => {
   // Data
   const localData = JSON.parse(JSON.stringify(props.dataByCountry));
   const dataToPlot = localData.filter(c => !c.has_missing_life_quality_data);
-  console.log("dataToPlot", dataToPlot);
   dataToPlot.forEach(d => {
     const lifeQualityFactors = [];
     lifeQualityFactors.push({ 
@@ -83,7 +82,7 @@ const QualityOfLife = props => {
     d["life_quality_factors"] = lifeQualityFactors;
   });
 
-  const defaultRegionLabel = "Europe & Central Asia";
+  const defaultRegionLabel = "Europe";
   const defaultData = dataToPlot.filter(c => c.region === defaultRegionLabel);
 
   const sortData = (d) => {

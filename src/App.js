@@ -21,6 +21,22 @@ function App() {
       console.log("data world", dataWorld);
 
       // dataByCountry.forEach(d => {
+      //   console.log(d.country_code)
+      //   if (d.country_code === "HKG" || d.country_code === "MAC" || d.country_code === "GUM" || d.country_code === "ASM") {
+      //     d.region = "Western Pacific";
+      //   } else if (d.country_code === "PSE") {
+      //     d.region = "Eastern Mediterranean";
+      //   } else if (d.country_code === "PRI" || d.country_code === "CUW" || d.country_code === "CYM" || d.country_code === "BMU" || d.country_code === "TCA") {
+      //     d.region = "Americas";
+      //   } else if (d.country_code === "XKX") {
+      //     d.region = "Europe";
+      //   } else {
+      //     const relatedData = regions.find(r => r["Code"] === d.country_code);
+      //     d.region = relatedData["WHO region"]
+      //   }
+      // })
+
+      // dataByCountry.forEach(d => {
       //   const relatedData = newData.find(c => c["Country Code"] === d.country_code);
       //   const access = {
       //     "2010": +relatedData["2010"],
