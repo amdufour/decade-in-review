@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <footer>
-      <div>Design and Development: <a href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></div>
+      <div className="container">
+        <div className="credits">Design and Development: <a href="https://www.delightfuldata.art/">Anne-Marie Dufour</a></div>
+      </div>
     </footer>
   );
 };
