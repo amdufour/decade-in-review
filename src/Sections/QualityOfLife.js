@@ -75,8 +75,8 @@ const QualityOfLife = props => {
     lifeQualityFactors.push({ 
       index: 4, 
       factor: "air_pollution_exposure", 
-      valueFirstYear: d.population_exposed_to_levels_exceeding_WHO_guideline["2010"],
-      valueLastYear: d.population_exposed_to_levels_exceeding_WHO_guideline["2017"],
+      valueFirstYear: 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2010"],
+      valueLastYear: 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2017"],
       hasImproved: d.population_exposed_to_levels_exceeding_WHO_guideline.has_improved
     });
 
