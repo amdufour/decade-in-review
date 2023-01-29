@@ -14,18 +14,18 @@
     background-color: transparent;
     border: none;
     border-radius: 0;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $cyan;
   }
   .select__single-value,
   .select__input {
-    color: $white !important;
+    color: $text !important;
   }
   .select__indicator-separator {
     display: none;
   }
   .select__indicator {
     padding: 0;
-    color: $white;
+    color: $cyan;
     svg {
       width: 35px;
       height: auto;
@@ -33,5 +33,18 @@
   }
   .select__menu {
     color: $text;
+  }
+}
+
+.section-explore .select {
+  .select__control {
+    border-bottom-color: $white;
+  }
+  .select__single-value,
+  .select__input {
+    color: $white !important;
+  }
+  .select__indicator {
+    color: $white;
   }
 }
