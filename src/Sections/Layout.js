@@ -5,6 +5,7 @@ import Introduction from "./Introduction";
 import Health from "./Health";
 import Education from "./Education";
 import QualityOfLife from "./QualityOfLife";
+import Footer from "./Footer";
 
 const Layout = props => {
   const margin = {top: 30, right: 20, bottom: 50, left: 60};
@@ -16,11 +17,6 @@ const Layout = props => {
         <Introduction />
       </header>
       <main>
-        {/* <QualityOfLife
-          dataByCountry={props.dataByCountry}
-          dataWorld={props.dataWorld}
-        />
-         */}
         <Education 
           dataByCountry={props.dataByCountry}
           dataWorld={props.dataWorld}
@@ -32,7 +28,12 @@ const Layout = props => {
           margin={margin}
           years={years}
         />
+        <QualityOfLife
+          dataByCountry={props.dataByCountry}
+          dataWorld={props.dataWorld}
+        />
       </main>
+      <Footer />
     </Fragment>
   );
 };

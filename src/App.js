@@ -9,43 +9,6 @@ function App() {
   const [dataByCountry, setDataByCountry] = useState([]);
   const [dataWorld, setDataWorld] = useState([]);
 
-  // useEffect(() => {
-  //   let mounted = true;
-  //   Promise.all([
-  //     d3.json("/data/data.json"),
-  //     d3.csv("/data/literacy_female.csv"),
-  //     d3.csv("/data/literacy_male.csv"),
-  //   ]).then(data => {
-  //     console.log("data", data);
-
-  //     const fullData = data[0];
-      
-  //     const literacyFemale = data[1].find(d => d["Country Name"] === "World");
-  //     const literacyMale = data[2].find(d => d["Country Name"] === "World");
-  //     console.log(literacyFemale)
-  //     console.log(literacyMale)
-
-  //     const dataWorld = [];
-  //     const literacy = { id: "literacy", timeline: [] };
-  //     const years = d3.range(1976, 2021);
-  //     years.forEach(y => {
-  //       const yearData = { 
-  //         year: y, 
-  //         literacy_female: +literacyFemale[y.toString()],
-  //         literacy_male: +literacyMale[y.toString()]
-  //       }
-  //       literacy.timeline.push(yearData)
-  //     });
-  //     dataWorld.push(literacy)
-  //     console.log("dataWorld", dataWorld)
-
-      
-  //   });
-
-  //   return () => mounted = false;
-  // }, []);
-
-  
   useEffect(() => {
     let mounted = true;
     Promise.all([
@@ -54,9 +17,55 @@ function App() {
     ]).then(data => {
       const dataByCountry = data[0];
       const dataWorld = data[1];
-      const birthRate = data[2];
       console.log("data by country", dataByCountry);
       console.log("data world", dataWorld);
+
+      // dataByCountry.forEach(d => {
+      //   const relatedData = newData.find(c => c["Country Code"] === d.country_code);
+      //   const access = {
+      //     "2010": +relatedData["2010"],
+      //     "2020": +relatedData["2020"],
+      //     has_improved: +relatedData["2020"] > +relatedData["2010"] 
+      //       ? "positive" 
+      //       : +relatedData["2020"] < +relatedData["2010"]
+      //         ? "negative"
+      //         : "equal"
+      //   };
+      //   d["literacy_adult"] = access;
+
+
+      //   if (access["2020"] === 0) {
+      //     d["has_missing_life_quality_data"] = true;
+      //   }
+      // });
+
+      // dataByCountry.forEach(d => {
+      //   const data2010 = newData.find(c => c["Code"] === d.country_code && c["Year"] === "2010");
+      //   const data2017 = newData.find(c => c["Code"] === d.country_code && c["Year"] === "2017");
+      //   if (data2010 && data2017) {
+      //     const access = {
+      //       "2010": +data2010.population_exposed_to_levels_exceeding_WHO_guideline,
+      //       "2017": +data2017.population_exposed_to_levels_exceeding_WHO_guideline,
+      //       has_improved: +data2017.population_exposed_to_levels_exceeding_WHO_guideline > +data2010.population_exposed_to_levels_exceeding_WHO_guideline 
+      //         ? "negative" 
+      //         : +data2017.population_exposed_to_levels_exceeding_WHO_guideline < +data2010.population_exposed_to_levels_exceeding_WHO_guideline
+      //           ? "positive"
+      //           : "equal"
+      //     };
+      //     d["population_exposed_to_levels_exceeding_WHO_guideline"] = access;
+      //   } else {
+      //     d["has_missing_life_quality_data"] = true;
+      //   }
+      // })
+
+      // dataByCountry.forEach(d => {
+      //   const data2019 = newData.find(c => c["ISO"] === d.country_code);
+      //   if (data2019) {
+      //     d["happy_planet_index_2019"] = +data2019["HPI"].replace(",", ".");
+      //   } else {
+      //     d["has_missing_life_quality_data"] = true;
+      //   }
+      // })
 
       if (mounted) {
         setTimeout(() => {

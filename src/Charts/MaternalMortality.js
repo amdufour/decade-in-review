@@ -25,20 +25,17 @@ const MaternalMortality = props => {
   localData.forEach(d => {
     d["mortality2010"] = d.maternal_deaths_per_10000_births_2010;
     d["mortality2017"] = d.maternal_deaths_per_10000_births_2017;
-    d["fill"] = "#AAAFAF";
   });
   const filteredData = localData.filter(d => d[`${props.type}_diff`]);
-console.log(filteredData.filter(d => d[`${props.type}_diff`] <= 0))
+
   const dataDecrease = filteredData.filter(d => d[`${props.type}_diff`] <= 0);
   dataDecrease.sort((a, b) => a[`${props.type}_diff`] - b[`${props.type}_diff`]);
   const topDecrease = dataDecrease.slice(0, 5);
-  topDecrease.forEach(d => d.fill = "#059799");
   const decreaseRemain = dataDecrease.splice(5);
 
   const dataIncrease = filteredData.filter(d => d[`${props.type}_diff`] > 0);
   dataIncrease.sort((a, b) => b[`${props.type}_diff`] - a[`${props.type}_diff`]);
   const topIncrease = dataIncrease.slice(0, 5);
-  topIncrease.forEach(d => d.fill = "#E27D5F");
   const increaseRemain = dataIncrease.splice(5);
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
@@ -168,15 +165,21 @@ console.log(filteredData.filter(d => d[`${props.type}_diff`] <= 0))
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
       
       if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
+        const color = d.mortality2017 <= d.mortality2010 ? "#059799" : "#E27D5F";
+        
         d3.select(".maternity-slope-others line")
           .attr("y1", yScaleSlope(d.mortality2010))
-          .attr("y2", yScaleSlope(d.mortality2017));
+          .attr("y2", yScaleSlope(d.mortality2017))
+          .attr("stroke", color);
         d3.select(".maternity-slope-others .other-circle-2010")
-          .attr("cy", yScaleSlope(d.mortality2010));
+          .attr("cy", yScaleSlope(d.mortality2010))
+          .attr("fill", color);
         d3.select(".maternity-slope-others .other-circle-2020")
-          .attr("cy", yScaleSlope(d.mortality2017));
+          .attr("cy", yScaleSlope(d.mortality2017))
+          .attr("fill", color);
         d3.select(".maternity-slope-others text")
           .attr("y", yScaleSlope(d.mortality2010))
+          .attr("fill", color)
           .text(d.country_name);
         d3.select(".maternity-slope-others")
           .attr("transform", "translate(0, 0)")
@@ -220,7 +223,7 @@ console.log(filteredData.filter(d => d[`${props.type}_diff`] <= 0))
         .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
         .attr("cy", d => yScale(d.mortality2017))
         .attr("r", 2.5)
-        .attr("fill", d => d.fill)
+        .attr("fill", d => d.mortality2017 <= d.mortality2010 ? "#059799" : "#E27D5F")
         .attr("stroke", "#F9FFFF")
         .attr("stroke-width", 0.5)
         .on("mouseenter", (e, d) => {

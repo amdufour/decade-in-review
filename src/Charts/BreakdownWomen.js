@@ -5,17 +5,9 @@ import * as d3 from "d3";
 import Heatmap from "./Heatmap";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 import Axis from "../ChartComponents.js/Axis";
+import { regions } from "../helper/helper";
 
 // Data
-const regions = [
-  { value: "north-america", label: "North America" },
-  { value: "latin-america", label: "Latin America & Caribbean" },
-  { value: "europe", label: "Europe & Central Asia" },
-  { value: "middle-east", label: "Middle East & North Africa" },
-  { value: "africa", label: "Sub-Saharan Africa" },
-  { value: "east-asia", label: "East Asia & Pacific" },
-  { value: "south-asia", label: "South Asia" },
-];
 const topics = [
   { value: "literacy_women", label: "Women's literacy" },
   { value: "secondary_school_enrollment_girls", label: "Girls enrolled in high school" },
@@ -109,7 +101,7 @@ const BreakdownWomen = props => {
             </div>
           </div>
         </div>
-        <div className="chart-help">Pass your cursor over a section to reveal additional information.</div>
+        <div className="chart-help">Pass your cursor over a section to reveal the numbers.</div>
         <div className="heatmap-axis">
           <ChartContainer
             width={width}

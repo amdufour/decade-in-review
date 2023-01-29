@@ -168,15 +168,21 @@ const Mortality = props => {
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
       
       if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
+        const color = d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#E27D5F";
+        
         d3.select(".slope-others line")
           .attr("y1", yScaleSlope(d[props.type][0].mortality_rate))
-          .attr("y2", yScaleSlope(d.mortality2020));
+          .attr("y2", yScaleSlope(d.mortality2020))
+          .attr("stroke", color);
         d3.select(".slope-others .other-circle-2010")
-          .attr("cy", yScaleSlope(d[props.type][0].mortality_rate));
+          .attr("cy", yScaleSlope(d[props.type][0].mortality_rate))
+          .attr("fill", color);
         d3.select(".slope-others .other-circle-2020")
-          .attr("cy", yScaleSlope(d.mortality2020));
+          .attr("cy", yScaleSlope(d.mortality2020))
+          .attr("fill", color);
         d3.select(".slope-others text")
           .attr("y", yScaleSlope(d[props.type][0].mortality_rate))
+          .attr("fill", color)
           .text(d.country_name);
         d3.select(".slope-others")
           .attr("transform", "translate(0, 0)")
@@ -220,7 +226,7 @@ const Mortality = props => {
         .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
         .attr("cy", d => yScale(d.mortality2020))
         .attr("r", 2.5)
-        .attr("fill", d => d.fill)
+        .attr("fill", d => d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#E27D5F")
         .attr("stroke", "#F9FFFF")
         .attr("stroke-width", 0.5)
         .on("mouseenter", (e, d) => {
