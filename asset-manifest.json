@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b59e274d.css",
+    "main.js": "/static/js/main.12564cae.js",
+    "static/media/WGS-summit-logo.svg": "/static/media/WGS-summit-logo.f5dfe2eb6efb65b0dd05b205b2bb078c.svg",
+    "static/media/quality_of_life-visuals.svg": "/static/media/quality_of_life-visuals.a1cc54c0695a9c84fe0fe1249de238b1.svg",
+    "static/media/quality_of_life-axis.svg": "/static/media/quality_of_life-axis.979c62ad842c6f28ddf0b3e2ef74d6f6.svg",
+    "static/media/magic.svg": "/static/media/magic.26b1b5c6b6c6152a65ca.svg",
+    "index.html": "/index.html",
+    "static/media/asterisk-purple.svg": "/static/media/asterisk-purple.98c4a7a7749606f812ab.svg",
+    "static/media/asterisk.svg": "/static/media/asterisk.f09476671745612e5215.svg",
+    "static/media/logo.svg": "/static/media/logo.d65cba53c25c972236a5.svg",
+    "main.b59e274d.css.map": "/static/css/main.b59e274d.css.map",
+    "main.12564cae.js.map": "/static/js/main.12564cae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b59e274d.css",
+    "static/js/main.12564cae.js"
+  ]
+}
