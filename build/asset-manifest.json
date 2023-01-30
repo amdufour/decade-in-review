@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/decade-in-review/static/css/main.cb8e82f0.css",
-    "main.js": "/decade-in-review/static/js/main.b83bddee.js",
+    "main.js": "/decade-in-review/static/js/main.727e0e42.js",
     "static/media/WGS-summit-logo.svg": "/decade-in-review/static/media/WGS-summit-logo.f5dfe2eb6efb65b0dd05b205b2bb078c.svg",
     "static/media/quality_of_life-visuals.svg": "/decade-in-review/static/media/quality_of_life-visuals.a1cc54c0695a9c84fe0fe1249de238b1.svg",
     "static/media/quality_of_life-axis.svg": "/decade-in-review/static/media/quality_of_life-axis.979c62ad842c6f28ddf0b3e2ef74d6f6.svg",
@@ -11,10 +11,10 @@
     "static/media/asterisk.svg": "/decade-in-review/static/media/asterisk.f09476671745612e5215.svg",
     "static/media/logo.svg": "/decade-in-review/static/media/logo.d65cba53c25c972236a5.svg",
     "main.cb8e82f0.css.map": "/decade-in-review/static/css/main.cb8e82f0.css.map",
-    "main.b83bddee.js.map": "/decade-in-review/static/js/main.b83bddee.js.map"
+    "main.727e0e42.js.map": "/decade-in-review/static/js/main.727e0e42.js.map"
   },
   "entrypoints": [
     "static/css/main.cb8e82f0.css",
-    "static/js/main.b83bddee.js"
+    "static/js/main.727e0e42.js"
   ]
 }
