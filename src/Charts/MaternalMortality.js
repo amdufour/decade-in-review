@@ -397,7 +397,7 @@ const MaternalMortality = props => {
           </div>
         </div>
         <div className="row">
-          <div className="offset-md-1 col-7">
+          <div className="offset-md-1 col-11 col-md-7">
             <ChartContainer
               width={width}
               height={height}
@@ -504,7 +504,7 @@ const MaternalMortality = props => {
               </g>
             </ChartContainer>
           </div>
-          <div className="col-4">
+          <div className="col-12 col-md-4">
             <div className="slope-container">
               <ChartContainer
                 width={width}

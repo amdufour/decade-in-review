@@ -121,7 +121,9 @@ const QualityOfLife = props => {
                   <img src={LegendAxisImg} alt="Legend of the radial axis" />
                 </div>
                 <div className="col-12 col-md-5">
-                  <img src={LegendAxisVisuals} alt="How to interpret the visualizations" />
+                  <div className="legend-img-2">
+                    <img src={LegendAxisVisuals} alt="How to interpret the visualizations" />
+                  </div>
                 </div>
                 <div className="col-12 col-md-4">
                   <div className="legend-quality-life">

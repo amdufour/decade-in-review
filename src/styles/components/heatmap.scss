@@ -9,6 +9,10 @@
     font-weight: 500;
     line-height: 1;
     text-align: end;
+    @media (max-width: $md) {
+      width: 130px;
+      font-size: 1.4rem;
+    }
   }
   text {
     opacity: 0;
@@ -23,4 +27,10 @@
 
 .heatmap-axis {
   margin-left: 220px;
+  @media (max-width: $md) {
+    margin-left: 130px;
+    text {
+      font-size: 3rem;
+    }
+  }
 }

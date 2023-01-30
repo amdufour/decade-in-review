@@ -15,6 +15,26 @@
       font-weight: 800;
       color: $cyan;
     }
+    @media (max-width: $lg) {
+      .section-number-circle {
+        top: 0px;
+        left: -55px;
+        width: 110px;
+      }
+      .section-number {
+        font-size: 8rem;
+      }
+    }
+    @media (max-width: $sm) {
+      .section-number-circle {
+        top: -5px;
+        left: -37px;
+        width: 70px;
+      }
+      .section-number {
+        font-size: 4rem;
+      }
+    }
   }
 
   // intro

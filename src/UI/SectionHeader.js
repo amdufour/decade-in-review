@@ -52,10 +52,10 @@ const SectionHeader = props => {
         }
         {props.title2 &&
           <Fragment>
-            <div className="col-5">
+            <div className="col-9 col-md-5">
               <h2 ref={titleRef}>{props.title}</h2>
             </div>
-            <div className="col-5 offset-md-1">
+            <div className="col-9 col-md-5 offset-md-1">
               <h2 ref={title2Ref}>{props.title2}</h2>
             </div>
           </Fragment>

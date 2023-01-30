@@ -12,12 +12,25 @@ h1, h2, h3, h4 {
 h1 {
   margin: 1rem 0;
   font-size: 9rem;
+  line-height: 1.1;
   color: $white;
+  @media (max-width: $md) {
+    font-size: 7rem;
+  }
+  @media (max-width: $sm) {
+    font-size: 5rem;
+  }
 }
 h2 {
   margin: 0;
   font-size: 4.8rem;
   color: $cyan;
+  @media (max-width: $md) {
+    font-size: 3.8rem;
+  }
+  @media (max-width: $sm) {
+    font-size: 3rem;
+  }
 }
 h3 {
   margin: 1rem 0;
