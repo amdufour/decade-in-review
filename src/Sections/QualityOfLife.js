@@ -219,7 +219,12 @@ const QualityOfLife = props => {
                         cy={-radialScale(110) * Math.cos(scaleAngle(i))}
                         r={4}
                         fill={d.life_quality_factors.find(f => f.factor === c).hasImproved === "positive" ? "#059799" : "transparent"}
-                        stroke={d.life_quality_factors.find(f => f.factor === c).hasImproved === "positive" ? "#059799" : "#E27D5F"}
+                        stroke={d.life_quality_factors.find(f => f.factor === c).hasImproved === "positive" 
+                                  ? "#059799" 
+                                  : "negative"
+                                    ? "#E27D5F"
+                                    : "transparent"
+                        }
                         strokeWidth={2}
                       />
                     ))}
