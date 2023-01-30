@@ -130,6 +130,16 @@ const Introduction = props => {
         <div className="WGS-logo">
           <img src={WGSLogo} alt="Logo of the World Government Summit" />
         </div>
+        <div className="intro-color-scale">
+          <div className="label-hpi">Happy Planet Index</div>
+          <div className="scale-container">
+            <div className="labels">
+              <div className="label">24</div>
+              <div className="label">65</div>
+            </div>
+            <div className="color-scale"></div>
+          </div>
+        </div>
         <div className="row">
           <div ref={titleRef} className="col-12 col-md-8">
             <h1>A decade in review</h1>
