@@ -14,7 +14,8 @@ const Introduction = props => {
 
     const mapContainer = map
       .append("svg")
-        .attr("viewBox", `0 0 928 452`);
+        .attr("viewBox", `0 0 928 452`)
+        .style("opacity", 0);
 
     const projection = d3.geoNaturalEarth1();
     const pathGenerator = d3.geoPath()
@@ -73,6 +74,15 @@ const Introduction = props => {
     const stepDuration = 1500;
     const yearsLoop = props.years.slice(0, -1);
     let currentIndex = 0;
+    
+    setTimeout(() => {
+      mapContainer
+        .transition()
+        .duration(stepDuration)
+        .ease(d3.easeCubicInOut)
+          .style("opacity", 1);
+    }, stepDuration);
+
     const timer = setInterval(() => {
       d3.selectAll(".country-path")
         .transition()

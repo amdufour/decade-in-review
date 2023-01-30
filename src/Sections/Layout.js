@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import * as d3 from "d3";
 
 import Introduction from "./Introduction";
@@ -12,7 +11,7 @@ const Layout = props => {
   const years = d3.range(2010, 2021);
 
   return (
-    <Fragment>
+    <div className="project-container">
       <header>
         <Introduction 
           worldAtlas={props.worldAtlas}
@@ -39,7 +38,7 @@ const Layout = props => {
         />
       </main>
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 
