@@ -47,36 +47,38 @@ const QualityOfLife = props => {
       index: 0, 
       factor: "access_electricity", 
       valueFirstYear: d.access_electricity["2010"],
-      valueLastYear: d.access_electricity["2020"],
-      hasImproved: d.access_electricity.has_improved
+      valueLastYear: d.access_electricity["2010"],
+      hasImproved: Math.abs(d.access_electricity["2020"] - d.access_electricity["2010"]) >= 1 ? d.access_electricity.has_improved : "equal"
     });
     lifeQualityFactors.push({ 
       index: 1, 
       factor: "access_internet", 
       valueFirstYear: d.access_internet["2010"],
       valueLastYear: d.access_internet["2020"],
-      hasImproved: d.access_internet.has_improved
+      hasImproved: Math.abs(d.access_internet["2020"] - d.access_internet["2010"]) >= 1 ? d.access_internet.has_improved : "equal"
     });
     lifeQualityFactors.push({ 
       index: 2, 
       factor: "access_water", 
       valueFirstYear: d.access_water["2010"],
       valueLastYear: d.access_water["2020"],
-      hasImproved: d.access_water.has_improved
+      hasImproved: Math.abs(d.access_water["2020"] - d.access_water["2010"]) >= 1 ? d.access_water.has_improved : "equal"
     });
     lifeQualityFactors.push({ 
       index: 3, 
       factor: "life_expectancy", 
       valueFirstYear: d.life_expectancy["2010"],
       valueLastYear: d.life_expectancy["2020"],
-      hasImproved: d.life_expectancy.has_improved
+      hasImproved: Math.abs(d.life_expectancy["2020"] - d.life_expectancy["2010"]) >= 1 ? d.life_expectancy.has_improved : "equal"
     });
+    const air2010 = 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2010"];
+    const air2017 = 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2017"];
     lifeQualityFactors.push({ 
       index: 4, 
       factor: "air_pollution_exposure", 
-      valueFirstYear: 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2010"],
-      valueLastYear: 100 - d.population_exposed_to_levels_exceeding_WHO_guideline["2017"],
-      hasImproved: d.population_exposed_to_levels_exceeding_WHO_guideline.has_improved
+      valueFirstYear: air2010,
+      valueLastYear: air2017,
+      hasImproved: Math.abs(air2017 - air2010) >= 1 ? d.population_exposed_to_levels_exceeding_WHO_guideline.has_improved : "equal"
     });
 
     d["life_quality_factors"] = lifeQualityFactors;
@@ -93,7 +95,6 @@ const QualityOfLife = props => {
     });
   };
   sortData(defaultData);
-
   const [data, setData] = useState(defaultData);
 
   const handleRegionSelection = (selection) => {
@@ -221,7 +222,7 @@ const QualityOfLife = props => {
                         fill={d.life_quality_factors.find(f => f.factor === c).hasImproved === "positive" ? "#059799" : "transparent"}
                         stroke={d.life_quality_factors.find(f => f.factor === c).hasImproved === "positive" 
                                   ? "#059799" 
-                                  : "negative"
+                                  : d.life_quality_factors.find(f => f.factor === c).hasImproved === "negative"
                                     ? "#E27D5F"
                                     : "transparent"
                         }
