@@ -18,6 +18,7 @@ const Layout = props => {
           worldAtlas={props.worldAtlas}
           countryIds={props.countryIds}
           dataByCountry={props.dataByCountry}
+          years={years}
         />
       </header>
       <main>

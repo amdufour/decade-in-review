@@ -6,16 +6,14 @@ import { hpiColorScale } from "../helper/helper";
 
 const Introduction = props => {
   const mapRef = useRef(null);
-  const windowSizeRef = useRef([window.innerWidth, window.innerHeight]);
 
   useEffect(() => {
-    const windowSize = windowSizeRef.current;
     const map = d3.select(mapRef.current);
     map.select("svg").remove();
 
     const mapContainer = map
       .append("svg")
-        .attr("viewBox", `0 0 ${windowSize[0]/2} ${windowSize[1]/2}`);
+        .attr("viewBox", `0 0 928 452`);
 
     const projection = d3.geoNaturalEarth1();
     const pathGenerator = d3.geoPath()
@@ -56,7 +54,7 @@ const Introduction = props => {
       d.country_name = relatedCountry;
       
       if (props.dataByCountry.find(c => c.country_name === relatedCountry)) {
-        d.hpi_2019 = props.dataByCountry.find(c => c.country_name === relatedCountry).happy_planet_index_2019;
+        d["hpi"] = props.dataByCountry.find(c => c.country_name === relatedCountry).hpi;
       }
     });
     
@@ -66,8 +64,28 @@ const Introduction = props => {
       .join("path")
         .attr("class", d => `country-path country-path-${d.country_name.replaceAll(" ", "_")}`)
         .attr("d", d => pathGenerator(d))
-        .attr("fill", d => d.hpi_2019 ? hpiColorScale(d.hpi_2019) : "#F9FFFF")
-        .attr("fill-opacity", d => d.hpi_2019 ? 0.75 : 0.2);
+        .attr("fill", d => d.hpi && d.hpi[0].hpi ? hpiColorScale(d.hpi[0].hpi) : "#F9FFFF")
+        .attr("fill-opacity", d => d.hpi && d.hpi[0].hpi ? 0.75 : 0.2)
+        .attr("stroke", "#F9FFFF")
+        .attr("stroke-width", 0.3);
+
+    const stepDuration = 1500;
+    const yearsLoop = props.years.slice(0, -1);
+    let currentIndex = 0;
+    const timer = setInterval(() => {
+      d3.selectAll(".country-path")
+        .transition()
+        .duration(stepDuration)
+        .ease(d3.easeCubicInOut)
+          .attr("fill", d => d.hpi && d.hpi[currentIndex].hpi ? hpiColorScale(d.hpi[currentIndex].hpi) : "#F9FFFF")
+          .attr("fill-opacity", d => d.hpi && d.hpi[currentIndex].hpi ? 0.75 : 0.2);
+
+      currentIndex = currentIndex === yearsLoop.length - 1 ? 0 : currentIndex + 1;
+    }, stepDuration);
+
+    return () => {
+      clearInterval(timer);
+    }
 
   }, [props.countryIds, props.dataByCountry, props.worldAtlas]);
 

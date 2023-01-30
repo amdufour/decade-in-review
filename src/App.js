@@ -80,13 +80,17 @@ function App() {
       //   }
       // })
 
+      // const hpi = data[4];
       // dataByCountry.forEach(d => {
-      //   const data2019 = newData.find(c => c["ISO"] === d.country_code);
-      //   if (data2019) {
-      //     d["happy_planet_index_2019"] = +data2019["HPI"].replace(",", ".");
+      //   const newHpi = hpi.find(c => c["ISO"] === d.country_code);
+      //   let hpiValue;
+      //   if (newHpi) {
+      //     hpiValue = +newHpi["HPI"].replace(",", ".");
       //   } else {
-      //     d["has_missing_life_quality_data"] = true;
+      //     hpiValue = null
       //   }
+
+      //   d.hpi.push({ year: 2019, hpi: hpiValue })
       // })
 
       if (mounted) {

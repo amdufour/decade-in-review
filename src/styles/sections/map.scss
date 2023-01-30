@@ -1,7 +1,7 @@
 .map-bg {
   position: absolute;
-  left: 50px;
-  width: calc(100% - 100px);
+  left: 0;
+  width: 100vw;
   height: 100vh;
   .map {
     width: 100%;
@@ -9,5 +9,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    svg {
+      width: 100%;
+      height: auto;
+    }
   }
 }
