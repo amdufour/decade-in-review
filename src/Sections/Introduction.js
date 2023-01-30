@@ -3,6 +3,7 @@ import * as d3 from "d3";
 import * as topojson from "topojson-client";
 
 import { hpiColorScale } from "../helper/helper";
+import WGSLogo from "./assets/WGS-summit-logo.svg";
 
 const Introduction = props => {
   const mapRef = useRef(null);
@@ -94,6 +95,9 @@ const Introduction = props => {
       <div className="container">
         <div className="map-bg">
           <div ref={mapRef} className="map"></div>
+        </div>
+        <div className="WGS-logo">
+          <img src={WGSLogo} alt="Logo of the World Government Summit" />
         </div>
         <div className="row">
           <div className="col-12 col-md-8">

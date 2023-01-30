@@ -4,6 +4,17 @@ header {
   background-color: $cyan;
   background: linear-gradient(120deg, rgba(5,151,153,1) 0%, rgba(128,200,189,0.6) 100%);
 
+  // Logo
+  .WGS-logo {
+    display: flex;
+    justify-content: flex-end;
+    img {
+      margin-top: 20px;
+      width: auto;
+      height: 50px;
+    }
+  }
+
   // Title & subtitle
   h1 {
     margin-top: 30%;
