@@ -2,6 +2,8 @@ import { Fragment, useRef, useEffect } from "react";
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
 
+import { hpiColorScale } from "../helper/helper";
+
 const Introduction = props => {
   const mapRef = useRef(null);
   const windowSizeRef = useRef([window.innerWidth, window.innerHeight]);
@@ -18,24 +20,56 @@ const Introduction = props => {
     const projection = d3.geoNaturalEarth1();
     const pathGenerator = d3.geoPath()
       .projection(projection);
-    
 
-    d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json").then(data => {
-      console.log(data);
-
-      const countries = topojson.feature(data, data.objects.countries);
-      console.log(countries);
-
-      const paths = mapContainer
-        .selectAll(".country-path")
-        .data(countries.features)
-        .join("path")
-          .attr("class", "country-path")
-          .attr("d", d => pathGenerator(d))
-          .attr("fill", "white");
+    const countries = topojson.feature(props.worldAtlas, props.worldAtlas.objects.countries);
+    countries.features.forEach(d => {
+      let relatedCountry = props.countryIds.find(c => c.iso_n3 === d.id).admin;
+      switch(relatedCountry) {
+        case "United States of America":
+          relatedCountry = "United States";
+          break;
+        case "Democratic Republic of the Congo":
+          relatedCountry = "Democratic Republic of Congo";
+          break;
+        case "United Republic of Tanzania":
+          relatedCountry = "Tanzania";
+          break;
+        case "Equatorial Guinea":
+          relatedCountry = "Guinea";
+          break;
+        case "Ivory Coast":
+          relatedCountry = "Cote d'Ivoire";
+          break;
+        case "Republic of Serbia":
+          relatedCountry = "Serbia";
+          break;
+        case "Macedonia":
+          relatedCountry = "North Macedonia";
+          break;
+        case "Czech Republic":
+          relatedCountry = "Czechia";
+          break;
+        case "Papua New Guinea":
+          relatedCountry = "Papua New Guinea";
+          break;
+      };
+      d.country_name = relatedCountry;
+      
+      if (props.dataByCountry.find(c => c.country_name === relatedCountry)) {
+        d.hpi_2019 = props.dataByCountry.find(c => c.country_name === relatedCountry).happy_planet_index_2019;
+      }
     });
+    
+    const paths = mapContainer
+      .selectAll(".country-path")
+      .data(countries.features)
+      .join("path")
+        .attr("class", d => `country-path country-path-${d.country_name.replaceAll(" ", "_")}`)
+        .attr("d", d => pathGenerator(d))
+        .attr("fill", d => d.hpi_2019 ? hpiColorScale(d.hpi_2019) : "#F9FFFF")
+        .attr("fill-opacity", d => d.hpi_2019 ? 0.75 : 0.2);
 
-  }, []);
+  }, [props.countryIds, props.dataByCountry, props.worldAtlas]);
 
   return (
     <Fragment>

@@ -165,7 +165,7 @@ const MaternalMortality = props => {
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
       
       if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
-        const color = d.mortality2017 <= d.mortality2010 ? "#059799" : "#E27D5F";
+        const color = d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a";
         
         d3.select(".maternity-slope-others line")
           .attr("y1", yScaleSlope(d.mortality2010))
@@ -223,7 +223,7 @@ const MaternalMortality = props => {
         .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
         .attr("cy", d => yScale(d.mortality2017))
         .attr("r", 2.5)
-        .attr("fill", d => d.mortality2017 <= d.mortality2010 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .attr("stroke-width", 0.5)
         .on("mouseenter", (e, d) => {
@@ -245,7 +245,7 @@ const MaternalMortality = props => {
         .attr("y1", d => yScaleSlope(d.mortality2010))
         .attr("x2", innerWidthSlope)
         .attr("y2", d => yScaleSlope(d.mortality2017))
-        .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke-width", 2);
 
     slopeCountry
@@ -254,7 +254,7 @@ const MaternalMortality = props => {
         .attr("cx", 0)
         .attr("cy", d => yScaleSlope(d.mortality2010))
         .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .on("mouseenter", (e, d) => {
           showScatterplotLabels(d);
@@ -267,7 +267,7 @@ const MaternalMortality = props => {
         .attr("cx", innerWidthSlope)
         .attr("cy", d => yScaleSlope(d.mortality2017))
         .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .on("mouseenter", (e, d) => {
           showScatterplotLabels(d);
@@ -290,7 +290,7 @@ const MaternalMortality = props => {
         .attr("text-anchor", "end")
         .attr("alignment-baseline", "middle")
         .style("font-size", "13px")
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .text(d => d.country_name);
 
     const slopeOthers = slope

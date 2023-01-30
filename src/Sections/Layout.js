@@ -14,7 +14,11 @@ const Layout = props => {
   return (
     <Fragment>
       <header>
-        <Introduction />
+        <Introduction 
+          worldAtlas={props.worldAtlas}
+          countryIds={props.countryIds}
+          dataByCountry={props.dataByCountry}
+        />
       </header>
       <main>
         <Education 

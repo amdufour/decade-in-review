@@ -8,15 +8,21 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [dataByCountry, setDataByCountry] = useState([]);
   const [dataWorld, setDataWorld] = useState([]);
+  const [worldAtlas, setWorldAtlas] = useState([]);
+  const [countryIds, setCountryIds] = useState([]);
 
   useEffect(() => {
     let mounted = true;
     Promise.all([
       d3.json("/data/data.json"),
       d3.json("/data/data_world.json"),
+      d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json"),
+      d3.tsv("/data/country_ids.tsv"),
     ]).then(data => {
       const dataByCountry = data[0];
       const dataWorld = data[1];
+      const worldAtlas = data[2];
+      const countryIds = data[3];
       console.log("data by country", dataByCountry);
       console.log("data world", dataWorld);
 
@@ -87,6 +93,8 @@ function App() {
         setTimeout(() => {
           setDataByCountry(dataByCountry);
           setDataWorld(dataWorld);
+          setWorldAtlas(worldAtlas);
+          setCountryIds(countryIds);
           setLoading(false);
         }, 2000);
       }
@@ -98,7 +106,13 @@ function App() {
   return (
     <div>
       {loading && <Loader />}
-      {!loading && <Layout dataByCountry={dataByCountry} dataWorld={dataWorld} />}
+      {!loading && 
+        <Layout 
+          dataByCountry={dataByCountry} 
+          dataWorld={dataWorld} 
+          worldAtlas={worldAtlas}
+          countryIds={countryIds}
+        />}
     </div>
   );
 }

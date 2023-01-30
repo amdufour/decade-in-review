@@ -3,7 +3,7 @@ import Select from 'react-select';
 import * as d3 from "d3";
 
 import SectionHeader from "../UI/SectionHeader";
-import { regions } from "../helper/helper";
+import { regions, hpiColorScale } from "../helper/helper";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 
 import LegendAxisImg from "./assets/quality_of_life-axis.svg";
@@ -29,9 +29,6 @@ const QualityOfLife = props => {
   const scaleAngle = d3.scaleLinear()
     .domain([0, 5])
     .range([0, 2 * Math.PI]);
-  const colorScale = d3.scaleLinear()
-    .domain([24, 62.1])
-    .range(["#E27D5F", "#059799"]);
 
   // Shape generators
   const shapeGenerator = d3.lineRadial()
@@ -133,7 +130,7 @@ const QualityOfLife = props => {
                       <div className="legend-color-gradient"></div>
                       <div className="labels">
                         <div className="label">24</div>
-                        <div className="label">62</div>
+                        <div className="label">65</div>
                       </div>
                     </div>
                     <div className="legend-section legend-prefixes">
@@ -203,12 +200,12 @@ const QualityOfLife = props => {
                       </g>
                       <path
                         d={`${shapeGenerator(d.life_quality_factors)} Z`}
-                        fill={colorScale(d.happy_planet_index_2019)}
+                        fill={hpiColorScale(d.happy_planet_index_2019)}
                         filter="url(#blur)"
                       />
                       <path
                         d={`${shapeGenerator(d.life_quality_factors)} Z`}
-                        fill={colorScale(d.happy_planet_index_2019)}
+                        fill={hpiColorScale(d.happy_planet_index_2019)}
                       />
                       <path
                         d={`${shapeGeneratorFirstYear(d.life_quality_factors)} Z`}

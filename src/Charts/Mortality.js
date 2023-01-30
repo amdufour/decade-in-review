@@ -38,7 +38,7 @@ const Mortality = props => {
   const dataIncrease = filteredData.filter(d => d[`${props.type}_diff`] > 0);
   dataIncrease.sort((a, b) => b[`${props.type}_diff`] - a[`${props.type}_diff`]);
   const topIncrease = dataIncrease.slice(0, 5);
-  topIncrease.forEach(d => d.fill = "#E27D5F");
+  topIncrease.forEach(d => d.fill = "#ac2c5a");
   const increaseRemain = dataIncrease.splice(5);
 
   const sortedData = decreaseRemain.concat(increaseRemain).concat(topDecrease).concat(topIncrease);
@@ -168,7 +168,7 @@ const Mortality = props => {
             .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
       
       if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
-        const color = d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#E27D5F";
+        const color = d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#ac2c5a";
         
         d3.select(".slope-others line")
           .attr("y1", yScaleSlope(d[props.type][0].mortality_rate))
@@ -226,7 +226,7 @@ const Mortality = props => {
         .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
         .attr("cy", d => yScale(d.mortality2020))
         .attr("r", 2.5)
-        .attr("fill", d => d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#E27D5F")
+        .attr("fill", d => d.mortality2020 <= d[props.type][0].mortality_rate ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .attr("stroke-width", 0.5)
         .on("mouseenter", (e, d) => {
@@ -248,7 +248,7 @@ const Mortality = props => {
         .attr("y1", d => yScaleSlope(d[props.type].find(y => y.year === 2010).mortality_rate))
         .attr("x2", innerWidthSlope)
         .attr("y2", d => yScaleSlope(d[props.type].find(y => y.year === props.lastYear).mortality_rate))
-        .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke-width", 2);
 
     slopeCountry
@@ -257,7 +257,7 @@ const Mortality = props => {
         .attr("cx", 0)
         .attr("cy", d => yScaleSlope(d[props.type].find(y => y.year === 2010).mortality_rate))
         .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .on("mouseenter", (e, d) => {
           showScatterplotLabels(d);
@@ -270,7 +270,7 @@ const Mortality = props => {
         .attr("cx", innerWidthSlope)
         .attr("cy", d => yScaleSlope(d[props.type].find(y => y.year === props.lastYear).mortality_rate))
         .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .attr("stroke", "#F9FFFF")
         .on("mouseenter", (e, d) => {
           showScatterplotLabels(d);
@@ -295,7 +295,7 @@ const Mortality = props => {
         .attr("text-anchor", "end")
         .attr("alignment-baseline", "middle")
         .style("font-size", "13px")
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#E27D5F")
+        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .text(d => d.country_name);
 
     const slopeOthers = slope

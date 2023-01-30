@@ -63,8 +63,8 @@
     .legend-color-gradient {
       width: 100%;
       height: 40px;
-      background: rgb(226,125,95);
-      background: linear-gradient(90deg, rgba(226,125,95,1) 0%, rgba(5,151,153,1) 100%);
+      background: $cyan;
+      background: linear-gradient(90deg, $purple 0%, $cyan 100%);
       border-radius: 5px;
     }
     .labels {
@@ -95,7 +95,7 @@
       }
       &.symbol-worsened {
         background-color: transparent;
-        border-color: $orange;
+        border-color: $purple;
       }
     }
   }
