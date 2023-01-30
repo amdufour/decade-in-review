@@ -1,9 +1,48 @@
-import { Fragment } from "react";
+import { Fragment, useRef, useEffect } from "react";
+import * as d3 from "d3";
+import * as topojson from "topojson-client";
 
 const Introduction = props => {
+  const mapRef = useRef(null);
+  const windowSizeRef = useRef([window.innerWidth, window.innerHeight]);
+
+  useEffect(() => {
+    const windowSize = windowSizeRef.current;
+    const map = d3.select(mapRef.current);
+    map.select("svg").remove();
+
+    const mapContainer = map
+      .append("svg")
+        .attr("viewBox", `0 0 ${windowSize[0]/2} ${windowSize[1]/2}`);
+
+    const projection = d3.geoNaturalEarth1();
+    const pathGenerator = d3.geoPath()
+      .projection(projection);
+    
+
+    d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json").then(data => {
+      console.log(data);
+
+      const countries = topojson.feature(data, data.objects.countries);
+      console.log(countries);
+
+      const paths = mapContainer
+        .selectAll(".country-path")
+        .data(countries.features)
+        .join("path")
+          .attr("class", "country-path")
+          .attr("d", d => pathGenerator(d))
+          .attr("fill", "white");
+    });
+
+  }, []);
+
   return (
     <Fragment>
       <div className="container">
+        <div className="map-bg">
+          <div ref={mapRef} className="map"></div>
+        </div>
         <div className="row">
           <div className="col-12 col-md-8">
             <h1>A decade in review</h1>
