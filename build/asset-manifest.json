@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.e9f10756.css",
-    "main.js": "/static/js/main.d8681101.js",
-    "static/media/WGS-summit-logo.svg": "/static/media/WGS-summit-logo.f5dfe2eb6efb65b0dd05b205b2bb078c.svg",
-    "static/media/quality_of_life-visuals.svg": "/static/media/quality_of_life-visuals.a1cc54c0695a9c84fe0fe1249de238b1.svg",
-    "static/media/quality_of_life-axis.svg": "/static/media/quality_of_life-axis.979c62ad842c6f28ddf0b3e2ef74d6f6.svg",
-    "static/media/magic.svg": "/static/media/magic.26b1b5c6b6c6152a65ca.svg",
-    "index.html": "/index.html",
-    "static/media/asterisk-purple.svg": "/static/media/asterisk-purple.98c4a7a7749606f812ab.svg",
-    "static/media/asterisk.svg": "/static/media/asterisk.f09476671745612e5215.svg",
-    "static/media/logo.svg": "/static/media/logo.d65cba53c25c972236a5.svg",
-    "main.e9f10756.css.map": "/static/css/main.e9f10756.css.map",
-    "main.d8681101.js.map": "/static/js/main.d8681101.js.map"
+    "main.css": "/decade-in-review/static/css/main.3c265a9c.css",
+    "main.js": "/decade-in-review/static/js/main.190782d3.js",
+    "static/media/WGS-summit-logo.svg": "/decade-in-review/static/media/WGS-summit-logo.f5dfe2eb6efb65b0dd05b205b2bb078c.svg",
+    "static/media/quality_of_life-visuals.svg": "/decade-in-review/static/media/quality_of_life-visuals.a1cc54c0695a9c84fe0fe1249de238b1.svg",
+    "static/media/quality_of_life-axis.svg": "/decade-in-review/static/media/quality_of_life-axis.979c62ad842c6f28ddf0b3e2ef74d6f6.svg",
+    "index.html": "/decade-in-review/index.html",
+    "static/media/magic.svg": "/decade-in-review/static/media/magic.26b1b5c6b6c6152a65ca.svg",
+    "static/media/asterisk-purple.svg": "/decade-in-review/static/media/asterisk-purple.98c4a7a7749606f812ab.svg",
+    "static/media/asterisk.svg": "/decade-in-review/static/media/asterisk.f09476671745612e5215.svg",
+    "static/media/logo.svg": "/decade-in-review/static/media/logo.d65cba53c25c972236a5.svg",
+    "main.3c265a9c.css.map": "/decade-in-review/static/css/main.3c265a9c.css.map",
+    "main.190782d3.js.map": "/decade-in-review/static/js/main.190782d3.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9f10756.css",
-    "static/js/main.d8681101.js"
+    "static/css/main.3c265a9c.css",
+    "static/js/main.190782d3.js"
   ]
 }
