@@ -86,7 +86,7 @@ const SchoolAndparliaments = props => {
               </svg>
             </div>
             <div className="dots">
-              <svg id="dots-school" viewBox="0 0 193 192.5">
+              <svg id="dots-school" width="193" height="192.5" viewBox="0 0 193 192.5">
                 <circle cx="6.5" cy="6.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
                 <circle cx="6.5" cy="26.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
                 <circle cx="6.5" cy="46.5" r="6" style={{fill: "transparent", stroke: "#ac2c5a"}}/>
@@ -206,7 +206,7 @@ const SchoolAndparliaments = props => {
               </svg>
             </div>
             <div className="dots">
-              <svg id="dots-mp" viewBox="0 0 423.35 209.2">
+              <svg id="dots-mp" width="423.35" height="209.2" viewBox="0 0 423.35 209.2">
                 <circle cx="74.86" cy="203.2" r="6" style={{fill: "#ac2c5a"}}/>
                 <circle cx="57.65" cy="202.11" r="6" style={{fill: "#ac2c5a"}}/>
                 <circle cx="40.43" cy="201.02" r="6" style={{fill: "#ac2c5a"}}/>

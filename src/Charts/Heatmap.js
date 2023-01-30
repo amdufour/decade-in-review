@@ -1,8 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import * as d3 from "d3";
 
-import ChartContainer from "../ChartComponents.js/ChartContainer";
-
 const Heatmap = props => {
   const [showLabels, setShowLabels] = useState(false);
   const heatmapRef = useRef(null);
@@ -19,10 +17,10 @@ const Heatmap = props => {
   return (
     <div className={`heatmap-section ${showLabels ? "show-labels" : ""}`}>
       <h4>{props.data.country_name}</h4>
-      <ChartContainer
+      <svg
         width={props.width}
         height={props.height}
-        margin={props.margin}
+        viewBox={`0 0 ${props.width} ${props.height}`}
       >
         <g ref={heatmapRef}>
           {props.data[props.topic].map((d, i) => (
@@ -54,7 +52,7 @@ const Heatmap = props => {
             </g>
           ))}
         </g>
-      </ChartContainer>
+      </svg>
     </div>
   );
 };
