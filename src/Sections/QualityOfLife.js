@@ -84,7 +84,7 @@ const QualityOfLife = props => {
     d["life_quality_factors"] = lifeQualityFactors;
   });
 
-  const defaultRegionLabel = "Europe";
+  const defaultRegionLabel = "Eastern Mediterranean";
   const defaultData = dataToPlot.filter(c => c.region === defaultRegionLabel);
 
   const sortData = (d) => {

@@ -16,7 +16,7 @@ const topics = [
 
 const BreakdownWomen = props => {
   const defaultTopic = "women_MP_seats";
-  const defaultRegionLabel = "Europe";
+  const defaultRegionLabel = "Eastern Mediterranean";
   const defaultData = props.data.filter(c => c.region === defaultRegionLabel);
 
   const sortData = (d) => {
