@@ -14,10 +14,10 @@ function App() {
   useEffect(() => {
     let mounted = true;
     Promise.all([
-      d3.json("/data/data.json"),
-      d3.json("/data/data_world.json"),
+      d3.json("./data/data.json"),
+      d3.json("./data/data_world.json"),
       d3.json("https://unpkg.com/world-atlas@1.1.4/world/110m.json"),
-      d3.tsv("/data/country_ids.tsv"),
+      d3.tsv("./data/country_ids.tsv"),
     ]).then(data => {
       const dataByCountry = data[0];
       const dataWorld = data[1];
