@@ -23,8 +23,8 @@ function App() {
       const dataWorld = data[1];
       const worldAtlas = data[2];
       const countryIds = data[3];
-      console.log("data by country", dataByCountry);
-      console.log("data world", dataWorld);
+      // console.log("data by country", dataByCountry);
+      // console.log("data world", dataWorld);
 
       // dataByCountry.forEach(d => {
       //   console.log(d.country_code)

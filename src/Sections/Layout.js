@@ -5,6 +5,7 @@ import Health from "./Health";
 import Education from "./Education";
 import QualityOfLife from "./QualityOfLife";
 import Footer from "./Footer";
+import Warning from "../UI/Warning";
 
 const Layout = props => {
   const margin = {top: 30, right: 20, bottom: 50, left: 60};
@@ -38,6 +39,7 @@ const Layout = props => {
         />
       </main>
       <Footer />
+      <Warning />
     </div>
   );
 };
