@@ -532,7 +532,7 @@ const Mortality = props => {
                   />
                 </g>
                 <g
-                  transform={`translate(0, ${innerHeightSlope + 20})`}  
+                  transform={`translate(0, ${innerHeightSlope + 15})`}  
                   fontSize="15px"
                   textAnchor="middle"
                   dominantBaseline="hanging"
