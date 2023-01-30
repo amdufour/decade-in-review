@@ -40,7 +40,7 @@ const AxisLeft = props => {
       {ticks.map(tick => (
         <g key={tick} transform={`translate(0, ${props.scale(tick)})`}>
           <line x1={-3} y1={0} x2={0} y2={0} strokeLinecap="round" />
-          <text x={-5} y={0} textAnchor="end" alignmentBaseline="middle" >
+          <text x={-5} y={0} textAnchor="end" dominantBaseline="middle" >
             {tick}
           </text>
         </g>

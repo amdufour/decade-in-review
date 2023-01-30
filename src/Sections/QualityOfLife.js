@@ -247,7 +247,7 @@ const QualityOfLife = props => {
                             x={radialScale(128) * Math.sin(scaleAngle(i))}
                             y={-radialScale(128) * Math.cos(scaleAngle(i))}
                             textAnchor="middle"
-                            alignmentBaseline="middle"
+                            dominantBaseline="middle"
                           >
                             {a}
                           </text>

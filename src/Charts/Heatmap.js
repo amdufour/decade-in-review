@@ -45,7 +45,7 @@ const Heatmap = props => {
                 x={props.bandScale.bandwidth()/2}
                 y={props.height/2}
                 textAnchor="middle"
-                alignmentBaseline="middle"
+                dominantBaseline="middle"
                 color="#021E1E"
                 fontSize={16}
               >

@@ -288,7 +288,7 @@ const MaternalMortality = props => {
           }
         })
         .attr("text-anchor", "end")
-        .attr("alignment-baseline", "middle")
+        .attr("dominant-baseline", "middle")
         .style("font-size", "13px")
         .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
         .text(d => d.country_name);
@@ -321,7 +321,7 @@ const MaternalMortality = props => {
       .append("text")
         .attr("x", -8)
         .attr("text-anchor", "end")
-        .attr("alignment-baseline", "middle")
+        .attr("dominant-baseline", "middle")
         .attr("fill", "#059799")
         .style("font-size", "13px");
 
@@ -462,7 +462,7 @@ const MaternalMortality = props => {
                     className="mouseover"
                     x={10}
                     y={0.5}
-                    alignmentBaseline="middle"
+                    dominantBaseline="middle"
                   />
                 </g>
                 <g className="maternity-gdp-label">
@@ -480,7 +480,7 @@ const MaternalMortality = props => {
                     x={0}
                     y={0}
                     textAnchor="middle"
-                    alignmentBaseline="middle"
+                    dominantBaseline="middle"
                   />
                 </g>
                 <g className="maternity-mortality-label">
@@ -498,7 +498,7 @@ const MaternalMortality = props => {
                     x={0}
                     y={0}
                     textAnchor="end"
-                    alignmentBaseline="middle"
+                    dominantBaseline="middle"
                   />
                 </g>
               </g>
@@ -533,7 +533,7 @@ const MaternalMortality = props => {
                   transform={`translate(0, ${innerHeightSlope + 20})`}  
                   fontSize="15px"
                   textAnchor="middle"
-                  alignmentBaseline="hanging"
+                  dominantBaseline="hanging"
                 >
                   <text>2010</text>
                   <text x={innerWidthSlope}>2020</text>
@@ -553,7 +553,7 @@ const MaternalMortality = props => {
                     x={0}
                     y={10.5}
                     textAnchor="middle"
-                    alignmentBaseline="middle"
+                    dominantBaseline="middle"
                     fill="#F9FFFF"
                     fontSize="11px"
                     fontWeight={500}
@@ -573,7 +573,7 @@ const MaternalMortality = props => {
                     x={0}
                     y={10.5}
                     textAnchor="middle"
-                    alignmentBaseline="middle"
+                    dominantBaseline="middle"
                     fill="#F9FFFF"
                     fontSize="11px"
                     fontWeight={500}
