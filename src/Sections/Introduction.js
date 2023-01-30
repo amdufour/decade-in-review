@@ -1,14 +1,35 @@
 import { Fragment, useRef, useEffect } from "react";
 import * as d3 from "d3";
 import * as topojson from "topojson-client";
+import { gsap } from "gsap";
 
 import { hpiColorScale } from "../helper/helper";
 import WGSLogo from "./assets/WGS-summit-logo.svg";
 
 const Introduction = props => {
+  const titleRef = useRef(null);
+  const scrollRef = useRef(null);
   const mapRef = useRef(null);
 
   useEffect(() => {
+    const title = titleRef.current;
+    const scroll = scrollRef.current;
+
+    const title1 = title.querySelector("h1");
+    const title2 = title.querySelector(".intro");
+    gsap.set([title1, title2], {clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)", opacity: 0, y: 35});
+    gsap.set(scroll, {opacity: 0, y: 35});
+    
+    const tl = gsap.timeline({
+      defaults: {
+        ease: "power4.inOut",
+        duration: 2
+      }
+    });
+    tl.to(title1, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0}, 0.8)
+      .to(title2, {clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)", opacity: 1, y: 0}, "-=1.5")
+      .to(scroll, {opacity: 1, y: 0}, "-=1");
+
     const map = d3.select(mapRef.current);
     map.select("svg").remove();
 
@@ -110,12 +131,12 @@ const Introduction = props => {
           <img src={WGSLogo} alt="Logo of the World Government Summit" />
         </div>
         <div className="row">
-          <div className="col-12 col-md-8">
+          <div ref={titleRef} className="col-12 col-md-8">
             <h1>A decade in review</h1>
             <p className="intro">5 good (and less good) news about what happened in the world over the last 10 years.</p>
           </div>
         </div>
-        <div className="scroll">
+        <div ref={scrollRef} className="scroll">
           <div className="scroll-label">Scroll to reveal the story</div>
           <svg id="scroll-arrow-down" viewBox="0 0 21.47 33.4"><path d="M10.74,0c.66,0,1.19,.53,1.19,1.19V29.32l7.5-7.51c.47-.47,1.22-.47,1.69,0s.47,1.22,0,1.69l-9.54,9.54c-.47,.47-1.22,.47-1.69,0,0,0,0,0,0,0L.35,23.5c-.47-.47-.47-1.22,0-1.69s1.22-.47,1.69,0l7.5,7.51V1.19c0-.66,.53-1.19,1.19-1.19Z" style={{fill:"#f9ffff", fillRule:"evenodd",}}/></svg>
         </div>
