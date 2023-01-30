@@ -22,6 +22,7 @@ h2 {
 h3 {
   margin: 1rem 0;
   font-size: 2.4rem;
+  color: $cyan;
 }
 
 a {
@@ -38,8 +39,4 @@ ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
-}
-
-.highlight {
-  color: $cyan;
 }

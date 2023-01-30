@@ -6,6 +6,9 @@ import SectionHeader from "../UI/SectionHeader";
 import { regions } from "../helper/helper";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 
+import LegendAxisImg from "./assets/quality_of_life-axis.svg";
+import LegendAxisVisuals from "./assets/quality_of_life-visuals.svg";
+
 const QualityOfLife = props => {
   // Dimensions
   const width = 342;
@@ -112,7 +115,44 @@ const QualityOfLife = props => {
           title="Quality of life"
           intro=""
         />
-        <div>Legend with world data</div>
+        <div className="legend-container">
+          <h3>How to read this visualization</h3>
+          <div className="row">
+            <div className="col-12 col-md-3">
+              <img src={LegendAxisImg} alt="Legend of the radial axis" />
+            </div>
+            <div className="col-12 col-md-5">
+              <img src={LegendAxisVisuals} alt="How to interpret the visualizations" />
+            </div>
+            <div className="col-12 col-md-4">
+              <div className="legend-quality-life">
+                <div className="legend-section legend-color">
+                  <div className="legend-color-label">Color: Happy Planet Index</div>
+                  <div className="legend-color-gradient"></div>
+                  <div className="labels">
+                    <div className="label">24</div>
+                    <div className="label">62</div>
+                  </div>
+                </div>
+                <div className="legend-section legend-prefixes">
+                  <ul>
+                    <li><span className="prefix-label">E: </span>Population with access to Electricity (%)</li>
+                    <li><span className="prefix-label">I: </span>Population with access to the Internet (%)</li>
+                    <li><span className="prefix-label">W: </span>Population with access to drinking water (%)</li>
+                    <li><span className="prefix-label">L: </span>Life expectancy (years)</li>
+                    <li><span className="prefix-label">A: </span>Population exposed to air pollution below WHO limits (%)</li>
+                  </ul>
+                </div>
+                <div className="legend-section legend-improvements">
+                  <ul>
+                    <li><span className="symbol symbol-improved"></span>Improved in the last decade</li>
+                    <li><span className="symbol symbol-worsened"></span>Worsened in the last decade</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="selectors">
           <h3 className="highlight">Select a region</h3>
           <Select
@@ -172,14 +212,14 @@ const QualityOfLife = props => {
                     d={`${shapeGeneratorFirstYear(d.life_quality_factors)} Z`}
                     fill="none"
                     stroke="#021E1E"
-                    strokeWidth={2}
+                    strokeWidth={1}
                     filter="url(#blur-sm)"
                   />
                   <path
                     d={`${shapeGeneratorFirstYear(d.life_quality_factors)} Z`}
                     fill="none"
                     stroke="#021E1E"
-                    strokeWidth={2}
+                    strokeWidth={1}
                   />
                   <g 
                     className="axis-lines"
