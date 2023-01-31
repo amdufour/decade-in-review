@@ -8,6 +8,8 @@ header {
   .WGS-logo {
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 10;
     img {
       margin-top: 20px;
       width: auto;
