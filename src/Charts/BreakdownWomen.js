@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect, Fragment } from "react";
 import Select from 'react-select';
 import * as d3 from "d3";
 
 import Heatmap from "./Heatmap";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 import Axis from "../ChartComponents.js/Axis";
-import { regions } from "../helper/helper";
+import { regions, colorScale } from "../helper/helper";
 
 // Data
 const topics = [
@@ -15,6 +15,20 @@ const topics = [
 ];
 
 const BreakdownWomen = props => {
+  const breakpoint = 576;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= breakpoint ? true : false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= breakpoint && !isMobile) {
+        setIsMobile(true);
+      } else if (window.innerWidth > breakpoint && isMobile) {
+        setIsMobile(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+  }, [isMobile]);
+
   const defaultTopic = "women_MP_seats";
   const defaultRegionLabel = "Eastern Mediterranean";
   const defaultData = props.data.filter(c => c.region === defaultRegionLabel);
@@ -63,7 +77,7 @@ const BreakdownWomen = props => {
       <div className="container">
         <h2>Explore data about women's education & development</h2>
         <div className="row">
-          <div className="col-12 col-md-7">
+          <div className="col-12 col-lg-7">
             <div className="selectors">
               <h3>Customize the heatmap</h3>
               <Select
@@ -87,7 +101,7 @@ const BreakdownWomen = props => {
               />
             </div>
           </div>
-          <div className="col-12 col-md-5">
+          <div className="col-12 col-lg-5">
             <div className="legend">
               <h3>Color legend</h3>
               <div className="color-legend">
@@ -102,51 +116,85 @@ const BreakdownWomen = props => {
           </div>
         </div>
         <div className="chart-help">Pass your cursor over a section to reveal the numbers.</div>
-        <div className="heatmap-axis">
-          <ChartContainer
-            width={width}
-            height={30}
-            margin={margin}
-          >
-            <Axis
-              type="bandBottom"
-              ticks={props.years}
-              scale={xScale}
-              innerWidth={innerWidth}
-              innerHeight={innerHeight}
-              labelsPosition="above"
-            />
-          </ChartContainer>
-        </div>
-        <div className="heatmap-container">
-          {data.map((d, i) => (
-            <Heatmap
-              key={`heatmap-${d.country_name}-${topic}`}
-              data={d}
-              margin={margin}
-              width={width}
-              height={height}
-              bandScale={xScale}
-              colorScale={colorScale}
-              topic={topic}
-            />
-          ))}
-        </div>
-        <div className="heatmap-axis">
-          <ChartContainer
-            width={width}
-            height={30}
-            margin={margin}
-          >
-            <Axis
-              type="bandBottom"
-              ticks={props.years}
-              scale={xScale}
-              innerWidth={innerWidth}
-              innerHeight={innerHeight}
-            />
-          </ChartContainer>
-        </div>  
+        {!isMobile &&
+          <Fragment>
+            <div className="heatmap-axis">
+              <ChartContainer
+                width={width}
+                height={30}
+                margin={margin}
+              >
+                <Axis
+                  type="bandBottom"
+                  ticks={props.years}
+                  scale={xScale}
+                  innerWidth={innerWidth}
+                  innerHeight={innerHeight}
+                  labelsPosition="above"
+                />
+              </ChartContainer>
+            </div>
+            <div className="heatmap-container">
+              {data.map((d, i) => (
+                <Heatmap
+                  key={`heatmap-${d.country_name}-${topic}`}
+                  data={d}
+                  margin={margin}
+                  width={width}
+                  height={height}
+                  bandScale={xScale}
+                  colorScale={colorScale}
+                  topic={topic}
+                />
+              ))}
+            </div>
+            <div className="heatmap-axis">
+              <ChartContainer
+                width={width}
+                height={30}
+                margin={margin}
+              >
+                <Axis
+                  type="bandBottom"
+                  ticks={props.years}
+                  scale={xScale}
+                  innerWidth={innerWidth}
+                  innerHeight={innerHeight}
+                />
+              </ChartContainer>
+            </div> 
+          </Fragment>
+        }
+        {isMobile &&
+          <div className="heatmap-mobile-container">
+            <div className="years years-top">
+              <div className="year">2010</div>
+              <div className="year">2020</div>
+            </div>
+            {data.map((d, i) => (
+              <div
+                key={`heatmap-${d.country_name}-${topic}`}
+                className="heatmap-mobile-section"
+              >
+                <h4>{d.country_name}</h4>
+                <div className="map">
+                  <div 
+                    className="heatmap-color"
+                    style={{ backgroundColor: d[topic].find(y => y.year === 2010).percentage ? colorScale(+d[topic].find(y => y.year === 2010).percentage) : "#059799" }}
+                  ></div>
+                  <div 
+                    className="heatmap-color"
+                    style={{ backgroundColor: d[topic].find(y => y.year === 2020).percentage ? colorScale(+d[topic].find(y => y.year === 2010).percentage) : "#059799" }}
+                  ></div>
+                </div>
+              </div>
+            ))}
+            <div className="years years-bottom">
+              <div className="year">2010</div>
+              <div className="year">2020</div>
+            </div>
+          </div>
+        } 
         <div className="section-sources section-sources-gap">
           <div>Sources:</div>
           <ul>

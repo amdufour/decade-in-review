@@ -34,3 +34,43 @@
     }
   }
 }
+
+.heatmap-mobile-container {
+  .years {
+    display: flex;
+    margin-left: 50%;
+    width: 50%;
+    .year {
+      flex-basis: 0;
+      flex-grow: 1;
+      width: 100%;
+      max-width: 100%;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+}
+.heatmap-mobile-section {
+  display: flex;
+  align-items: center;
+  h4 {
+    margin: 0;
+    width: 50%;
+    padding-right: 10px;
+    font-size: 1.8rem;
+    text-align: right;
+  }
+  .map {
+    display: flex;
+    width: 50%;
+  }
+  .heatmap-color {
+    flex-basis: 0;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 100%;
+    margin: 4px 2px;
+    height: 40px;
+    border-radius: 3px;
+  }
+}
