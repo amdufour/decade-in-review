@@ -113,7 +113,7 @@ const QualityOfLife = props => {
           intro="The overall quality of life improved in most countries during the last decade. The following visualization presents factors such as access to electricity, the internet and drinking water, life expectancy, exposure to clean air, and the Happy Planet Index. The Happy Planet Index tells us “how well nations are doing at achieving long, happy, sustainable lives,” and its 2019 value is represented by the color of the shape associated with each country. The larger and the greener a shape is, the better a nation is doing."
         />
         <div className="row">
-          <div className="col-11 offset-md-1">
+          <div className="col-12 col-lg-11 offset-lg-1">
             <div className="legend-container">
               <h3>How to read this visualization</h3>
               <div className="row">
