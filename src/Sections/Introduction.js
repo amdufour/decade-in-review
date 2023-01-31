@@ -134,8 +134,8 @@ const Introduction = props => {
           <div className="label-hpi">Happy Planet Index</div>
           <div className="scale-container">
             <div className="labels">
+              <div className="label">64</div>
               <div className="label">24</div>
-              <div className="label">65</div>
             </div>
             <div className="color-scale"></div>
           </div>
