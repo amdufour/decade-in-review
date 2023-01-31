@@ -62,7 +62,7 @@ const SectionHeader = props => {
         }
         {props.intro &&
           <div className="row">
-            <div className="col-9 offset-md-1">
+            <div className="col-12 col-lg-9 offset-lg-1">
               <p className="section-intro">{props.intro}</p>
             </div>
           </div>

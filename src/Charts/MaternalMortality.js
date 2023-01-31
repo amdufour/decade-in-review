@@ -584,7 +584,7 @@ const MaternalMortality = props => {
           </div>
         </div>
         <div className="row">
-          <div className="offset-md-1 col-9">
+          <div className="col-12 offset-lg-1 col-lg-9">
             <div ref={descriptionRef} className="description description-mortality">
               <ul>
                 {props.description.map((d, i) => (

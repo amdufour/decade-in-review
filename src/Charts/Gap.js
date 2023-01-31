@@ -108,7 +108,7 @@ const Gap = props => {
           effectively and make sense of the world. ”"
         />
         <div className="row">
-          <div className="offset-md-1 col-11">
+          <div className="col-12 col-lg-11 offset-lg-1">
             <div id="gap-chart">
               <svg data-name="sct 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1467.03 325.22">
                 <g>
@@ -160,7 +160,7 @@ const Gap = props => {
         </div>
         <div className="description-container description-container-gap">
           <div className="row">
-            <div className="offset-md-1 col-9">
+            <div className="col-12 col-lg-9 offset-lg-1">
               <div className="description description-gap">
                 <ul>
                   <li ref={description1Ref}>In 1976, only 59% of women above the age of 15 worldwide were literate, compared to 76% of men, a gap of 17%.</li>
