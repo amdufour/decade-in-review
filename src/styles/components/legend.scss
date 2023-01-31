@@ -21,6 +21,11 @@
       }
     }
   }
+  @media (max-width: $md) {
+    &.legend-dots-girls {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .country-label,
