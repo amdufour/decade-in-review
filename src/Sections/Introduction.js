@@ -73,6 +73,7 @@ const Introduction = props => {
         case "Papua New Guinea":
           relatedCountry = "Papua New Guinea";
           break;
+        // no default
       };
       d.country_name = relatedCountry;
       
@@ -81,7 +82,7 @@ const Introduction = props => {
       }
     });
     
-    const paths = mapContainer
+    mapContainer
       .selectAll(".country-path")
       .data(countries.features)
       .join("path")
@@ -119,7 +120,7 @@ const Introduction = props => {
       clearInterval(timer);
     }
 
-  }, [props.countryIds, props.dataByCountry, props.worldAtlas]);
+  }, [props.countryIds, props.dataByCountry, props.worldAtlas, props.years]);
 
   return (
     <Fragment>
