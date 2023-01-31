@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/decade-in-review/static/css/main.c042c07b.css",
-    "main.js": "/decade-in-review/static/js/main.1c710d6c.js",
+    "main.js": "/decade-in-review/static/js/main.9b4776bc.js",
     "static/media/WGS-summit-logo.svg": "/decade-in-review/static/media/WGS-summit-logo.f5dfe2eb6efb65b0dd05b205b2bb078c.svg",
-    "static/media/quality_of_life-visuals.svg": "/decade-in-review/static/media/quality_of_life-visuals.a1cc54c0695a9c84fe0fe1249de238b1.svg",
-    "static/media/quality_of_life-axis.svg": "/decade-in-review/static/media/quality_of_life-axis.979c62ad842c6f28ddf0b3e2ef74d6f6.svg",
+    "static/media/quality_of_life-visuals.svg": "/decade-in-review/static/media/quality_of_life-visuals.8ea6cc93f5091108ddf126a73d4bd469.svg",
+    "static/media/quality_of_life-axis.svg": "/decade-in-review/static/media/quality_of_life-axis.07f49ed4b62ed6057d0078a1e1d1c088.svg",
     "index.html": "/decade-in-review/index.html",
     "static/media/magic.svg": "/decade-in-review/static/media/magic.26b1b5c6b6c6152a65ca.svg",
     "static/media/asterisk-purple.svg": "/decade-in-review/static/media/asterisk-purple.98c4a7a7749606f812ab.svg",
     "static/media/asterisk.svg": "/decade-in-review/static/media/asterisk.f09476671745612e5215.svg",
     "static/media/logo.svg": "/decade-in-review/static/media/logo.d65cba53c25c972236a5.svg",
     "main.c042c07b.css.map": "/decade-in-review/static/css/main.c042c07b.css.map",
-    "main.1c710d6c.js.map": "/decade-in-review/static/js/main.1c710d6c.js.map"
+    "main.9b4776bc.js.map": "/decade-in-review/static/js/main.9b4776bc.js.map"
   },
   "entrypoints": [
     "static/css/main.c042c07b.css",
-    "static/js/main.1c710d6c.js"
+    "static/js/main.9b4776bc.js"
   ]
 }
