@@ -4,16 +4,3 @@
   text-align: center;
   font-weight: 500;
 }
-
-@media (max-width: $sm) {
-  .section-quality-life {
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 300px;
-    }
-    .legend-img-2 {
-      margin-top: -180px;
-    }
-  }
-}

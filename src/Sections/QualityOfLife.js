@@ -117,15 +117,15 @@ const QualityOfLife = props => {
             <div className="legend-container">
               <h3>How to read this visualization</h3>
               <div className="row">
-                <div className="col-12 col-md-3">
+                <div className="col-12 col-sm-6">
                   <img src={LegendAxisImg} alt="Legend of the radial axis" />
                 </div>
-                <div className="col-12 col-md-5">
+                <div className="col-12 col-sm-6">
                   <div className="legend-img-2">
                     <img src={LegendAxisVisuals} alt="How to interpret the visualizations" />
                   </div>
                 </div>
-                <div className="col-12 col-md-4">
+                <div className="col-12 col-lg-6">
                   <div className="legend-quality-life">
                     <div className="legend-section legend-color">
                       <div className="legend-color-label">Color: Happy Planet Index</div>
