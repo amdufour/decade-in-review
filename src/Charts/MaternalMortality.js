@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,8 +7,12 @@ import { DrawSVGPlugin } from "../Animations/DrawSVGPlugin";
 import SectionHeader from "../UI/SectionHeader";
 import ChartContainer from "../ChartComponents.js/ChartContainer";
 import Axis from "../ChartComponents.js/Axis";
+import SlopeMaternalMortality from "../Sections/assets/slope-maternal-mortality.svg";
 
 const MaternalMortality = props => {
+  const breakpoint = 767;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= breakpoint ? true : false);
+
   // Dimensions
   const width = 330;
   const height = 245;
@@ -47,325 +51,335 @@ const MaternalMortality = props => {
   const slopeMouseOver2010Ref = useRef(null);
   const descriptionRef = useRef(null);
   useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= breakpoint && !isMobile) {
+        setIsMobile(true);
+      } else if (window.innerWidth > breakpoint && isMobile) {
+        setIsMobile(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
 
-    const scatterplot = d3.select(scatterplotRef.current);
-    const scatterplotMouseOver = d3.select(scatterplotMouseOverRef.current);
-    d3.selectAll(".maternity-slope-country").remove();
-    d3.selectAll(".maternity-slope-others").remove();
-    const slope = d3.select(slopeRef.current);
-    const slopeMouseOver2020 = d3.select(slopeMouseOver2020Ref.current);
-    const slopeMouseOver2010 = d3.select(slopeMouseOver2010Ref.current);
 
-    // Scatterplot
-    scatterplotMouseOver
-        .attr("transform", "translate(-100, -100)")
-      .selectAll("mouseover")
-        .attr("fill-opacity", 0)
-        .attr("stroke-opacity", 0);
+    if (!isMobile) {
+      const scatterplot = d3.select(scatterplotRef.current);
+      const scatterplotMouseOver = d3.select(scatterplotMouseOverRef.current);
+      d3.selectAll(".maternity-slope-country").remove();
+      d3.selectAll(".maternity-slope-others").remove();
+      const slope = d3.select(slopeRef.current);
+      const slopeMouseOver2020 = d3.select(slopeMouseOver2020Ref.current);
+      const slopeMouseOver2010 = d3.select(slopeMouseOver2010Ref.current);
 
-    const hideLabels = () => {
-      d3.selectAll(".maternity-scatterplot-circle")
-        .attr("fill-opacity", 1);
-
+      // Scatterplot
       scatterplotMouseOver
           .attr("transform", "translate(-100, -100)")
         .selectAll("mouseover")
-          .attr("fill-opacity", 1)
-          .attr("stroke-opacity", 1);
+          .attr("fill-opacity", 0)
+          .attr("stroke-opacity", 0);
 
-      scatterplotMouseOver
-        .select(".maternity-country-label")
-          .attr("transform", "translate(0, 0)");
+      const hideLabels = () => {
+        d3.selectAll(".maternity-scatterplot-circle")
+          .attr("fill-opacity", 1);
 
-      slope
-        .selectAll(".maternity-slope-country")
-          .style("opacity", 1);
+        scatterplotMouseOver
+            .attr("transform", "translate(-100, -100)")
+          .selectAll("mouseover")
+            .attr("fill-opacity", 1)
+            .attr("stroke-opacity", 1);
 
-      slopeMouseOver2010
-        .attr("transform", `translate(0, -100)`)
-        .style("opacity", 0);
-      slopeMouseOver2020
-        .attr("transform", `translate(0, -100)`)
-        .style("opacity", 0);
+        scatterplotMouseOver
+          .select(".maternity-country-label")
+            .attr("transform", "translate(0, 0)");
 
-      d3.select(".maternity-slope-others")
-        .style("opacity", 0)
-        .attr("transform", "translate(0, -1000)");
-    };
+        slope
+          .selectAll(".maternity-slope-country")
+            .style("opacity", 1);
 
-    const showScatterplotLabels = d => {
-      d3.selectAll(".maternity-scatterplot-circle")
-        .transition()
-          .attr("fill-opacity",circle => circle.country_code === d.country_code ? 1 : 0.1);
+        slopeMouseOver2010
+          .attr("transform", `translate(0, -100)`)
+          .style("opacity", 0);
+        slopeMouseOver2020
+          .attr("transform", `translate(0, -100)`)
+          .style("opacity", 0);
 
-      scatterplotMouseOver
-        .select(".maternity-mouseover-vertical-line")
-          .attr("y2", innerHeight - yScale(d.mortality2017));
-
-      scatterplotMouseOver
-        .select(".maternity-mouseover-horizontal-line")
-          .attr("x1", -xScale(d.gdp_per_capita_2015_US$));
-
-      scatterplotMouseOver
-        .select(".maternity-country-label text")
-          .text(d.country_name);
-
-      const countryLabelWidth = d3.select(".maternity-country-label text").node().getComputedTextLength();
-      scatterplotMouseOver
-        .select(".maternity-country-label rect")
-          .attr("width", countryLabelWidth + 8);
-
-      scatterplotMouseOver
-        .select(".maternity-gdp-label text")
-          .text(`${d3.format(".3s")(d.gdp_per_capita_2015_US$)}$`);
-
-      const gdpLabelWidth = d3.select(".maternity-gdp-label text").node().getComputedTextLength();
-      scatterplotMouseOver
-        .select(".maternity-gdp-label text")
-          .attr("x", 0)
-          .attr("y", innerHeight - yScale(d.mortality2017) + 8.5);
-      scatterplotMouseOver
-        .select(".maternity-gdp-label rect")
-          .attr("x", -gdpLabelWidth/2 - 4)
-          .attr("y", innerHeight - yScale(d.mortality2017) + 2)
-          .attr("width", gdpLabelWidth + 8);
-
-      scatterplotMouseOver
-        .select(".maternity-mortality-label text")
-          .text(d3.format(".2f")(d.mortality2017));
-
-      const mortalityLabelWidth = d3.select(".maternity-mortality-label text").node().getComputedTextLength();
-      scatterplotMouseOver
-        .select(".maternity-mortality-label text")
-          .attr("x", -xScale(d.gdp_per_capita_2015_US$) - 6)
-          .attr("y", 0);
-      scatterplotMouseOver
-        .select(".maternity-mortality-label rect")
-          .attr("x", -xScale(d.gdp_per_capita_2015_US$) - mortalityLabelWidth - 10)
-          .attr("y", -6)
-          .attr("width", mortalityLabelWidth + 8);
-      
-      scatterplotMouseOver
-          .attr("transform", `translate(${xScale(d.gdp_per_capita_2015_US$)}, ${yScale(d.mortality2017)})`)
-        .selectAll("mouseover")
-        .transition()
-          .attr("fill-opacity", 1)
-          .attr("stroke-opacity", 1);
-
-      scatterplotMouseOver
-        .select(".maternity-country-label")
-          .transition()
-            .attr("transform", "translate(3, 0)");
-    };
-
-    const showSlopeLabels = d => {
-      slope
-        .selectAll(".maternity-slope-country")
-          .transition()
-            .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
-      
-      if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
-        const color = d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a";
-        
-        d3.select(".maternity-slope-others line")
-          .attr("y1", yScaleSlope(d.mortality2010))
-          .attr("y2", yScaleSlope(d.mortality2017))
-          .attr("stroke", color);
-        d3.select(".maternity-slope-others .other-circle-2010")
-          .attr("cy", yScaleSlope(d.mortality2010))
-          .attr("fill", color);
-        d3.select(".maternity-slope-others .other-circle-2020")
-          .attr("cy", yScaleSlope(d.mortality2017))
-          .attr("fill", color);
-        d3.select(".maternity-slope-others text")
-          .attr("y", yScaleSlope(d.mortality2010))
-          .attr("fill", color)
-          .text(d.country_name);
         d3.select(".maternity-slope-others")
-          .attr("transform", "translate(0, 0)")
+          .style("opacity", 0)
+          .attr("transform", "translate(0, -1000)");
+      };
+
+      const showScatterplotLabels = d => {
+        d3.selectAll(".maternity-scatterplot-circle")
+          .transition()
+            .attr("fill-opacity",circle => circle.country_code === d.country_code ? 1 : 0.1);
+
+        scatterplotMouseOver
+          .select(".maternity-mouseover-vertical-line")
+            .attr("y2", innerHeight - yScale(d.mortality2017));
+
+        scatterplotMouseOver
+          .select(".maternity-mouseover-horizontal-line")
+            .attr("x1", -xScale(d.gdp_per_capita_2015_US$));
+
+        scatterplotMouseOver
+          .select(".maternity-country-label text")
+            .text(d.country_name);
+
+        const countryLabelWidth = d3.select(".maternity-country-label text").node().getComputedTextLength();
+        scatterplotMouseOver
+          .select(".maternity-country-label rect")
+            .attr("width", countryLabelWidth + 8);
+
+        scatterplotMouseOver
+          .select(".maternity-gdp-label text")
+            .text(`${d3.format(".3s")(d.gdp_per_capita_2015_US$)}$`);
+
+        const gdpLabelWidth = d3.select(".maternity-gdp-label text").node().getComputedTextLength();
+        scatterplotMouseOver
+          .select(".maternity-gdp-label text")
+            .attr("x", 0)
+            .attr("y", innerHeight - yScale(d.mortality2017) + 8.5);
+        scatterplotMouseOver
+          .select(".maternity-gdp-label rect")
+            .attr("x", -gdpLabelWidth/2 - 4)
+            .attr("y", innerHeight - yScale(d.mortality2017) + 2)
+            .attr("width", gdpLabelWidth + 8);
+
+        scatterplotMouseOver
+          .select(".maternity-mortality-label text")
+            .text(d3.format(".2f")(d.mortality2017));
+
+        const mortalityLabelWidth = d3.select(".maternity-mortality-label text").node().getComputedTextLength();
+        scatterplotMouseOver
+          .select(".maternity-mortality-label text")
+            .attr("x", -xScale(d.gdp_per_capita_2015_US$) - 6)
+            .attr("y", 0);
+        scatterplotMouseOver
+          .select(".maternity-mortality-label rect")
+            .attr("x", -xScale(d.gdp_per_capita_2015_US$) - mortalityLabelWidth - 10)
+            .attr("y", -6)
+            .attr("width", mortalityLabelWidth + 8);
+        
+        scatterplotMouseOver
+            .attr("transform", `translate(${xScale(d.gdp_per_capita_2015_US$)}, ${yScale(d.mortality2017)})`)
+          .selectAll("mouseover")
+          .transition()
+            .attr("fill-opacity", 1)
+            .attr("stroke-opacity", 1);
+
+        scatterplotMouseOver
+          .select(".maternity-country-label")
+            .transition()
+              .attr("transform", "translate(3, 0)");
+      };
+
+      const showSlopeLabels = d => {
+        slope
+          .selectAll(".maternity-slope-country")
+            .transition()
+              .style("opacity", country => country.country_code === d.country_code ? 1 : 0.1);
+        
+        if (!topDecrease.find(c => c.country_code === d.country_code) && !topIncrease.find(c => c.country_code === d.country_code)) {
+          const color = d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a";
+          
+          d3.select(".maternity-slope-others line")
+            .attr("y1", yScaleSlope(d.mortality2010))
+            .attr("y2", yScaleSlope(d.mortality2017))
+            .attr("stroke", color);
+          d3.select(".maternity-slope-others .other-circle-2010")
+            .attr("cy", yScaleSlope(d.mortality2010))
+            .attr("fill", color);
+          d3.select(".maternity-slope-others .other-circle-2020")
+            .attr("cy", yScaleSlope(d.mortality2017))
+            .attr("fill", color);
+          d3.select(".maternity-slope-others text")
+            .attr("y", yScaleSlope(d.mortality2010))
+            .attr("fill", color)
+            .text(d.country_name);
+          d3.select(".maternity-slope-others")
+            .attr("transform", "translate(0, 0)")
+            .transition()
+              .style("opacity", 1);
+        }
+
+        slopeMouseOver2010
+          .select("text")
+          .text(d3.format(".2f")(d.mortality2010));
+        slopeMouseOver2020
+          .select("text")
+          .text(d3.format(".2f")(d.mortality2017));
+        
+        slopeMouseOver2010
+          .attr("transform", `translate(0, ${yScaleSlope(d.mortality2010) + 8})`)
           .transition()
             .style("opacity", 1);
-      }
+        slopeMouseOver2020
+          .attr("transform", `translate(${innerWidthSlope}, ${yScaleSlope(d.mortality2017) + 8})`)
+          .transition()
+            .style("opacity", 1);
 
-      slopeMouseOver2010
-        .select("text")
-        .text(d3.format(".2f")(d.mortality2010));
-      slopeMouseOver2020
-        .select("text")
-        .text(d3.format(".2f")(d.mortality2017));
+      };
       
-      slopeMouseOver2010
-        .attr("transform", `translate(0, ${yScaleSlope(d.mortality2010) + 8})`)
-        .transition()
-          .style("opacity", 1);
-      slopeMouseOver2020
-        .attr("transform", `translate(${innerWidthSlope}, ${yScaleSlope(d.mortality2017) + 8})`)
-        .transition()
-          .style("opacity", 1);
+      scatterplot
+        .selectAll(".maternity-scatterplot-circle")
+        .data(sortedData)
+        .join("circle")
+          .attr("class", d => {
+            let circleType = "";
+            if (topDecrease.find(c => c.country_code === d.country_code)) {
+              circleType = "decrease";
+            } else if (topIncrease.find(c => c.country_code === d.country_code)) {
+              circleType = "increase";
+            } else {
+              circleType = "default";
+            }
+            return `maternity-scatterplot-circle maternity-scatterplot-circle-${props.type}-${d.country_code} ${circleType}`;
+          })
+          .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
+          .attr("cy", d => yScale(d.mortality2017))
+          .attr("r", 2.5)
+          .attr("fill", d => d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a")
+          .attr("stroke", "#F9FFFF")
+          .attr("stroke-width", 0.5)
+          .on("mouseenter", (e, d) => {
+            showScatterplotLabels(d);
+            showSlopeLabels(d);
+          })
+          .on("mouseleave", () => hideLabels());
 
-    };
-    
-    scatterplot
-      .selectAll(".maternity-scatterplot-circle")
-      .data(sortedData)
-      .join("circle")
-        .attr("class", d => {
-          let circleType = "";
-          if (topDecrease.find(c => c.country_code === d.country_code)) {
-            circleType = "decrease";
-          } else if (topIncrease.find(c => c.country_code === d.country_code)) {
-            circleType = "increase";
-          } else {
-            circleType = "default";
-          }
-          return `maternity-scatterplot-circle maternity-scatterplot-circle-${props.type}-${d.country_code} ${circleType}`;
-        })
-        .attr("cx", d => xScale(d.gdp_per_capita_2015_US$))
-        .attr("cy", d => yScale(d.mortality2017))
-        .attr("r", 2.5)
-        .attr("fill", d => d.mortality2017 <= d.mortality2010 ? "#059799" : "#ac2c5a")
-        .attr("stroke", "#F9FFFF")
-        .attr("stroke-width", 0.5)
-        .on("mouseenter", (e, d) => {
-          showScatterplotLabels(d);
-          showSlopeLabels(d);
-        })
-        .on("mouseleave", () => hideLabels());
+      // Slope chart
+      const slopeCountry = slope
+        .selectAll(".maternity-slope-country")
+        .data(topDecrease.concat(topIncrease))
+        .join("g")
+          .attr("class", d => `maternity-slope-country maternity-slope-country-${d.country_code} ${d[`${props.type}_diff`] < 0 ? "decrease" : "increase"}`);
 
-    // Slope chart
-    const slopeCountry = slope
-      .selectAll(".maternity-slope-country")
-      .data(topDecrease.concat(topIncrease))
-      .join("g")
-        .attr("class", d => `maternity-slope-country maternity-slope-country-${d.country_code} ${d[`${props.type}_diff`] < 0 ? "decrease" : "increase"}`);
+      slopeCountry
+        .append("line")
+          .attr("x1", 0)
+          .attr("y1", d => yScaleSlope(d.mortality2010))
+          .attr("x2", innerWidthSlope)
+          .attr("y2", d => yScaleSlope(d.mortality2017))
+          .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
+          .attr("stroke-width", 2);
 
-    slopeCountry
-      .append("line")
-        .attr("x1", 0)
-        .attr("y1", d => yScaleSlope(d.mortality2010))
-        .attr("x2", innerWidthSlope)
-        .attr("y2", d => yScaleSlope(d.mortality2017))
-        .attr("stroke", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
-        .attr("stroke-width", 2);
+      slopeCountry
+        .append("circle")
+          .attr("class", "circle-2010")
+          .attr("cx", 0)
+          .attr("cy", d => yScaleSlope(d.mortality2010))
+          .attr("r", 5)
+          .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
+          .attr("stroke", "#F9FFFF")
+          .on("mouseenter", (e, d) => {
+            showScatterplotLabels(d);
+            showSlopeLabels(d);
+          })
+          .on("mouseleave", () => hideLabels());
+      slopeCountry
+        .append("circle")
+          .attr("class", "circle-2020")
+          .attr("cx", innerWidthSlope)
+          .attr("cy", d => yScaleSlope(d.mortality2017))
+          .attr("r", 5)
+          .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
+          .attr("stroke", "#F9FFFF")
+          .on("mouseenter", (e, d) => {
+            showScatterplotLabels(d);
+            showSlopeLabels(d);
+          })
+          .on("mouseleave", () => hideLabels());
 
-    slopeCountry
-      .append("circle")
-        .attr("class", "circle-2010")
-        .attr("cx", 0)
-        .attr("cy", d => yScaleSlope(d.mortality2010))
-        .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
-        .attr("stroke", "#F9FFFF")
-        .on("mouseenter", (e, d) => {
-          showScatterplotLabels(d);
-          showSlopeLabels(d);
-        })
-        .on("mouseleave", () => hideLabels());
-    slopeCountry
-      .append("circle")
-        .attr("class", "circle-2020")
-        .attr("cx", innerWidthSlope)
-        .attr("cy", d => yScaleSlope(d.mortality2017))
-        .attr("r", 5)
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
-        .attr("stroke", "#F9FFFF")
-        .on("mouseenter", (e, d) => {
-          showScatterplotLabels(d);
-          showSlopeLabels(d);
-        })
-        .on("mouseleave", () => hideLabels());
+      slopeCountry
+        .append("text")
+          .attr("x", -8)
+          .attr("y", d => {
+            const defaultPosition = yScaleSlope(d.mortality2010);
+            switch (d.country_code) {
+              case "BGD":
+                return defaultPosition - 10;
+              default:
+                return defaultPosition;
+            }
+          })
+          .attr("text-anchor", "end")
+          .attr("dominant-baseline", "middle")
+          .style("font-size", "13px")
+          .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
+          .text(d => d.country_name);
 
-    slopeCountry
-      .append("text")
-        .attr("x", -8)
-        .attr("y", d => {
-          const defaultPosition = yScaleSlope(d.mortality2010);
-          switch (d.country_code) {
-            case "BGD":
-              return defaultPosition - 10;
-            default:
-              return defaultPosition;
-          }
-        })
-        .attr("text-anchor", "end")
-        .attr("dominant-baseline", "middle")
-        .style("font-size", "13px")
-        .attr("fill", d => d[`${props.type}_diff`] < 0 ? "#059799" : "#ac2c5a")
-        .text(d => d.country_name);
+      const slopeOthers = slope
+        .append("g")
+          .attr("class", "maternity-slope-others")
+          .attr("transform", "translate(0, -1000)");
+      slopeOthers
+        .append("line")
+          .attr("x1", 0)
+          .attr("x2", innerWidthSlope)
+          .attr("stroke", "#059799")
+          .attr("stroke-width", 2);
+      slopeOthers
+        .append("circle")
+          .attr("class", "other-circle-2010")
+          .attr("cx", 0)
+          .attr("r", 5)
+          .attr("fill", "#059799")
+          .attr("stroke", "#F9FFFF");
+      slopeOthers
+        .append("circle")
+          .attr("class", "other-circle-2020")
+          .attr("cx", innerWidthSlope)
+          .attr("r", 5)
+          .attr("fill", "#059799")
+          .attr("stroke", "#F9FFFF");
+      slopeOthers
+        .append("text")
+          .attr("x", -8)
+          .attr("text-anchor", "end")
+          .attr("dominant-baseline", "middle")
+          .attr("fill", "#059799")
+          .style("font-size", "13px");
 
-    const slopeOthers = slope
-      .append("g")
-        .attr("class", "maternity-slope-others")
-        .attr("transform", "translate(0, -1000)");
-    slopeOthers
-      .append("line")
-        .attr("x1", 0)
-        .attr("x2", innerWidthSlope)
-        .attr("stroke", "#059799")
-        .attr("stroke-width", 2);
-    slopeOthers
-      .append("circle")
-        .attr("class", "other-circle-2010")
-        .attr("cx", 0)
-        .attr("r", 5)
-        .attr("fill", "#059799")
-        .attr("stroke", "#F9FFFF");
-    slopeOthers
-      .append("circle")
-        .attr("class", "other-circle-2020")
-        .attr("cx", innerWidthSlope)
-        .attr("r", 5)
-        .attr("fill", "#059799")
-        .attr("stroke", "#F9FFFF");
-    slopeOthers
-      .append("text")
-        .attr("x", -8)
-        .attr("text-anchor", "end")
-        .attr("dominant-baseline", "middle")
-        .attr("fill", "#059799")
-        .style("font-size", "13px");
+      slopeMouseOver2010.style("opacity", 0);
+      slopeMouseOver2020.style("opacity", 0);
+      slopeOthers.style("opacity", 0);
 
-    slopeMouseOver2010.style("opacity", 0);
-    slopeMouseOver2020.style("opacity", 0);
-    slopeOthers.style("opacity", 0);
+      // Animations
+      const scatterplotGsap = scatterplotRef.current;
+      const description = descriptionRef.current;
+      const slopeGsap = slopeRef.current;
 
-    // Animations
-    const scatterplotGsap = scatterplotRef.current;
-    const description = descriptionRef.current;
-    const slopeGsap = slopeRef.current;
+      gsap.set(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle"), {scale: 0, opacity: 0});
+      gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country circle"), {scale: 0, opacity: 0});
+      gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country line"), {drawSVG: "0%", opacity: 0});
+      gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country text"), {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
+      gsap.set(description.querySelectorAll("li"), {opacity: 0, x: -50});
 
-    gsap.set(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle"), {scale: 0, opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country circle"), {scale: 0, opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country line"), {drawSVG: "0%", opacity: 0});
-    gsap.set(slopeGsap.querySelectorAll(".maternity-slope-country text"), {opacity: 0, x: -10, clipPath: "polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%)"});
-    gsap.set(description.querySelectorAll("li"), {opacity: 0, x: -50});
+      const tl = gsap.timeline({
+        defaults: {
+          ease: "power4.inOut",
+          duration: 0.5
+        },
+        scrollTrigger: {
+          trigger: description
+        }
+      });
 
-    const tl = gsap.timeline({
-      defaults: {
-        ease: "power4.inOut",
-        duration: 0.5
-      },
-      scrollTrigger: {
-        trigger: description
-      }
-    });
+      tl.to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.default"), {scale: 1, opacity: 1, stagger: {amount: 0.8, from: "center"}})
+        .to(description.querySelectorAll(`.description-${props.type}-0`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
+        .to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.decrease"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
 
-    tl.to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.default"), {scale: 1, opacity: 1, stagger: {amount: 0.8, from: "center"}})
-      .to(description.querySelectorAll(`.description-${props.type}-0`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
-      .to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.decrease"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.decrease text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
-
-      .to(description.querySelectorAll(`.description-${props.type}-1`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
-      .to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.increase"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
-      .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
-
-  });
+        .to(description.querySelectorAll(`.description-${props.type}-1`), {opacity:1, x: "+=50", duration: 1.5}, "+=1")
+        .to(scatterplotGsap.querySelectorAll(".maternity-scatterplot-circle.increase"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase .circle-2010"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase line"), {drawSVG: "100%", opacity: 1, duration: 1.5, stagger: {amount: 0.3, from: "center"}}, "-=0.5")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase .circle-2020"), {scale: 1, opacity: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+        .to(slopeGsap.querySelectorAll(".maternity-slope-country.increase text"), {opacity: 1, x: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, stagger: {amount: 0.3, from: "center"}}, "-=1")
+    }
+  }, [isMobile]);
 
   // Scales
   const dataWithMaternalDeath = localData.filter(d => d.maternal_deaths_per_10000_births_2017);
@@ -396,193 +410,198 @@ const MaternalMortality = props => {
             <div className="chart-help">Pass your cursor over a circle to reveal additional information.</div>
           </div>
         </div>
-        <div className="row">
-          <div className="offset-md-1 col-11 col-md-7">
-            <ChartContainer
-              width={width}
-              height={height}
-              margin={margin}
-            >
-              <Axis
-                type="left"
-                innerWidth={innerWidth}
-                innerHeight={innerHeight}
-                scale={yScale}
-                label={props.yLabel}
-              />
-              <Axis
-                type="bottom"
-                innerWidth={innerWidth}
-                innerHeight={innerHeight}
-                scale={xScale}
-                label="GDP per capita (2015 US$)"
-              />
-              <g className="maternity-scatterplot-circles" ref={scatterplotRef}></g>
-              <g className="scatterplot-mouseover" ref={scatterplotMouseOverRef}>
-                <circle
-                  className="mouseover"
-                  cx={0}
-                  cy={0}
-                  r={5}
-                  fill="none"
-                  stroke="#808989"
-                  strokeLinecap="round"
-                />
-                <line
-                  className="mouseover maternity-mouseover-vertical-line"
-                  x1={0}
-                  x2={0}
-                  y1={5}
-                  y2={0}
-                  stroke="#808989"
-                  strokeDasharray="2 2"
-                  strokeLinecap="round"
-                />
-                <line
-                  className="mouseover maternity-mouseover-horizontal-line"
-                  x1={0}
-                  x2={-5}
-                  y1={0}
-                  y2={0}
-                  stroke="#808989"
-                  strokeDasharray="2 2"
-                  strokeLinecap="round"
-                />
-                <g className="maternity-country-label">
-                  <rect 
-                    className="mouseover"
-                    x={6}
-                    y={-8}
-                    height={16}
-                    fill="#059799"
-                    rx={1}
-                    ry={1}
-                  />
-                  <text
-                    className="mouseover"
-                    x={10}
-                    y={0.5}
-                    dominantBaseline="middle"
-                  />
-                </g>
-                <g className="maternity-gdp-label">
-                  <rect 
-                    className="mouseover"
-                    x={0}
-                    y={0}
-                    height={12}
-                    fill="#059799"
-                    rx={1}
-                    ry={1}
-                  />
-                  <text
-                    className="mouseover"
-                    x={0}
-                    y={0}
-                    textAnchor="middle"
-                    dominantBaseline="middle"
-                  />
-                </g>
-                <g className="maternity-mortality-label">
-                  <rect 
-                    className="mouseover"
-                    x={0}
-                    y={0}
-                    height={12}
-                    fill="#059799"
-                    rx={1}
-                    ry={1}
-                  />
-                  <text
-                    className="mouseover"
-                    x={0}
-                    y={0}
-                    textAnchor="end"
-                    dominantBaseline="middle"
-                  />
-                </g>
-              </g>
-            </ChartContainer>
-          </div>
-          <div className="col-12 col-md-4">
-            <div className="slope-container">
+        {!isMobile &&
+          <div className="row">
+            <div className="offset-md-1 col-11 col-md-7">
               <ChartContainer
                 width={width}
-                height={heightSlope}
-                margin={marginSlope}
+                height={height}
+                margin={margin}
               >
-                <g
-                  stroke="#808989"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                >
+                <Axis
+                  type="left"
+                  innerWidth={innerWidth}
+                  innerHeight={innerHeight}
+                  scale={yScale}
+                  label={props.yLabel}
+                />
+                <Axis
+                  type="bottom"
+                  innerWidth={innerWidth}
+                  innerHeight={innerHeight}
+                  scale={xScale}
+                  label="GDP per capita (2015 US$)"
+                />
+                <g className="maternity-scatterplot-circles" ref={scatterplotRef}></g>
+                <g className="scatterplot-mouseover" ref={scatterplotMouseOverRef}>
+                  <circle
+                    className="mouseover"
+                    cx={0}
+                    cy={0}
+                    r={5}
+                    fill="none"
+                    stroke="#808989"
+                    strokeLinecap="round"
+                  />
                   <line
+                    className="mouseover maternity-mouseover-vertical-line"
                     x1={0}
                     x2={0}
-                    y1={0}
-                    y2={innerHeightSlope}
+                    y1={5}
+                    y2={0}
+                    stroke="#808989"
+                    strokeDasharray="2 2"
+                    strokeLinecap="round"
                   />
                   <line
-                    x1={innerWidthSlope}
-                    x2={innerWidthSlope}
+                    className="mouseover maternity-mouseover-horizontal-line"
+                    x1={0}
+                    x2={-5}
                     y1={0}
-                    y2={innerHeightSlope}
+                    y2={0}
+                    stroke="#808989"
+                    strokeDasharray="2 2"
+                    strokeLinecap="round"
                   />
-                </g>
-                <g
-                  transform={`translate(0, ${innerHeightSlope + 15})`}  
-                  fontSize="15px"
-                  textAnchor="middle"
-                  dominantBaseline="hanging"
-                >
-                  <text>2010</text>
-                  <text x={innerWidthSlope}>2020</text>
-                </g>
-                <g ref={slopeRef}></g>
-                <g ref={slopeMouseOver2010Ref}>
-                  <rect
-                    x={-18}
-                    y={0}
-                    width={36}
-                    height={20}
-                    fill="#059799"
-                    rx={2}
-                    ry={2}
-                  />
-                  <text
-                    x={0}
-                    y={10.5}
-                    textAnchor="middle"
-                    dominantBaseline="middle"
-                    fill="#F9FFFF"
-                    fontSize="11px"
-                    fontWeight={500}
-                  />
-                </g>
-                <g ref={slopeMouseOver2020Ref}>
-                  <rect
-                    x={-18}
-                    y={0}
-                    width={36}
-                    height={20}
-                    fill="#059799"
-                    rx={2}
-                    ry={2}
-                  />
-                  <text
-                    x={0}
-                    y={10.5}
-                    textAnchor="middle"
-                    dominantBaseline="middle"
-                    fill="#F9FFFF"
-                    fontSize="11px"
-                    fontWeight={500}
-                  />
+                  <g className="maternity-country-label">
+                    <rect 
+                      className="mouseover"
+                      x={6}
+                      y={-8}
+                      height={16}
+                      fill="#059799"
+                      rx={1}
+                      ry={1}
+                    />
+                    <text
+                      className="mouseover"
+                      x={10}
+                      y={0.5}
+                      dominantBaseline="middle"
+                    />
+                  </g>
+                  <g className="maternity-gdp-label">
+                    <rect 
+                      className="mouseover"
+                      x={0}
+                      y={0}
+                      height={12}
+                      fill="#059799"
+                      rx={1}
+                      ry={1}
+                    />
+                    <text
+                      className="mouseover"
+                      x={0}
+                      y={0}
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                    />
+                  </g>
+                  <g className="maternity-mortality-label">
+                    <rect 
+                      className="mouseover"
+                      x={0}
+                      y={0}
+                      height={12}
+                      fill="#059799"
+                      rx={1}
+                      ry={1}
+                    />
+                    <text
+                      className="mouseover"
+                      x={0}
+                      y={0}
+                      textAnchor="end"
+                      dominantBaseline="middle"
+                    />
+                  </g>
                 </g>
               </ChartContainer>
             </div>
+            <div className="col-12 col-md-4">
+              <div className="slope-container">
+                <ChartContainer
+                  width={width}
+                  height={heightSlope}
+                  margin={marginSlope}
+                >
+                  <g
+                    stroke="#808989"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  >
+                    <line
+                      x1={0}
+                      x2={0}
+                      y1={0}
+                      y2={innerHeightSlope}
+                    />
+                    <line
+                      x1={innerWidthSlope}
+                      x2={innerWidthSlope}
+                      y1={0}
+                      y2={innerHeightSlope}
+                    />
+                  </g>
+                  <g
+                    transform={`translate(0, ${innerHeightSlope + 15})`}  
+                    fontSize="15px"
+                    textAnchor="middle"
+                    dominantBaseline="hanging"
+                  >
+                    <text>2010</text>
+                    <text x={innerWidthSlope}>2020</text>
+                  </g>
+                  <g ref={slopeRef}></g>
+                  <g ref={slopeMouseOver2010Ref}>
+                    <rect
+                      x={-18}
+                      y={0}
+                      width={36}
+                      height={20}
+                      fill="#059799"
+                      rx={2}
+                      ry={2}
+                    />
+                    <text
+                      x={0}
+                      y={10.5}
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                      fill="#F9FFFF"
+                      fontSize="11px"
+                      fontWeight={500}
+                    />
+                  </g>
+                  <g ref={slopeMouseOver2020Ref}>
+                    <rect
+                      x={-18}
+                      y={0}
+                      width={36}
+                      height={20}
+                      fill="#059799"
+                      rx={2}
+                      ry={2}
+                    />
+                    <text
+                      x={0}
+                      y={10.5}
+                      textAnchor="middle"
+                      dominantBaseline="middle"
+                      fill="#F9FFFF"
+                      fontSize="11px"
+                      fontWeight={500}
+                    />
+                  </g>
+                </ChartContainer>
+              </div>
+            </div>
           </div>
-        </div>
+        }
+        {isMobile &&
+          <img src={SlopeMaternalMortality} alt="Maternal mortality decreased in Afghanistan, Bangladesh, and Ethiopia. It increased in Chad, Nigeria, Algeria, Iraq, and the united States." />
+        }
         <div className="row">
           <div className="col-12 offset-lg-1 col-lg-9">
             <div ref={descriptionRef} className="description description-mortality">
