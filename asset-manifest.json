@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/decade-in-review/static/css/main.e99ea7e3.css",
-    "main.js": "/decade-in-review/static/js/main.10582563.js",
+    "main.css": "/decade-in-review/static/css/main.c1e5e2cc.css",
+    "main.js": "/decade-in-review/static/js/main.4e42d6cc.js",
     "static/media/slope-maternal-mortality.svg": "/decade-in-review/static/media/slope-maternal-mortality.51874371e4c1a465e6aaa52b3efc86e4.svg",
     "static/media/slope-infant-mortality.svg": "/decade-in-review/static/media/slope-infant-mortality.55a1f877ba859a717bc6ea55ce7e6222.svg",
     "static/media/gap-mobile.svg": "/decade-in-review/static/media/gap-mobile.fad4062357b359e6e0c4dc4eda41cf38.svg",
@@ -13,11 +13,11 @@
     "static/media/asterisk-purple.svg": "/decade-in-review/static/media/asterisk-purple.98c4a7a7749606f812ab.svg",
     "static/media/asterisk.svg": "/decade-in-review/static/media/asterisk.f09476671745612e5215.svg",
     "static/media/logo.svg": "/decade-in-review/static/media/logo.d65cba53c25c972236a5.svg",
-    "main.e99ea7e3.css.map": "/decade-in-review/static/css/main.e99ea7e3.css.map",
-    "main.10582563.js.map": "/decade-in-review/static/js/main.10582563.js.map"
+    "main.c1e5e2cc.css.map": "/decade-in-review/static/css/main.c1e5e2cc.css.map",
+    "main.4e42d6cc.js.map": "/decade-in-review/static/js/main.4e42d6cc.js.map"
   },
   "entrypoints": [
-    "static/css/main.e99ea7e3.css",
-    "static/js/main.10582563.js"
+    "static/css/main.c1e5e2cc.css",
+    "static/js/main.4e42d6cc.js"
   ]
 }
