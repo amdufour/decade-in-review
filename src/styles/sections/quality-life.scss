@@ -4,3 +4,13 @@
   text-align: center;
   font-weight: 500;
 }
+
+.sticky-container {
+  display: flex;
+  height: 100%;
+  .sticky {
+    position: sticky;
+    bottom: 2rem;
+    align-self: flex-end;
+  }
+}
