@@ -88,14 +88,12 @@ const Introduction = props => {
       .join("path")
         .attr("class", d => `country-path country-path-${d.country_name.replaceAll(" ", "_")}`)
         .attr("d", d => pathGenerator(d))
-        .attr("fill", d => d.hpi && d.hpi[0].hpi ? hpiColorScale(d.hpi[0].hpi) : "#F9FFFF")
-        .attr("fill-opacity", d => d.hpi && d.hpi[0].hpi ? 0.75 : 0.2)
+        .attr("fill", d => d.hpi && d.hpi.find(y => y.year === 2019).hpi ? hpiColorScale(d.hpi.find(y => y.year === 2019).hpi) : "#F9FFFF")
+        .attr("fill-opacity", d => d.hpi && d.hpi.find(y => y.year === 2019).hpi ? 0.75 : 0.2)
         .attr("stroke", "#F9FFFF")
         .attr("stroke-width", 0.3);
 
     const stepDuration = 1500;
-    const yearsLoop = props.years.slice(0, -1);
-    let currentIndex = 0;
     
     setTimeout(() => {
       mapContainer
@@ -104,21 +102,6 @@ const Introduction = props => {
         .ease(d3.easeCubicInOut)
           .style("opacity", 1);
     }, stepDuration);
-
-    const timer = setInterval(() => {
-      d3.selectAll(".country-path")
-        .transition()
-        .duration(stepDuration)
-        .ease(d3.easeCubicInOut)
-          .attr("fill", d => d.hpi && d.hpi[currentIndex].hpi ? hpiColorScale(d.hpi[currentIndex].hpi) : "#F9FFFF")
-          .attr("fill-opacity", d => d.hpi && d.hpi[currentIndex].hpi ? 0.75 : 0.2);
-
-      currentIndex = currentIndex === yearsLoop.length - 1 ? 0 : currentIndex + 1;
-    }, stepDuration);
-
-    return () => {
-      clearInterval(timer);
-    }
 
   }, [props.countryIds, props.dataByCountry, props.worldAtlas, props.years]);
 
@@ -132,7 +115,7 @@ const Introduction = props => {
           <img src={WGSLogo} alt="Logo of the World Government Summit" />
         </div>
         <div className="intro-color-scale">
-          <div className="label-hpi">Happy Planet Index</div>
+          <div className="label-hpi">Happy Planet Index (2019)</div>
           <div className="scale-container">
             <div className="labels">
               <div className="label">64</div>
