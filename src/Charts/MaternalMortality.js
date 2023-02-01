@@ -407,7 +407,7 @@ const MaternalMortality = props => {
         />
         <div className="row">
           <div className="offset-md-1 col-11">
-            <div className="chart-help">Pass your cursor over a circle to reveal additional information.</div>
+            <div className="chart-help">Pass your cursor over a circle to reveal the numbers.</div>
           </div>
         </div>
         {!isMobile &&
