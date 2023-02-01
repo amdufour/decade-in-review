@@ -551,7 +551,7 @@ const MaternalMortality = props => {
                     dominantBaseline="hanging"
                   >
                     <text>2010</text>
-                    <text x={innerWidthSlope}>2020</text>
+                    <text x={innerWidthSlope}>2017</text>
                   </g>
                   <g ref={slopeRef}></g>
                   <g ref={slopeMouseOver2010Ref}>
